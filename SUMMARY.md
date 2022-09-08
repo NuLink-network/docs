@@ -1,8 +1,8 @@
 # Summary
 
-* NuLink Intro(intro.md)
+* [NuLink Intro](README.md)
 * Get Started
-
+* 
 * Products
     * Staking
     * Nulink Worker
