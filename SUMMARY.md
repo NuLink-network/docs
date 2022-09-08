@@ -1,9 +1,10 @@
-# Summary
+# Table of contents
 
 * [NuLink Intro](README.md)
-* Get Started
-* 
-* Products
+
+## Get Started
+
+## Products
     * Staking
     * Nulink Worker
       * Install
