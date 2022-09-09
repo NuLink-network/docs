@@ -1,10 +1,8 @@
 # Table of contents
 
-
-* [NuLink Introduction](introduction.md)
-
 ## Get Started
 
+* [NuLink Introduction](introduction.md)
 * [Roadmap](roadmap.md)
 
 ## Products
