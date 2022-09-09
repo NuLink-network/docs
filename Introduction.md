@@ -9,7 +9,7 @@ The Nulink technology platform consists of blockchain, access control (Proxy Re-
 
 The NuLink network integrates the Application Layer, the Cryptography Layer, the Storage Layer, the Blockchain Layer and the Watcher Network.
 
-![image](./Miscellaneous/img/architecture.png)
+![image](./miscellaneous/img/architecture.png)
 
 1. The Application Layer: The Application Layer is an abstract interface layer that directly interacts with the application. The Application Layer also needs to interact with the Cryptograph Layer to grant authorization of the application’s privacy data.
 2. The Cryptograph Layer: The Cryptograph Layer is an entity that handles cryptographic operations on behalf of the Application Layer. The cryptographic operations include key generation, encryption, decryption, etc. The Cryptograph Layer also needs to connect to the Storage Layer and is responsible for uploading and downloading the encrypted privacy data.
