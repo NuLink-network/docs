@@ -1,4 +1,217 @@
-# NuLink Worker Installer
+# NuLink Worker
+
+## Minimum System Requirements
+Debian/Ubuntu (Recommended)
+
+20GB storage
+
+4GB RAM
+
+x86 architecture
+
+Static IP address
+
+Exposed TCP port 9151
+
+Nodes can be run on cloud infrastructure.
+
+## Install NuLink Worker
+
+See [NuLink Worker Install](./worker_install.md). There is the option of using Docker (recommended) or a local installation.
+
+## Configure and Run a Ursula Node
+
+### Run Node via Docker (Recommended)
+
+TODO
+
+### Run Node via Local Installtion
 
 
+#### Initialize Node
 
+This step creates and stores the PRE node configuration, and only needs to be run once.
+
+```shell
+nulink ursula init      \
+--signer <ETH KEYSTORE URI>           \
+--network <L1 NETWORK NAME>           \
+--eth-provider <L1 PROVIDER URI>      \
+--payment-provider <L2 PROVIDER URI>  \
+--payment-network <L2 NETWORK NAME>   \
+--operator-address <OPERATOR ADDRESS> \
+--max-gas-price <GWEI>
+```
+
+- `<ETH KEYSTORE URI>` - The local ethereum keystore, **OPERATOR ADDRESS keystore, or will initialize error** (e.g. keystore:///home/<user>/.ethereum/keystore）
+- `<L1 PROVIDER URI>` - The URI of a local or hosted ethereum node (infura/geth, e.g. https://infora.io/...)
+- `<L1 NETWORK NAME>` - The name of PRE network (heco_testnet)
+- `<L2 PROVIDER URI>` - The URI of a local or hosted level-two node (infura/bor)
+- `<L2 NETWORK NAME>` - The name of a payment network
+- `<OPERATOR ADDRESS>` - The local ETH address to be used by the Ursula node. [How to generate ethereum account](./eth_account.md)
+- `<GWEI>` (Optional)  - The maximum price of gas to spend on any transaction
+
+e.g.
+
+Input:
+
+```shell
+nulink ursula init \
+--signer keystore:///root/nulink/keystore \
+--eth-provider https://http-testnet.hecochain.com \
+--network heco_testnet \
+--payment-provider https://http-testnet.hecochain.com \
+--payment-network heco_testnet \
+--operator-address 0x8a20d379A4C08c482a617A81a39EB426B6EB8642 \
+--max-gas-price 2000
+```
+
+Output:
+
+```shell
+# step 1
+Detected IPv4 address (8.219.188.70) - Is this the public-facing address of Ursula? [y/N]: y
+
+Please provide a password to lock Operator keys.
+Do not forget this password, and ideally store it using a password manager.
+
+# step 2
+Enter nulink keystore password (8 character minimum): xxxxxx
+Repeat for confirmation: xxxxxx
+
+Backup your seed words, you will not be able to view them again.
+
+hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
+
+# step 3
+Have you backed up your seed phrase? [y/N]: y
+
+# step 4
+Confirm seed words: hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
+
+
+Generated keystore
+
+    
+Public Key:   02dacea4c7f5563004af37f282ca10f7
+Path to Keystore: /root/.local/share/nulink/keystore
+
+- You can share your public key with anyone. Others need it to interact with you.
+- Never share secret keys with anyone! 
+- Backup your keystore! Character keys are required to interact with the protocol!
+- Remember your password! Without the password, it's impossible to decrypt the key!
+
+
+Generated configuration file at non-default filepath /root/.local/share/nulink/ursula-02dacea4.json
+* NOTE: for a non-default configuration filepath use `--config-file "/root/.local/share/nulink/ursula-02dacea4.json"` with subsequent `ursula` CLI commands
+
+* Review configuration  -> nulink ursula config
+* Start working         -> nulink ursula run
+```
+
+#### Run Woker Node
+
+Run worker node using the intialized configuration.
+
+```shell
+nulink ursula run
+```
+
+Enter the above startup command and press enter to prompt for the passwords of ETH account and nulink keystore, which are set in the initialization phase.
+
+Note: **_operator account needs to have tokens on the corresponding chain_**
+
+e.g.
+
+Input:
+
+```shell
+nulink ursula run --rest-port 9151 --teacher https://8.219.188.70:9151 --no-block-until-ready
+```
+
+Output:
+
+```shell
+Enter ethereum account password (0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93):
+Enter nulink keystore password:
+Authenticating Ursula
+Loaded Ursula (heco_testnet)
+✓ External IP matches configuration
+Starting services
+✓ Node Discovery (Heco_testnet)
+✓ Operator 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93 is funded with 0.499959405 ETH
+✓ Operator 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93 is bonded to staking provider 0xf3D6ad89E34b1Cf8325EA614fa901eA4F34Be14a
+✓ Operator already confirmed.  Not starting worktracker.
+✓ Start Operator Bonded Tracker
+✓ Rest Server https://8.219.188.70:9157
+Working ~ Keep Ursula Online!
+```
+
+If you use a LAN address in the first step, please use --no-ip-checkup. If you start the node without binding, use --no-block-until-ready
+
+
+## Bond Operator
+
+The Staking Provider must be bonded to an Operator address. This should be performed by the Staking Provider via the nulink bond command (directly or as part of a Docker command). Run nulink bond --help for usage. The Operator address is the ETH account that will be used when running the Ursula node.
+
+
+### via Staking DApp
+
+- Navigate to [https://stake.nulink.org](https://stake.nulink.org)
+- Connect with the Staking Provider account to execute the bond operation
+- Enter the Operator address to bond
+- Click “Bond Operator”
+
+More operation see [NuLink Staking DApp](./staking_Dapp.md).
+
+### via Docker
+
+TODO
+
+### via Local Installation
+
+```shell
+nucypher bond                                 \
+--signer <ETH KEYSTORE URI>                   \
+--network <NETWORK NAME>                      \
+--eth-provider <L1 PROVIDER URI>              \
+--staking-provider <STAKING PROVIDER ADDRESS> \
+--operator-address <OPERATOR ADDRESS>
+```
+
+- `<ETH KEYSTORE URI>`- The local ethereum keystore, **OPERATOR ADDRESS keystore, or will initialize error** (e.g. keystore:///home/<user>/.ethereum/keystore）
+- `<L1 NETWORK NAME>`- The name of PRE network (heco_testnet)
+- `<L1 PROVIDER URI>`- The URI of a local or hosted ethereum node (infura/geth, e.g. https://infora.io/...)
+- `<STAKING PROVIDER ADDRESS>`- The ethereum address of the staking provider
+- `<OPERATOR ADDRESS>`- The local ETH address to be used by the Ursula node.
+
+e.g.
+
+Input:
+
+```shell
+nulink bond \
+--signer keystore:///root/nulink/keystore \
+--network heco_testnet \
+--eth-provider https://http-testnet.hecochain.com \
+--staking-provider 0x47f2224134B251Ed768fDF42c20957f46eD2F011 \
+--operator-address 0x7778600427B36EDe2a5c4DB8a80A467d8AECD247 
+```
+
+Output:
+
+```shell
+Reading Latest Chaindata...
+# step 1
+Are you sure you want to bond staking provider 0x47f2224134B251Ed768fDF42c20957f46eD2F011 to operator 0x31Ca98b9160a8Aad3b512AdB6Fa43Ed1F94EeeB9? [y/N]: y
+# step 2
+Enter ethereum account password (0x47f2224134B251Ed768fDF42c20957f46eD2F011): 
+Bonding operator 0x31Ca98b9160a8Aad3b512AdB6Fa43Ed1F94EeeB9
+Broadcasting BONDOPERATOR Legacy Transaction (0.000333296 ETH @ 1 gwei)
+TXHASH 0xbdae4444e03895919c87b87fb0f20ea72283004fcf9c212096a323ef345036bc
+Waiting 600 seconds for receipt
+OK | 0xbdae4444e03895919c87b87fb0f20ea72283004fcf9c212096a323ef345036bc (282484 gas)
+Block #18577408 | 0xc47f3e90cee405cbc84dbbce6aa37752c11a16fe0ec8deff1700f474c75e501f
+```
+
+After completing the above operations, Ursula node will send the transaction to the corresponding network and wait for the transaction to be confirmed, so your stacking provider account must have the tokens on the corresponding chain

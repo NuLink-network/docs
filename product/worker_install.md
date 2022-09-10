@@ -1,0 +1,95 @@
+# NuLink Worker Install
+
+NuLink can be run either from a docker container or via local installation. Running Nulink via a docker container simplifies the installation process and negates the need for a local installation. Therefore, it is recommended that you use docker for installation.
+
+
+## Docker install and update
+
+1. Install [Docker](https://docs.docker.com/get-docker/)
+2. Pull the latest NuLink image.
+
+```shell
+docker pull nulink/nulink:latest
+```
+
+## Local Install
+
+NuLink supports Python 3.7 and 3.8. If you don’t already have it, install [Python](https://www.python.org/downloads/).
+
+In order to isolate global system dependencies from nulink-specific dependencies, we highly recommend using python-virtualenv to install nucypher inside a dedicated virtual environment.
+
+For full documentation on [virtualenv see](https://virtualenv.pypa.io/en/latest/):
+
+```shell
+pip install virtualenv
+```
+
+1. Create a Virtual Environment
+
+Create a virtual environment in a folder somewhere on your machine.This virtual environment is a self-contained directory tree that will contain a python installation for a particular version of Python, and various installed packages needed to run the node.
+
+
+```shell
+virtualenv /root/nulink-venv
+
+...
+```
+
+2. Activate the newly created virtual environment
+
+```shell
+source /root/nulink-venv/bin/activate
+
+(nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# 
+```
+
+3. Install/Update the Nulink package
+
+```shell
+(nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install -U nulink
+```
+
+4. Verify Installation
+
+Before continuing, verify that your nulink installation and entry points are functional.
+
+Activate your virtual environment, if not activated already:
+
+```shell
+source /root/nulink-venv/bin/activate
+
+(nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# 
+```
+
+Next, verify nulink is importable. No response is successful, silence is golden:
+
+```shell
+python -c "import nulink"
+```
+
+Then, run the nulink --help command:
+
+```shell
+Usage: nulink [OPTIONS] COMMAND [ARGS]...
+
+  Top level command for all things nulink.
+
+Options:
+  --version       Echo the CLI version
+  --config-path   Echo the configuration root directory path
+  --logging-path  Echo the logging root directory path
+  --help          Show this message and exit.
+
+Commands:
+  alice     "Alice the Policy Authority" management commands.
+  bob       "Bob management commands.
+  bond      Bond an operator to a staking provider.
+  contacts  Lightweight contacts utility to store public keys of known...
+  enrico    "Enrico the Encryptor" management commands.
+  porter    Porter management commands.
+  status    Echo a snapshot of live NuLink Network metadata.
+  unbond    Unbonds an operator from an authorized staking provider.
+  ursula    "Ursula the Untrusted" PRE Re-encryption node management...
+root@iZt4niz7s1ss0908w31u5pZ:~# 
+```
+
