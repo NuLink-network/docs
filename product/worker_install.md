@@ -11,6 +11,11 @@ NuLink can be run either from a docker container or via local installation. Runn
 ```shell
 docker pull nulink/nulink:latest
 ```
+3. Copy the operator's keystore file to the host directory selected in the previous step, ensure that the host directory selected in the previous step has permissions:
+
+```shell
+chmod 777 </path/to/host/machine/directory>
+```
 
 ## Local Install
 
