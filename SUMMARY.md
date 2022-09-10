@@ -5,6 +5,14 @@
 * [NuLink Introduction](introduction.md)
 * [Roadmap](roadmap.md)
 
+## Cryptographic Primitives
+
+* [Proxy Re-encryption](./crypto_primitive/pre.md)
+* [Identity-Based Encryption & Attribute-Based Encryption](./crypto_primitive/ibe_abe.md)
+* [Zero-Knowledge Proof](./crypto_primitive/zkp.md)
+* [Fully Homomorphic Encryption](./crypto_primitive/fhe.md)
+
+
 ## Products
 
 * [Testnet](./product/testnet.md)
