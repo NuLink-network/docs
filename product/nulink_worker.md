@@ -27,23 +27,22 @@ This section is specific to [Docker installations](https://docs.nulink.org/produ
 #### Export Node Environment Variables
 These environment variables are used to better simplify the Docker installation process.
 ```shell
-# Password used for creation / update of nucypher keystore
-$ export NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
+# Password used for creation / update of nulink keystore
+$ export NULINK_KEYSTORE_PASSWORD=<YOUR NULINK KEYSTORE PASSWORD>
 
 # Password used to unlock node eth account
-$ export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
+$ export NULINK_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
 #### Initialize Node Configuration
 This step creates and stores the PRE node configuration, and only needs to be run once.
 
 ```shell
-$ docker run -it \
---restart on-failure \
-iandy2233/nulink nulink ursula init \
+$ docker run -it --restart on-failure \
 -p 9151:9151 \
 -v </path/to/host/machine/directory>:/code \
 -v </path/to/host/machine/directory>:/home/circleci/.local/share/nulink \
+iandy2233/nulink nulink ursula init \
 --signer <ETH KEYSTORE URI> \
 --eth-provider <L1 PROVIDER URI>  \
 --network bsc_testnet \
@@ -63,12 +62,11 @@ Replace the following values with your own:
 
 e.g.
 ```shell
-$ docker run -it \
---restart on-failure \
-iandy2233/nulink nulink ursula init \
+$ docker run -it --restart on-failure \
 -p 9151:9151 \
 -v </path/to/host/machine/directory>:/code \
 -v </path/to/host/machine/directory>:/home/circleci/.local/share/nulink \
+iandy2233/nulink nulink ursula init \
 --signer keystore:///code/<sub/path/to/keystore> \
 --eth-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
 --network bsc_testnet \
@@ -83,28 +81,14 @@ iandy2233/nulink nulink ursula init \
 This step starts the PRE node.
 
 ```shell
-$ docker run -d --rm \
---name ursula      \
---restart on-failure              \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
--v ~/.ethereum/:/root/.ethereum   \
--p 9151:9151                      \
--e NUCYPHER_KEYSTORE_PASSWORD     \
--e NUCYPHER_OPERATOR_ETH_PASSWORD \
-nucypher/nucypher:latest          \
-nucypher ursula run
-
-docker run --restart on-failure -d \
+$ docker run --restart on-failure -d \
 --name ursula \
 -p 9151:9151 \
 -v </path/to/host/machine/directory>:/code \
 -v </path/to/host/machine/directory>:/home/circleci/.local/share/nulink \
 -e NULINK_KEYSTORE_PASSWORD \
 -e NULINK_OPERATOR_ETH_PASSWORD \
---teacher https://8.219.188.70:9151 \
---no-block-until-ready \
-iandy2233/nulink \
-nulink ursula run
+iandy2233/nulink nulink ursula run --teacher https://8.219.188.70:9151 --no-block-until-ready
 ```
 
 Replace the following values with your own:
@@ -264,7 +248,7 @@ TODO
 ### via Local Installation
 
 ```shell
-nucypher bond                                 \
+nulink bond                                 \
 --signer <ETH KEYSTORE URI>                   \
 --network <NETWORK NAME>                      \
 --eth-provider <L1 PROVIDER URI>              \

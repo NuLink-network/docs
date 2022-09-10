@@ -1,4 +1,4 @@
-# NuLink Worker Install
+# NuLink Worker Installation
 
 NuLink can be run either from a docker container or via local installation. Running Nulink via a docker container simplifies the installation process and negates the need for a local installation. Therefore, it is recommended that you use docker for installation.
 
