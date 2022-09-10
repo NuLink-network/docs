@@ -2,12 +2,22 @@
 
 ## NuLink Testnet
 
-The NuLink Testnet includes four parts: the NuLink staking Dapp, the NuLink worker Installer, the NuLink Agent and the NuLink file sharing Dapp. The NuLink staking Dapp and the NuLink worker Installer are used by those who want to provide service in the NuLink test network; while the NuLink Agent and the NuLink file sharing Dapp are used by those who want to use the privacy-preserving service in the NuLink test ne work. The NuLink testnet is launched on BNB Smart Chain. 
+The NuLink Testnet includes four parts: the NuLink staking Dapp, the NuLink worker Installer, the NuLink Agent and the NuLink file sharing Dapp. The NuLink staking Dapp and the NuLink worker Installer are used by those who want to provide service in the NuLink test network; while the NuLink Agent and the NuLink file sharing Dapp are used by those who want to use the privacy-preserving service in the NuLink test ne work.
 
 * [NuLink worker Installer](nulink_worker.md) 
+
 * [NuLink staking Dapp](staking_Dapp.md)
+
 * [NuLink agent](nulink_agent.md)
+
 * [NuLink file sharing Dapp](file_sharing_Dapp.md)
+
+The NuLink testnet is launched on BNB Smart Chain. The smart contract address is:
+
+* NuLink Token: []
+* NuLink Staking Pool: []
+* Simple PRE Application: []
+* Subscription Manager: []
 
 ## Characters
 
