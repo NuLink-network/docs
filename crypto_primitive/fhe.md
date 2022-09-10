@@ -2,8 +2,6 @@
 
 Sometimes, the data owner wants to let the data consumer use his data but not give the data source. He could encrypt his data in a local endpoint and send it to a computation node. The computation node could manipulate the encrypted data in the ciphertext domain. The data consumer could only retrieve the encrypted result. If he got the authorization from the data owner, he could decrypt the result. Otherwise he knows nothing about data or result. Either way, the data source is secure and nobody could render it except the data owner. We call it data computing functionality. The data computing functionality of NuLink will be realized by bridging the fully homomorphic encryption technology to the blockchain system in the future.
 
-It takes advantage of the property that full homomorphic encryption can be used to calculate ciphertext, that is, the user selects the data computing service in the Application Layer. After receiving the authorization, the Cryptography Layer homomorphic encrypts and uploads the user’s data to the Storage Layer. The computing node of the Blockchain Layer will access the data and perform the specified calculation (such as machine learning model prediction, etc.). Finally, the ciphertext result is returned to the Storage Layer, and the Cryptography Layer accesses the ciphertext result, which is decrypted and returned to the user. We will add MPC (multi-party computation) to this solution later.
-
 Fully homomorphic encryption (FHE) refers to the ability to calculate ciphertext without the private key. That is to say, for any valid f and plaintext m, there is a special property f(Enc(m)) = Enc(f(m)).
 
 ![image](../miscellaneous/img/fhe.png)
