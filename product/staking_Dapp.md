@@ -8,34 +8,35 @@ In order to use NuLink Staking Dapp for NuLink testnet, the user needs to get th
 
 
 ## Work Flow
-![image](../miscellaneous/img/stakeflow.png)
+![image](../miscellaneous/img/stakeflow.png)  
 
 ### Step1- Initialization: Connect Wallet and Log in staking account
 
 NuLink currently supports only METAMASK wallet. Users need to [download](https://metamask.io/download/) and install METAMASK wallet ahead. If you need more help with METAMASK usage, please refer [here](https://metamask.io/faqs/). After installation, you can create an account for staking in METAMASK . 
 
-Once you create a staking account in METAMASK  wallet, you can login and connect your account in [Nulink Staking Dapp](http://stake.nulink.org/). You can click the "Connect Wallet" "at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.
+Once you create a staking account in METAMASK  wallet, you can login and connect your account in [Nulink Staking Dapp](http://stake.nulink.org/). You can click the "Connect Wallet" "at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.  
 
-![image](../miscellaneous/img/connectWallet.png)
+![image](../miscellaneous/img/connectWallet.png)  
 
-After connecting with METAMASK Wallet, the system will automatically detect whether you connect to the NuLink testnet. If not, it automatically prompts a window for you to switch to the correct network.
-![image](../miscellaneous/img/networkError.png)
+After connecting with METAMASK Wallet, the system will automatically detect whether you connect to the NuLink testnet. If not, it automatically prompts a window for you to switch to the correct network.  
+
+![image](../miscellaneous/img/networkError.png)  
 
 ### Step2- Staking your NLKs(test) to the staking pool
 Once you log in with METAMASK wallet, you can check your balance and click the "Staking" button to stake your balance to the pool. Remember, you must bond an active worker after staking, otherwise you will not get any reward. 
 
-![image](../miscellaneous/img/staking.png)
+![image](../miscellaneous/img/staking.png)  
 
 ### Step3- Bond an active worker to gain reward.
 You need to run an active Worker node before you Click "Bond Worker". Please refer to [here](nulink_worker.md) for running a Worker. If you click "Bond Worker", it will first detect your staking status first:
 
 * If you did not stake any funds, a pop-up window will prompt you to stake first.
 
-![image](../miscellaneous/img/bondWorker1.png)
+![image](../miscellaneous/img/bondWorker1.png)  
 
 * If you did stake ahead, you will access the Bond Worker pop-up page.  Simplely enter the Worker Address and Node URI, and then confirm the bonding. Now you have completed the staking process and start to earn NLKs(test).
 
-![image](../miscellaneous/img/bondWorker2.png)
+![image](../miscellaneous/img/bondWorker2.png)  
 
 ### step4- Stop staking and quit.
 
@@ -47,23 +48,23 @@ If you decide to stop the staking and get all funds along with reward, you have 
 #### How to unbound Worker and shut down the Worker node?
 You need to click  “Unbound worker ". It will prompt a window for you to confirm unbond operation. 
 
- ![image](../miscellaneous/img/unbondWorker2.png)
- 
+ ![image](../miscellaneous/img/unbondWorker2.png)  
+
 Remark: There is a bond lock time(10 mintues) for NuLink testnet, which means you can not unbond within 10 mintues after bonding Worker.
 
- ![image](../miscellaneous/img/unbondWorker1.png)
- 
+ ![image](../miscellaneous/img/unbondWorker1.png)  
+
 After you unbond Worker, you can shut down your Worker node. Please refer [here]().
 
 #### How to unstake?
 Click the "Unstake" pop-up window to prompt whether to unstake. The staking can be released successfully after confirming.
 
- ![image](../miscellaneous/img/unstake.png)
+ ![image](../miscellaneous/img/unstake.png)  
 
 #### How to withdraw your reward?
 You can click "Claim" to withdraw the reward after unstaking your fund.
 
- ![image](../miscellaneous/img/claim.png)
+ ![image](../miscellaneous/img/claim.png)  
 
 
 
