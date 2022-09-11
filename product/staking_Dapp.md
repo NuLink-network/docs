@@ -30,11 +30,11 @@ Once you log in with METAMASK wallet, you can check your balance and click the "
 ### Step3- Bond an active worker to gain reward.
 You need to run an active Worker node before you Click "Bond Worker". Please refer to [here](nulink_worker.md) for running a Worker. If you click "Bond Worker", it will first detect your staking status first:
 
-* If you did not stake any funds, a pop-up window will prompt you to stake first.
+* If you did not stake any funds to pool, a pop-up window will prompt you to stake first.
 
 ![image](../miscellaneous/img/bondWorker1.png)  
 
-* If you did stake ahead, you will access the Bond Worker pop-up page.  Simplely enter the Worker Address and Node URI, and then confirm the bonding. Now you have completed the staking process and start to earn NLKs(test).
+* If you did stake your fund to pool before, you will access the Bond Worker pop-up page.  Simplely enter the Worker Address and Node URI, and then confirm the bonding. Now you have completed the staking process and start to earn NLKs(test).
 
 ![image](../miscellaneous/img/bondWorker2.png)  
 
@@ -70,23 +70,23 @@ You can click "Claim" to withdraw the reward after unstaking your fund.
 
 ## Term Explaination in Dapp.
 
-1. **Total Value Locked**: Total lock-in value of the NuLink testnet.
-2. **Total Nodes**: Total number of Worker nodes in the NuLink testnet.
-3. **My Balance**: Current balance in user's account, can be used for staking to pool. 
-4. **Reward**: Unclaim reward of the user's account.
-5. **My Node Info**: Displays user node details, including the following data:
-* Node URI: IP and Port of users’ Worker node.
-* Worker Status: The current status of user's Worker node. Either online or offline.
-* Staker Address: Address of the user's staking account.
-* Woker Address: Address of the user's Worker node.
-* Start time:  The time start to earn reward(finish staking and bonding), accurate to second.
-* Accumulated time:  Accumulated time for earning reward, accurate to second.
-* Reward: Unclaim rewards for the user .
-* Staking Amount: The amount of fund which user stake in the pool.
-6. **Node List**: Displays all active nodes in the NuLink testnet, including the following data:
-* Node URI: IP and Port of the Worker node.
-* Staker Address: Address of the node's staking account.
-* Woker Address: Address of the node's Worker node.
-* Worker Status:The current status of user's Worker node. Either online or offline.
-7. **Notice List**: The bell in the right up corner, click to show all the transaction massages.
+1. **Total Value Locked**: Total lock-in value of the NuLink testnet.  
+2. **Total Nodes**: Total number of Worker nodes in the NuLink testnet.  
+3. **My Balance**: Current balance in user's account, can be used for staking to pool.   
+4. **Reward**: Unclaim reward of the user's account.  
+5. **My Node Info**: Displays user node details, including the following data:  
+  * Node URI: IP and Port of users’ Worker node.
+  * Worker Status: The current status of user's Worker node. Either online or offline.
+  * Staker Address: Address of the user's staking account.
+  * Woker Address: Address of the user's Worker node.
+  * Start time:  The time start to earn reward(finish staking and bonding), accurate to second.
+  * Accumulated time:  Accumulated time for earning reward, accurate to second.
+  * Reward: Unclaim rewards for the user .
+  * Staking Amount: The amount of fund which user stake in the pool.
+6. **Node List**: Displays all active nodes in the NuLink testnet, including the following data:  
+  * Node URI: IP and Port of the Worker node.
+  * Staker Address: Address of the node's staking account.
+  * Woker Address: Address of the node's Worker node.
+  * Worker Status:The current status of user's Worker node. Either online or offline.
+7. **Notice List**: The bell in the right up corner, click to show all the transaction massages.  
 
