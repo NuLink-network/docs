@@ -17,84 +17,139 @@ docker pull nulink/nulink:latest
 chmod 777 </path/to/host/machine/directory>
 ```
 
-## Local Install
+[//]: # ()
+[//]: # (## Local Install)
 
-NuLink supports Python 3.7 and 3.8. If you don’t already have it, install [Python](https://www.python.org/downloads/).
+[//]: # ()
+[//]: # (NuLink supports Python 3.9. If you don’t already have it, install [Python]&#40;https://www.python.org/downloads/&#41;.)
 
-In order to isolate global system dependencies from nulink-specific dependencies, we highly recommend using python-virtualenv to install nucypher inside a dedicated virtual environment.
+[//]: # ()
+[//]: # (In order to isolate global system dependencies from nulink-specific dependencies, we highly recommend using python-virtualenv to install nucypher inside a dedicated virtual environment.)
 
-For full documentation on [virtualenv see](https://virtualenv.pypa.io/en/latest/):
+[//]: # ()
+[//]: # (For full documentation on [virtualenv see]&#40;https://virtualenv.pypa.io/en/latest/&#41;:)
 
-```shell
-pip install virtualenv
-```
+[//]: # ()
+[//]: # (```shell)
 
-1. Create a Virtual Environment
+[//]: # (pip install virtualenv)
 
-Create a virtual environment in a folder somewhere on your machine.This virtual environment is a self-contained directory tree that will contain a python installation for a particular version of Python, and various installed packages needed to run the node.
+[//]: # (```)
 
+[//]: # ()
+[//]: # (1. Create a Virtual Environment)
 
-```shell
-virtualenv /root/nulink-venv
+[//]: # ()
+[//]: # (Create a virtual environment in a folder somewhere on your machine.This virtual environment is a self-contained directory tree that will contain a python installation for a particular version of Python, and various installed packages needed to run the node.)
 
-...
-```
+[//]: # ()
+[//]: # ()
+[//]: # (```shell)
 
-2. Activate the newly created virtual environment
+[//]: # (virtualenv /root/nulink-venv)
 
-```shell
-source /root/nulink-venv/bin/activate
+[//]: # ()
+[//]: # (...)
 
-(nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# 
-```
+[//]: # (```)
 
-3. Install/Update the Nulink package
+[//]: # ()
+[//]: # (2. Activate the newly created virtual environment)
 
-```shell
-(nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install -U nulink
-```
+[//]: # ()
+[//]: # (```shell)
 
-4. Verify Installation
+[//]: # (source /root/nulink-venv/bin/activate)
 
-Before continuing, verify that your nulink installation and entry points are functional.
+[//]: # ()
+[//]: # (&#40;nulink-venv&#41; root@iZt4niz7s1ss0908w31u5pZ:~# )
 
-Activate your virtual environment, if not activated already:
+[//]: # (```)
 
-```shell
-source /root/nulink-venv/bin/activate
+[//]: # ()
+[//]: # (3. Install/Update the Nulink package)
 
-(nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# 
-```
+[//]: # ()
+[//]: # (```shell)
 
-Next, verify nulink is importable. No response is successful, silence is golden:
+[//]: # (&#40;nulink-venv&#41; root@iZt4niz7s1ss0908w31u5pZ:~# pip install -U nulink)
 
-```shell
-python -c "import nulink"
-```
+[//]: # (```)
 
-Then, run the nulink --help command:
+[//]: # ()
+[//]: # (4. Verify Installation)
 
-```shell
-Usage: nulink [OPTIONS] COMMAND [ARGS]...
+[//]: # ()
+[//]: # (Before continuing, verify that your nulink installation and entry points are functional.)
 
-  Top level command for all things nulink.
+[//]: # ()
+[//]: # (Activate your virtual environment, if not activated already:)
 
-Options:
-  --version       Echo the CLI version
-  --config-path   Echo the configuration root directory path
-  --logging-path  Echo the logging root directory path
-  --help          Show this message and exit.
+[//]: # ()
+[//]: # (```shell)
 
-Commands:
-  alice     "Alice the Policy Authority" management commands.
-  bob       "Bob management commands.
-  bond      Bond an operator to a staking provider.
-  contacts  Lightweight contacts utility to store public keys of known...
-  enrico    "Enrico the Encryptor" management commands.
-  porter    Porter management commands.
-  status    Echo a snapshot of live NuLink Network metadata.
-  unbond    Unbonds an operator from an authorized staking provider.
-  ursula    "Ursula the Untrusted" PRE Re-encryption node management...
-root@iZt4niz7s1ss0908w31u5pZ:~# 
-```
+[//]: # (source /root/nulink-venv/bin/activate)
 
+[//]: # ()
+[//]: # (&#40;nulink-venv&#41; root@iZt4niz7s1ss0908w31u5pZ:~# )
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (Next, verify nulink is importable. No response is successful, silence is golden:)
+
+[//]: # ()
+[//]: # (```shell)
+
+[//]: # (python -c "import nulink")
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (Then, run the nulink --help command:)
+
+[//]: # ()
+[//]: # (```shell)
+
+[//]: # (Usage: nulink [OPTIONS] COMMAND [ARGS]...)
+
+[//]: # ()
+[//]: # (  Top level command for all things nulink.)
+
+[//]: # ()
+[//]: # (Options:)
+
+[//]: # (  --version       Echo the CLI version)
+
+[//]: # (  --config-path   Echo the configuration root directory path)
+
+[//]: # (  --logging-path  Echo the logging root directory path)
+
+[//]: # (  --help          Show this message and exit.)
+
+[//]: # ()
+[//]: # (Commands:)
+
+[//]: # (  alice     "Alice the Policy Authority" management commands.)
+
+[//]: # (  bob       "Bob management commands.)
+
+[//]: # (  bond      Bond an operator to a staking provider.)
+
+[//]: # (  contacts  Lightweight contacts utility to store public keys of known...)
+
+[//]: # (  enrico    "Enrico the Encryptor" management commands.)
+
+[//]: # (  porter    Porter management commands.)
+
+[//]: # (  status    Echo a snapshot of live NuLink Network metadata.)
+
+[//]: # (  unbond    Unbonds an operator from an authorized staking provider.)
+
+[//]: # (  ursula    "Ursula the Untrusted" PRE Re-encryption node management...)
+
+[//]: # (root@iZt4niz7s1ss0908w31u5pZ:~# )
+
+[//]: # (```)
+
+[//]: # ()

@@ -3,7 +3,7 @@
 ## Minimum System Requirements
 Debian/Ubuntu (Recommended)
 
-20GB storage
+20GB avaliable storage
 
 4GB RAM
 
@@ -35,7 +35,7 @@ $ export NULINK_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
 #### Initialize Node Configuration
-This step creates and stores the PRE node configuration, and only needs to be run once.
+This step creates and stores the NuLink worker node configuration, and only needs to be run once.
 
 ```shell
 $ docker run -it --restart on-failure \
@@ -44,19 +44,19 @@ $ docker run -it --restart on-failure \
 -v </path/to/host/machine/directory>:/home/circleci/.local/share/nulink \
 iandy2233/nulink nulink ursula init \
 --signer <ETH KEYSTORE URI> \
---eth-provider <L1 PROVIDER URI>  \
---network bsc_testnet \
---payment-provider <L2 PROVIDER URI> \
---payment-network <L2 NETWORK NAME> \
+--eth-provider <NULINK PROVIDER URI>  \
+--network <NULINK NETWORK NAME> \
+--payment-provider <PAYMENT PROVIDER URI> \
+--payment-network <PAYMENT NETWORK NAME> \
 --operator-address <OPERATOR ADDRESS> \
 --max-gas-price <GWEI>
 ```
 Replace the following values with your own:
 - `<ETH KEYSTORE URI>` - The local ethereum keystore (e.g. keystore:///root/.ethereum/keystore for mainnet)
-- `<L1 PROVIDER URI>` - The URI of a local or hosted ethereum node (infura/geth, e.g. https://infura.io/…)
-- `<L1 NETWORK NAME>` - The name of the PRE network (mainnet, bsc_test)
-- `<L2 PROVIDER URI>` - The URI of a local or hosted level-two node (infura/bor)
-- `<L2 NETWORK NAME>` - The name of a payment network (polygon or mumbai)
+- `<NULINK PROVIDER URI>` - The URI of a local or hosted ethereum node (infura/geth, e.g. https://infura.io/…)
+- `<NULINK NETWORK NAME>` - The name of the NuLink network (mainnet, bsc_testnet)
+- `<PAYMENT PROVIDER URI>` - The URI of a local or hosted payment network node (infura/bor)
+- `<PAYMENT NETWORK NAME>` - The name of a payment network (bsc, bsc_testnet)
 - `<OPERATOR ADDRESS>` - The local ETH address to be used by the Ursula node (the one that was bonded)
 - `<GWEI>` (Optional) - The maximum price of gas to spend on any transaction
 
@@ -112,19 +112,19 @@ This step creates and stores the PRE node configuration, and only needs to be ru
 ```shell
 nulink ursula init      \
 --signer <ETH KEYSTORE URI>           \
---network <L1 NETWORK NAME>           \
---eth-provider <L1 PROVIDER URI>      \
---payment-provider <L2 PROVIDER URI>  \
---payment-network <L2 NETWORK NAME>   \
+--network <NULINK NETWORK NAME>           \
+--eth-provider <NULINK PROVIDER URI>      \
+--payment-provider <PAYMENT PROVIDER URI>  \
+--payment-network <PAYMENT NETWORK NAME>   \
 --operator-address <OPERATOR ADDRESS> \
 --max-gas-price <GWEI>
 ```
 
 - `<ETH KEYSTORE URI>` - The local ethereum keystore, **OPERATOR ADDRESS keystore, or will initialize error** (e.g. keystore:///home/<user>/.ethereum/keystore）
-- `<L1 PROVIDER URI>` - The URI of a local or hosted ethereum node (infura/geth, e.g. https://infora.io/...)
-- `<L1 NETWORK NAME>` - The name of PRE network (heco_testnet)
-- `<L2 PROVIDER URI>` - The URI of a local or hosted level-two node (infura/bor)
-- `<L2 NETWORK NAME>` - The name of a payment network
+- `<NULINK PROVIDER URI>` - The URI of a local or hosted ethereum node (infura/geth, e.g. https://infura.io/…)
+- `<NULINK NETWORK NAME>` - The name of the NuLink network (mainnet, bsc_testnet)
+- `<PAYMENT PROVIDER URI>` - The URI of a local or hosted payment network node (infura/bor)
+- `<PAYMENT NETWORK NAME>` - The name of a payment network (bsc, bsc_testnet)
 - `<OPERATOR ADDRESS>` - The local ETH address to be used by the Ursula node. [How to generate ethereum account](./eth_account.md)
 - `<GWEI>` (Optional)  - The maximum price of gas to spend on any transaction
 
@@ -250,15 +250,15 @@ TODO
 ```shell
 nulink bond                                 \
 --signer <ETH KEYSTORE URI>                   \
---network <NETWORK NAME>                      \
---eth-provider <L1 PROVIDER URI>              \
+--network <NULINK NETWORK NAME>                      \
+--eth-provider <NULINK PROVIDER URI>              \
 --staking-provider <STAKING PROVIDER ADDRESS> \
 --operator-address <OPERATOR ADDRESS>
 ```
 
 - `<ETH KEYSTORE URI>`- The local ethereum keystore, **OPERATOR ADDRESS keystore, or will initialize error** (e.g. keystore:///home/<user>/.ethereum/keystore）
-- `<L1 NETWORK NAME>`- The name of PRE network (heco_testnet)
-- `<L1 PROVIDER URI>`- The URI of a local or hosted ethereum node (infura/geth, e.g. https://infora.io/...)
+- `<NULINK PROVIDER URI>` - The URI of a local or hosted ethereum node (infura/geth, e.g. https://infura.io/…)
+- `<NULINK NETWORK NAME>` - The name of the NuLink network (mainnet, bsc_testnet)
 - `<STAKING PROVIDER ADDRESS>`- The ethereum address of the staking provider
 - `<OPERATOR ADDRESS>`- The local ETH address to be used by the Ursula node.
 
