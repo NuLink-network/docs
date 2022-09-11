@@ -70,11 +70,11 @@ You can click "Claim" to withdraw the reward after unstaking your fund.
 
 ## Term Explaination in Dapp.
 
-1. **Total Value Locked**: Total lock-in value of the NuLink testnet.  
-2. **Total Nodes**: Total number of Worker nodes in the NuLink testnet.  
-3. **My Balance**: Current balance in user's account, can be used for staking to pool.   
-4. **Reward**: Unclaim reward of the user's account.  
-5. **My Node Info**: Displays user node details, including the following data:  
+1.  **Total Value Locked**: Total lock-in value of the NuLink testnet.  
+2.  **Total Nodes**: Total number of Worker nodes in the NuLink testnet.  
+3.  **My Balance**: Current balance in user's account, can be used for staking to pool.   
+4.  **Reward**: Unclaim reward of the user's account.  
+5.  **My Node Info**: Displays user node details, including the following data:  
   * Node URI: IP and Port of users’ Worker node.
   * Worker Status: The current status of user's Worker node. Either online or offline.
   * Staker Address: Address of the user's staking account.
@@ -83,10 +83,10 @@ You can click "Claim" to withdraw the reward after unstaking your fund.
   * Accumulated time:  Accumulated time for earning reward, accurate to second.
   * Reward: Unclaim rewards for the user .
   * Staking Amount: The amount of fund which user stake in the pool.
-6. **Node List**: Displays all active nodes in the NuLink testnet, including the following data:  
+6.  **Node List**: Displays all active nodes in the NuLink testnet, including the following data:  
   * Node URI: IP and Port of the Worker node.
   * Staker Address: Address of the node's staking account.
   * Woker Address: Address of the node's Worker node.
   * Worker Status:The current status of user's Worker node. Either online or offline.
-7. **Notice List**: The bell in the right up corner, click to show all the transaction massages.  
+7.  **Notice List**: The bell in the right up corner, click to show all the transaction massages.  
 
