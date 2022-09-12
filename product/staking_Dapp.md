@@ -68,7 +68,9 @@ You can click "Claim" to withdraw the reward after unstaking your fund.
 
 ### Transaction Notification
 
-For all the above operation, the Dapp will send a corresponding transaction on BSC testnet.  You can click the bell in the right up corner to view the notice list. And you can also click to see details of each transaction massage.  
+For all the above operation, the Dapp will send a corresponding transaction on BSC testnet.  You can click the bell in the right up corner to view the notice list. And you can also click ’View details‘ to see details of each transaction massage.  
+
+
  ![image](../miscellaneous/img/messages.png)  
 
 ## Term Explaination in Dapp.
