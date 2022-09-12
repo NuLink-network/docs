@@ -66,7 +66,44 @@ nulink/nulink nulink ursula init \
 Example Output:
 
 ```shell
-
+# step 1
+ Detected IPv4 address (8.219.188.70) - Is this the public-facing address of Worker? [y/N]: y
+ 
+ Please provide a password to lock Operator keys.
+ Do not forget this password, and ideally store it using a password manager.
+ 
+ # step 2
+ Enter nulink keystore password (8 character minimum): xxxxxx
+ Repeat for confirmation: xxxxxx
+ 
+ Backup your seed words, you will not be able to view them again.
+ 
+ hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
+ 
+ # step 3
+ Have you backed up your seed phrase? [y/N]: y
+ 
+ # step 4
+ Confirm seed words: hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
+ 
+ 
+ Generated keystore
+ 
+ 
+ Public Key:   02dacea4c7f5563004af37f282ca10f7
+ Path to Keystore: /root/.local/share/nulink/keystore
+ 
+ - You can share your public key with anyone. Others need it to interact with you.
+ - Never share secret keys with anyone!
+ - Backup your keystore! Character keys are required to interact with the protocol!
+ - Remember your password! Without the password, it's impossible to decrypt the key!
+ 
+ 
+ Generated configuration file at non-default filepath /root/.local/share/nulink/ursula-02dacea4.json
+ * NOTE: for a non-default configuration filepath use `--config-file "/root/.local/share/nulink/ursula-02dacea4.json"` with subsequent `ursula` CLI commands
+ 
+ * Review configuration  -> nulink ursula config
+ * Start working         -> nulink ursula run
 ```
 
 ### Launch the Node  
@@ -97,10 +134,35 @@ nulink/nulink nulink ursula run --no-block-until-ready
 Example Output:
 
 ```shell
-
+8d269b8e845ae0ba7bb9ad106030da1789b0da73554a72fa4b779f1bf4437bd1
 ```
 
-Now you can save the Node URI(e.g: https://8.219.188.70:9157) and Worker address(e.g: 0x7DEff413E415bd2507da4988393d8540a28bf3c6)  for bonding operation.
+### View Worker Static IP Address
+The following command describes how to view worker addresses.
+
+```shell
+    docker logs -f ursula3
+```
+e.g.
+
+Example Input:
+```shell
+    docker logs -f ursula3
+```
+Example Output:
+```shell
+    Authenticating Ursula
+    Loaded Ursula (bsc_testnet)
+    ✓ External IP matches configuration
+    Starting services
+    ✓ Node Discovery (Bsc_testnet)
+    ✓ Work Tracking
+    ✓ Start Operator Bonded Tracker
+    ✓ Rest Server https://8.219.188.70:9151
+    Working ~ Keep Ursula Online!
+```
+
+Now you can save the Node URI(e.g: https://8.219.188.70:9151) and Worker address(e.g: 0x7DEff413E415bd2507da4988393d8540a28bf3c6)  for bonding operation.
 
 ## Run Node via Local Operation  
 
