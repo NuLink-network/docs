@@ -4,9 +4,10 @@
 
 The NuLink Testnet includes four parts: the NuLink Staking Dapp, the NuLink Worker Node, the NuLink Agent and the NuLink File Sharing Dapp. The NuLink Staking Dappand the  NuLink Worker Node are used by those who want to provide cryptographic service in the NuLink test network; while the NuLink Agent and the NuLink File Sharing Dapp are used by those who want to use the privacy-preserving service in the NuLink test network. The token in the NuLink testnet is NLK(test). Please be aware it is only used for testing purpose and has no trading value. 
 
-* [**NuLink Worker Node:**](nulink_worker.md) The node to provide cryptographic service in the NuLink network. 
 
 * [**NuLink Staking Dapp:**](staking_Dapp.md) The platform for managing the staker/worker account 
+
+* [**NuLink Worker Node:**](nulink_worker.md) The node to provide cryptographic service in the NuLink network. 
 
 * [**NuLink Agent:**](nulink_agent.md) The plug in to handle the local cryptographic operation of the file sharing users.
 

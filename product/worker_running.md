@@ -1,8 +1,14 @@
-# NuLink Worker Configuration and Running
+# NuLink Worker Initialization and Running
+
+If you install your Worker node via Docker, you can initialize and run it following this [instruction](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Docker). And if you install your Worker node via local installation, please read [local operation](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Local-Installtion) 
+
 
 ## Run Node via Docker (Recommended)
 
-This section is specific to [Docker installations](https://docs.nulink.org/products/nulink_worker/worker_install#docker-install-and-update) of NuLink.
+There are there steps to complete start a Worker node via Docker:
+1. [Export Node Environment Variables](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Docker##Export-Node-Environment-Variables)
+2. [Initialize Node Configuration](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Docker##Initialize-Node-Configuration)
+3. [Launch the Node](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Docker##Launch-the-Node)
 
 ### Export Node Environment Variables
 These environment variables are used to better simplify the Docker installation process.
@@ -81,8 +87,11 @@ Replace the following values with your own:
 3. the <sub/path/to/keystore> path is the "keystore_directory/keystore_file" (the full path in the container is /code/keystore_directory/keystore_file)
 ```
 
-## Run Node via Local Installtion
+## Run Node via Local Operation
 
+There are two steps to complete start a Worker node via Docker:
+1. [Initialize Node Configuration](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Local--Operation##Initialize-Node)
+2. [Launch the Node](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Local-Operation##Launch-the-Node)
 
 ### Initialize Node
 

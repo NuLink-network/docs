@@ -18,9 +18,9 @@
 * [Testnet](./product/testnet.md)
 * [Staking Dapp](./product/staking_Dapp.md)
 * [NuLink Worker](./product/nulink_worker.md)
+  * [Create Worker Account](./product/eth_account.md)
   * [NuLink Worker Installation](./product/worker_install.md)
-  * [NuLink Worker Initialization and Running](./product/worker_running.md)
-  * [ETH Account Generation](./product/eth_account.md)
+  * [NuLink Worker Initialization and Running](./product/worker_running.md)  
 * [NuLink Agent](./product/nulink_agent.md)
 * [NuLink File Sharing Dapp](./product/file_sharing_Dapp.md)
 
