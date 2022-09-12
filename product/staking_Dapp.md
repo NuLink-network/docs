@@ -50,8 +50,6 @@ If you decide to stop the staking and get all funds along with reward, you have 
 #### How to unbound Worker and shut down the Worker node?
 You need to click  “Unbound worker ". It will prompt a window for you to confirm unbond operation. 
 
- ![image](../miscellaneous/img/unbondWorker2.png)  
-
 Remark: There is a bond lock time(10 minutes) for NuLink testnet, which means you can not unbond within 10 minutes after bonding Worker.
 
  ![image](../miscellaneous/img/unbondWorker1.png)  
