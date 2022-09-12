@@ -24,7 +24,7 @@ After connecting with METAMASK Wallet, the system will automatically detect whet
 
 **Remark:** The default RPC server for BSC testnet sometime is unstable. If you find the current server is done, please find an active one [here](https://chainlist.org/)  and replace it in METAMASK network setting. Need [help](https://metamask.zendesk.com/hc/en-us/articles/4404424659995-User-Guide-Custom-networks-and-sidechains) editing RPC server in METAMASK?
 
-### Step2- Staking your NLKs(test) to the staking pool
+### Step2- Stake your NLKs(test) to the staking pool
 Once you log in with METAMASK wallet, you can check your balance and click the "Staking" button to stake your balance to the pool. Make sure you [claim](https://test-staking.nulink.org/faucet) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember, you must bond an active worker after staking, otherwise you will not get any reward. 
 
 ![image](../miscellaneous/img/staking.png)  
@@ -66,21 +66,18 @@ You can click "Claim" to withdraw the reward after unstaking your fund.
 
  ![image](../miscellaneous/img/claim.png)  
 
+### Transaction Notification
 
+For all the above operation, the Dapp will send a corresponding transaction on BSC testnet.  You can click the bell in the right up corner to view the notice list. And you can also click to see details of each transaction massage.  
+ ![image](../miscellaneous/img/messages.png)  
 
 ## Term Explaination in Dapp.
 
 1.  **Total Value Locked**: Total lock-in value of the NuLink testnet.  
 2.  **Total Nodes**: Total number of Worker nodes in the NuLink testnet.  
 3.  **My Balance**: Current balance in user's account, can be used for staking to pool.   
-4.  **Reward**: Unclaimed reward of the user's account.  
-5.  **Notice List**: The bell in the right up corner, click to show all the transaction massages.  
-6.  **Node List**: Displays all active nodes in the NuLink testnet, including the following data:
-      * Node URI: IP and Port of the Worker node.
-      * Staker Address: Address of the node's staking account.
-      * Woker Address: Address of the node's Worker node.
-      * Worker Status: The current status of user's Worker node. Either online or offline.
-7.  **My Node Info**: Displays user node details, including the following data:  
+4.  **Reward**: Unclaimed reward of the user's account.    
+5.  **My Node Info**: Displays user node details, including the following data:  
       * Node URI: IP and Port of users’ Worker node.
       * Worker Status: The current status of user's Worker node. Either online or offline.
       * Staker Address: Address of the user's staking account.
@@ -89,3 +86,9 @@ You can click "Claim" to withdraw the reward after unstaking your fund.
       * Accumulated time:  Accumulated time for earning reward, accurate to second.
       * Reward: Unclaimed rewards for the user .
       * Staking Amount: The amount of fund which user stake in the pool.
+6.  **Node List**: Displays all active nodes in the NuLink testnet, including the following data:   
+      * Node URI: IP and Port of the Worker node.
+      * Staker Address: Address of the node's staking account.
+      * Woker Address: Address of the node's Worker node.
+      * Worker Status: The current status of user's Worker node. Either online or offline.
+    
