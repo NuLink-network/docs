@@ -39,8 +39,8 @@ pip install virtualenv
 
 1. Create a Virtual Environment
 
+    Create a virtual environment in a folder somewhere on your machine.This virtual environment is a self-contained directory tree that will contain a python installation for a particular version of Python, and various installed packages needed to run the node.
 
-Create a virtual environment in a folder somewhere on your machine.This virtual environment is a self-contained directory tree that will contain a python installation for a particular version of Python, and various installed packages needed to run the node.
     ```shell
     
     virtualenv /root/nulink-venv
@@ -49,8 +49,8 @@ Create a virtual environment in a folder somewhere on your machine.This virtual 
     
     ```
 
-
 2. Activate the newly created virtual environment
+
     ```shell
     
     source /root/nulink-venv/bin/activate
@@ -58,8 +58,8 @@ Create a virtual environment in a folder somewhere on your machine.This virtual 
     
     ```
 
-
 3. Install/Update the Nulink package
+
     ```shell
     
     (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install -U nulink
@@ -69,9 +69,10 @@ Create a virtual environment in a folder somewhere on your machine.This virtual 
 
 4. Verify Installation
 
-Before continuing, verify that your nulink installation and entry points are functional.
+    Before continuing, verify that your nulink installation and entry points are functional.
 
-Activate your virtual environment, if not activated already:
+    Activate your virtual environment, if not activated already:
+
     ```shell
     
     source /root/nulink-venv/bin/activate
@@ -81,14 +82,16 @@ Activate your virtual environment, if not activated already:
     
     ```
 
-Next, verify nulink is importable. No response is successful, silence is golden:
+    Next, verify nulink is importable. No response is successful, silence is golden:
+
     ```shell
     
     python -c "import nulink"
     
     ```
 
-Then, run the nulink --help command:
+    Then, run the nulink --help command:
+
     ```shell
     
     Usage: nulink [OPTIONS] COMMAND [ARGS]...
