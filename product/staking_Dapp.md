@@ -1,9 +1,9 @@
 # NuLink Staking Dapp
 
 ## Overview
-Nulink Staking Dapp is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bind Woker account to get the reward. You can access Nulink Staking Dapp through this [link](http://stake.nulink.org/).
+Nulink Staking Dapp is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bind Woker account to get the reward. You can access Nulink Staking Dapp through this [link](https://stake.nulink.org/).
 
-In order to use NuLink Staking Dapp for NuLink testnet, the user needs to get the initial fund of NLKs(test) and BNBs(test) on [faucet](http://8.219.12.114/faucet). 
+In order to use NuLink Staking Dapp for NuLink testnet, the user needs to get the initial fund of NLKs(test) and BNBs(test) on [faucet](https://stake.nulink.org/faucet). 
 
 
 
@@ -14,7 +14,7 @@ In order to use NuLink Staking Dapp for NuLink testnet, the user needs to get th
 
 NuLink currently supports only METAMASK wallet. Users need to [download](https://metamask.io/download/) and install METAMASK wallet ahead. If you need more help with METAMASK usage, please refer [here](https://metamask.io/faqs/). After installation, you can create an account for staking in METAMASK . 
 
-Once you create a staking account in METAMASK  wallet, you can login and connect your account in [Nulink Staking Dapp](http://stake.nulink.org/). You can click the "Connect Wallet" "at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.  
+Once you create a staking account in METAMASK  wallet, you can login and connect your account in [Nulink Staking Dapp](https://stake.nulink.org/). You can click the "Connect Wallet" "at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.  
 
 ![image](../miscellaneous/img/connectWallet.png)  
 
@@ -25,12 +25,12 @@ After connecting with METAMASK Wallet, the system will automatically detect whet
 **Remark:** The default RPC server for BSC testnet sometime is unstable. If you find the current server is done, please find an active one [here](https://chainlist.org/)  and replace it in METAMASK network setting. Need [help](https://metamask.zendesk.com/hc/en-us/articles/4404424659995-User-Guide-Custom-networks-and-sidechains) editing RPC server in METAMASK?
 
 ### Step2- Staking your NLKs(test) to the staking pool
-Once you log in with METAMASK wallet, you can check your balance and click the "Staking" button to stake your balance to the pool. Make sure you [claim](http://8.219.12.114/faucet) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember, you must bond an active worker after staking, otherwise you will not get any reward. 
+Once you log in with METAMASK wallet, you can check your balance and click the "Staking" button to stake your balance to the pool. Make sure you [claim](https://stake.nulink.org/faucet) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember, you must bond an active worker after staking, otherwise you will not get any reward. 
 
 ![image](../miscellaneous/img/staking.png)  
 
 ### Step3- Bond an active worker to gain reward.
-You need to run an active Worker node before you Click "Bond Worker". Please refer to [here](nulink_worker.md) for running a Worker. If you click "Bond Worker", it will first detect your staking status first:
+You need to run an active Worker node before you Click "Bond Worker". Please refer [here](nulink_worker.md) for running a Worker. If you click "Bond Worker", it will first detect your staking status first:
 
 * If you did not stake any funds to pool, a pop-up window will prompt you to stake first.
 
