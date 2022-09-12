@@ -2,7 +2,7 @@
 # Roadmap
 
 ## 2021 - Q1
-* Project Start
+1. Project Start
 
 ## 2021 - Q4
 1. Deliver NuLink Polkadot pallet and launch Polkadot watcher node.

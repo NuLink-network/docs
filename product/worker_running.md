@@ -5,10 +5,10 @@ If you install your Worker node via Docker, you can initialize and run it follow
 
 ## Run Node via Docker (Recommended)  
 
-There are there steps to complete start a Worker node via Docker:
-1. Export Node Environment Variables
-2. Initialize Node Configuration
-3. Launch the Node
+There are there steps to complete starting a Worker node via Docker:
+1. **Export Node Environment Variables**
+2. **Initialize Node Configuration**
+3. **Launch the Node**
 
 ### Export Node Environment Variables  
 These environment variables are used to better simplify the Docker installation process.
@@ -89,9 +89,9 @@ Replace the following values with your own:
 
 ## Run Node via Local Operation  
 
-There are two steps to complete start a Worker node via Docker:
-1. Initialize Node Configuration
-2. Launch the Node
+There are two steps to complete starting a Worker node via local operation:
+1. **Initialize Node Configuration**
+2. **Launch the Node**
 
 ### Initialize Node Configuration
 
