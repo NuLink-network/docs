@@ -18,7 +18,7 @@ Once create a staking account in METAMASK  wallet, login and connect the staking
 
 ![image](../miscellaneous/img/connectWallet.png)  
 
-After connecting with METAMASK Wallet, the system will automatically detect whether you connect to the NuLink testnet. If not, it automatically prompts a window for you to switch to the correct network.  
+After connecting with METAMASK Wallet, the system will automatically detect whether you connect to the Horus network. If not, it automatically prompts a window for you to switch to the correct network.  
 
 ![image](../miscellaneous/img/networkError.png)  
 
@@ -30,31 +30,25 @@ Once log in with METAMASK wallet, please check the balance and click the "Stakin
 ![image](../miscellaneous/img/staking.png)  
 
 ### Step3- Bond an active worker to gain reward.
-You need to run an active Worker node before you Click "Bond Worker". Please refer [here](nulink_worker.md) for running a Worker. If you click "Bond Worker", it will first detect your staking status first:
-
-* If you did not stake any funds to pool, a pop-up window will prompt you to stake first.
-
-![image](../miscellaneous/img/bondWorker1.png)  
-
-* If you did stake your fund to pool before, you will access the Bond Worker pop-up page.  Simply enter the Worker Address and Node URI, and then confirm the bonding. Now you have completed the staking process and start to earn NLKs(test).
+An active Worker node is needed before clicking "Bond Worker". Please refer [here](nulink_worker.md) for running a Worker. The Bond Worker page will  pop-up when click "Bond Worker".  Simply enter the Worker Address and Node URI, and then confirm the bonding. Now the whole staking process is completed and the reward NLKs(test) will be issued.
 
 ![image](../miscellaneous/img/bondWorker2.png)  
 
 ### Step4- Stop staking and quit.
 
-If you decide to stop the staking and get all funds along with reward, you have three things to do:
+Follow the checklist below to stop the staking and get all funds along with reward:
 * Unbound Worker and shut down the Worker node
 * Unstake your fund from staking pool
 * Claim reward
 
 #### How to unbound Worker and shut down the Worker node?
-You need to click  “Unbound worker ". It will prompt a window for you to confirm unbond operation. 
+Click  “Unbound worker ". It will prompt a window to confirm unbond operation. 
 
-Remark: There is a bond lock time(10 minutes) for NuLink testnet, which means you can not unbond within 10 minutes after bonding Worker.
+Remark: There is a bond lock time(10 minutes) for the Horus network, which means the user can not unbond within 10 minutes after bonding Worker.
 
  ![image](../miscellaneous/img/unbondWorker1.png)  
 
-After unbonding Worker, you are free to shut down your Worker node.
+After unbonding Worker, the Worker node is free to closed.
 
 #### How to unstake?
 Click the "Unstake" pop-up a  window to prompt whether to unstake. The staking will be released after confirming.
@@ -62,21 +56,21 @@ Click the "Unstake" pop-up a  window to prompt whether to unstake. The staking w
  ![image](../miscellaneous/img/unstake.png)  
 
 #### How to withdraw your reward?
-You can click "Claim" to withdraw the reward after unstaking your fund.
+Click "Claim" to withdraw the reward after unstaking fund.
 
  ![image](../miscellaneous/img/claim.png)  
 
 ### Transaction Notification
 
-For all the above operation, the Dapp will send a corresponding transaction on BSC testnet.  You can click the bell in the right up corner to view the notice list. And you can also click ’View details‘ to see details of each transaction massage.  
+For all the above operation, the Dapp will send a corresponding transaction on BSC testnet.  Click the bell in the right up corner to view the notice list. Click ’View details‘ to see details of each transaction massage.  
 
 
  ![image](../miscellaneous/img/messages.png)  
 
 ## Term Explaination in Dapp.
 
-1.  **Total Value Locked**: Total lock-in value of the NuLink testnet.  
-2.  **Total Nodes**: Total number of Worker nodes in the NuLink testnet.  
+1.  **Total Value Locked**: Total lock-in value of the Horus network.  
+2.  **Total Nodes**: Total number of Worker nodes in the Horus network.  
 3.  **My Balance**: Current balance in user's account, can be used for staking to pool.   
 4.  **Reward**: Unclaimed reward of the user's account.    
 5.  **My Node Info**: Displays user node details, including the following data:  
@@ -88,7 +82,7 @@ For all the above operation, the Dapp will send a corresponding transaction on B
       * Accumulated time:  Accumulated time for earning reward, accurate to second.
       * Reward: Unclaimed rewards for the user .
       * Staking Amount: The amount of fund which user stake in the pool.
-6.  **Node List**: Displays all active nodes in the NuLink testnet, including the following data:   
+6.  **Node List**: Displays all active nodes in the Horus network, including the following data:   
       * Node URI: IP and Port of the Worker node.
       * Staker Address: Address of the node's staking account.
       * Woker Address: Address of the node's Worker node.
