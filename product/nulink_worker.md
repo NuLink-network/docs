@@ -2,7 +2,7 @@
 
 ## Overview  
 
-The NuLink Worker is the node to provide cryptographic service in the NuLink network. It provides Proxy Re-encryption service in testnet and it will provide more services such as ABE, IBE, ZKP and FHE in the future. The staker needs running a Worker node to be eligible for token reward. 
+The NuLink Worker is the node to provide cryptographic service in the NuLink network. It provides Proxy Re-encryption service in the Horus network and it will provide more services such as ABE, IBE, ZKP and FHE in NuLink mainnet. The staker needs running a Worker node to be eligible for token reward. 
 
 There are four steps to run a NuLink Worker:
 1. Create Worker Account
@@ -22,7 +22,7 @@ There are four steps to run a NuLink Worker:
 
 ## Create Worker Account  
 
-Prepare an ETH type account for the Worker. We suggest creating a Worker account different from your staking account. 
+Prepare an ETH type account for the Worker. We suggest creating a Worker account different from the staking account. 
 
 If you already know how to create one and access the keystore file, you can skip this step. Otherwise we recommend you to use Geth to create the Worker account.  Please check [here](./eth_account.md) for details.
 
@@ -32,11 +32,11 @@ Start to download and install NuLink Worker.  Install it using Docker (recommend
 
 ## Initialize and Run a Worker Node  
 
-Initialize the configuration and start the Worker Node. If install via docker, need to initialize the configuration and run it in Docker. Otherwise you need to handle it on the local side. Please check  [here](./worker_running.md) for more details. 
+Initialize the configuration and start the Worker Node. If install via docker, need to initialize the configuration and run it in Docker. Otherwise please check  [here](./worker_running.md) for more details regarding local running. 
 
 ## Bond the Worker node with your staking account  
 
-Once you succeed to start a NuLink Worker node, don't forget to bond it with your staking account to get reward. You have to use NuLink Staking Dapp to Bond it. 
+Don't forget to bond it with your staking account to get reward after successfully running a NuLink Worker node using the NuLink Staking Dapp. 
 
 - Navigate to [NuLink Staking Dapp](https://stake.nulink.org)
 - Connect with the Staking account and make sure you have staked tokens in the staking pool
