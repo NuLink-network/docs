@@ -136,7 +136,7 @@ Example Output:
 ```shell
 aa3a0f6376b566473cbcde46b0e772feb4d3658188d2cbb424a1e94588d6d8eb
 ```
-**If you encounter error when starting Worker node, please check that the port 9151 has not been occupied first by other process.**
+**If you encounter error when starting Worker node,  first please check that the port 9151 has not been occupiedby other process.**
 
 
 
@@ -293,5 +293,5 @@ Now the Worker address(e.g: 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93) and Node
 
 
 
-Remark: If you use a LAN address in the first step, please use --no-ip-checkup. If you start the node without binding, use --no-block-until-ready
+Remark: If you use a LAN address in the first step, please use --no-ip-checkup. If you start the node without bonding, use --no-block-until-ready
 
