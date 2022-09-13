@@ -22,17 +22,17 @@ There are four steps to run a NuLink Worker:
 
 ## Create Worker Account  
 
-You need to prepare an ETH type account for the Worker. We suggest creating a Worker account different from your staking account. 
+Prepare an ETH type account for the Worker. We suggest creating a Worker account different from your staking account. 
 
 If you already know how to create one and access the keystore file, you can skip this step. Otherwise we recommend you to use Geth to create the Worker account.  Please check [here](./eth_account.md) for details.
 
 ## Install NuLink Worker  
 
-Once you have your Worker account ready , you can start to download and install NuLink Worker.  You can install it using Docker (recommended) or install it with local installation. See [here](./worker_install.md) for more details. 
+Start to download and install NuLink Worker.  Install it using Docker (recommended) or install it with local installation. See [here](./worker_install.md) for more details. 
 
 ## Initialize and Run a Worker Node  
 
-After successfully installing NuLink Worker, you can now initialize the configuration and start the Worker Node. If you install it with docker, you need to initialize the configuration and run it in Docker. Otherwise you need to handle it on the local side. Please check  [here](./worker_running.md) for more details. 
+Initialize the configuration and start the Worker Node. If install via docker, need to initialize the configuration and run it in Docker. Otherwise you need to handle it on the local side. Please check  [here](./worker_running.md) for more details. 
 
 ## Bond the Worker node with your staking account  
 

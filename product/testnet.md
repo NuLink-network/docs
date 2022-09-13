@@ -1,19 +1,19 @@
-# NuLink Testnet
+# Horus Testnet
 
-## NuLink Testnet
+## Overview
 
-The NuLink Testnet includes four parts: the NuLink Staking Dapp, the NuLink Worker Node, the NuLink Agent and the NuLink File Sharing Dapp. The NuLink Staking Dappand the  NuLink Worker Node are used by those who want to provide cryptographic service in the NuLink test network; while the NuLink Agent and the NuLink File Sharing Dapp are used by those who want to use the privacy-preserving service in the NuLink test network. The token in the NuLink testnet is NLK(test). Please be aware it is only used for testing purpose and has no trading value. 
+The NuLink Testnet is called the Horus network. It includes four parts: the NuLink Staking Dapp, the NuLink Worker Node, the NuLink Agent and the NuLink File Sharing Dapp. The NuLink Staking Dapp and the  NuLink Worker Node are used by those who want to provide cryptographic service in the Horus network; while the NuLink Agent and the NuLink File Sharing Dapp are used by those who want to use the privacy-preserving service in the Horus network. The token in the Horus network is NLK(test). Please be aware it is only used for testing purpose and has no trading value. 
 
 
 * [**NuLink Staking Dapp:**](staking_Dapp.md) The platform for managing the staker/worker account 
 
-* [**NuLink Worker Node:**](nulink_worker.md) The node to provide cryptographic service in the NuLink network. 
+* [**NuLink Worker Node:**](nulink_worker.md) The node to provide cryptographic service in Horus. 
 
 * [**NuLink Agent:**](nulink_agent.md) The plug in to handle the local cryptographic operation of the file sharing users.
 
 * [**NuLink File Sharing Dapp:**](file_sharing_Dapp.md) The entrypoint for data sharing users to manage the private file and handle the authorization  request.
 
-The NuLink testnet is launched on BNB Smart Chain Testnet. The smart contract address is:
+The Horus network is launched on BNB Smart Chain Testnet. The smart contract address is:
 
 * **NuLink Token**: [0xDa627a1f6Bc94079b0c65C70B3B307799118943D](https://testnet.bscscan.com/address/0xDa627a1f6Bc94079b0c65C70B3B307799118943D)
 * **NuLink Staking Pool**: [0x8582C8fcc25CB1C8967A779B4Fb2B947FdC85aA7](https://testnet.bscscan.com/address/0x8582C8fcc25CB1C8967A779B4Fb2B947FdC85aA7)
