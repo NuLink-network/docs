@@ -15,10 +15,10 @@ The NuLink Testnet includes four parts: the NuLink Staking Dapp, the NuLink Work
 
 The NuLink testnet is launched on BNB Smart Chain Testnet. The smart contract address is:
 
-* **NuLink Token**: []
-* **NuLink Staking Pool**: []
-* **Simple PRE Application**: []
-* **Subscription Manager**: []
+* **NuLink Token**: [0xDa627a1f6Bc94079b0c65C70B3B307799118943D](https://testnet.bscscan.com/address/0xDa627a1f6Bc94079b0c65C70B3B307799118943D)
+* **NuLink Staking Pool**: [0x8582C8fcc25CB1C8967A779B4Fb2B947FdC85aA7](https://testnet.bscscan.com/address/0x8582C8fcc25CB1C8967A779B4Fb2B947FdC85aA7)
+* **Simple PRE Application**: [0xD4E68C860e6b0943122550a38d3988902133Db25](https://testnet.bscscan.com/address/0xD4E68C860e6b0943122550a38d3988902133Db25)
+* **Subscription Manager**: [0x574b8b4480056f406C1012e7041BFabaA3DC6ea6](https://testnet.bscscan.com/address/0x574b8b4480056f406C1012e7041BFabaA3DC6ea6)
 
 ## Characters
 
