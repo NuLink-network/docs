@@ -40,7 +40,7 @@ nulink/nulink nulink ursula init \
 ```
 Replace the following values with your own value:
 - `</path/to/host/machine/directory>` - The host directory you create when install.
-- `<ETH KEYSTORE URI>` - The path to store the keystore of the Worker account in container.
+- `<ETH KEYSTORE URI>` - The path to the keystore file of the Worker account.
 - `<NULINK PROVIDER URI>` - The URI of a local or hosted node where the Horus network launched.
 - `<NULINK NETWORK NAME>` - The name of the network where  the Horus network launched. 
 - `<PAYMENT PROVIDER URI>` - The URI of a local or hosted node where payment goes.
@@ -51,11 +51,10 @@ Replace the following values with your own value:
 Example Input:
 
 ```shell
-$ 
-docker run -it --rm \
+$ docker run -it --rm \
 -p 9151:9151 \
--v /nulink:/code \
--v /nulink:/home/circleci/.local/share/nulink \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
 -e NULINK_KEYSTORE_PASSWORD \
 nulink/nulink nulink ursula init \
 --signer keystore:///code/UTC--2022-09-13T01-14-32.465358210Z--8b1819341bec211a45a2186c4d0030681ccce0ee \
@@ -188,7 +187,7 @@ nulink ursula init      \
 ```
 
 
-- `<ETH KEYSTORE URI>` - The path to store the keystore of the Worker account.
+- `<ETH KEYSTORE URI>` - The path to the keystore file of the Worker account..
 - `<NULINK PROVIDER URI>` - The URI of a local or hosted node where the Horus network launched.
 - `<NULINK NETWORK NAME>` - The name of the network where the Horus network launched. 
 - `<PAYMENT PROVIDER URI>` - The URI of a local or hosted node where payment goes.
