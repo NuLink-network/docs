@@ -28,6 +28,7 @@ $ docker run -it --restart on-failure \
 -p 9151:9151 \
 -v </path/to/host/machine/directory>:/code \
 -v </path/to/host/machine/directory>:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD \
 nulink/nulink nulink ursula init \
 --signer <ETH KEYSTORE URI> \
 --eth-provider <NULINK PROVIDER URI>  \
@@ -53,8 +54,9 @@ Example Input:
 $ 
 docker run -it --restart on-failure \
 -p 9151:9151 \
--v /root/nulink:/code \
--v /root/nulink:/home/circleci/.local/share/nulink \
+-v /nulink:/code \
+-v /nulink:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD \
 nulink/nulink nulink ursula init \
 --signer keystore:///code/UTC--2022-09-13T01-14-32.465358210Z--8b1819341bec211a45a2186c4d0030681ccce0ee \
 --eth-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
