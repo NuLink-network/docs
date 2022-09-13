@@ -136,7 +136,7 @@ Example Output:
 ```shell
 aa3a0f6376b566473cbcde46b0e772feb4d3658188d2cbb424a1e94588d6d8eb
 ```
-**If you can not start Worker node, please check that the port 9151 is not been occupied first.**
+**If you encounter error when starting Worker node, please check that the port 9151 has not been occupied first by other process.**
 
 
 
