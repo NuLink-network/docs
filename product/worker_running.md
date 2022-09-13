@@ -1,6 +1,6 @@
 # NuLink Worker Initialization and Running  
 
-If you install your Worker node via Docker, you can initialize and run it  by following instruction.  And if you install your Worker node via local installation, please read local operation part.
+If install the Worker node via Docker, please initialize and run it using Docker as well.  And if install the Worker node via local installation, please read local operation part.
 
 
 ## Run Node via Docker (Recommended)  
@@ -41,8 +41,8 @@ nulink/nulink nulink ursula init \
 Replace the following values with your own value:
 - `</path/to/host/machine/directory>` - The host directory you create when install.
 - `<ETH KEYSTORE URI>` - The path to store the keystore of the Worker account in container.
-- `<NULINK PROVIDER URI>` - The URI of a local or hosted node where NuLink testnet launched.
-- `<NULINK NETWORK NAME>` - The name of the network where NuLink testnet launched. 
+- `<NULINK PROVIDER URI>` - The URI of a local or hosted node where the Horus network launched.
+- `<NULINK NETWORK NAME>` - The name of the network where  the Horus network launched. 
 - `<PAYMENT PROVIDER URI>` - The URI of a local or hosted node where payment goes.
 - `<PAYMENT NETWORK NAME>` - The name of the payment network. 
 - `<OPERATOR ADDRESS>` - The address of the Worker account. [How to generate Worker account](./eth_account.md).
@@ -143,8 +143,6 @@ The following command describes how to view worker addresses.
 ```shell
     docker logs -f <docker name>
 ```
-e.g.
-
 Example Input:
 ```shell
     $ docker logs -f ursula
@@ -163,7 +161,7 @@ Working ~ Keep Ursula Online!
 
 ```
 
-Now you can save the Node URI(e.g: https://8.219.186.125:9151) and Worker address(e.g: 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee)  for bonding operation.
+Now the Node URI(e.g: https://8.219.186.125:9151) and Worker address(e.g: 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee)  are ready for bonding operation.
 
 ## Run Node via Local Operation  
 
@@ -188,8 +186,8 @@ nulink ursula init      \
 
 
 - `<ETH KEYSTORE URI>` - The path to store the keystore of the Worker account.
-- `<NULINK PROVIDER URI>` - The URI of a local or hosted node where NuLink testnet launched.
-- `<NULINK NETWORK NAME>` - The name of the network where NuLink testnet launched. 
+- `<NULINK PROVIDER URI>` - The URI of a local or hosted node where the Horus network launched.
+- `<NULINK NETWORK NAME>` - The name of the network where the Horus network launched. 
 - `<PAYMENT PROVIDER URI>` - The URI of a local or hosted node where payment goes.
 - `<PAYMENT NETWORK NAME>` - The name of the payment network. 
 - `<OPERATOR ADDRESS>` - The address of the Worker account. [How to generate Worker account](./eth_account.md)
@@ -288,7 +286,7 @@ Starting services
 Working ~ Keep Ursula Online!
 ```
 
-Now you can save the Worker address(e.g: 0xf3D6ad89E34b1Cf8325EA614fa901eA4F34Be14a) and Node URI(e.g: https://8.219.188.70:9157) for bonding operation.
+Now the Worker address(e.g: 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93) and Node URI(e.g: https://8.219.188.70:9157)  are ready for bonding operation.
 
 
 
