@@ -2,7 +2,7 @@
 
 There are several ways to install Geth, including through the package manager, downloading the pre-built package, running as a docker container, or building from the downloaded source code. Please refer  [here](https://geth.ethereum.org/docs/install-and-build/installing-geth) for more details regarding Geth Installation.
 
-After you install Geth, you can export the keystore file to your local storage. You need to remember the keystore file path and account address for later use.
+After installing Geth, it will save the keystore file to the local storage. Please remember the keystore file path and account address for later use.
 
 ## Example on Ubuntu
 
