@@ -24,7 +24,7 @@ $ export NULINK_OPERATOR_ETH_PASSWORD=<YOUR WORKER ACCOUNT PASSWORD>
 This step creates and stores the NuLink worker node configuration, and only needs to be run once.
 
 ```shell
-$ docker run -it --restart on-failure \
+$ docker run -it --rm \
 -p 9151:9151 \
 -v </path/to/host/machine/directory>:/code \
 -v </path/to/host/machine/directory>:/home/circleci/.local/share/nulink \
@@ -52,7 +52,7 @@ Example Input:
 
 ```shell
 $ 
-docker run -it --restart on-failure \
+docker run -it --rm \
 -p 9151:9151 \
 -v /nulink:/code \
 -v /nulink:/home/circleci/.local/share/nulink \
