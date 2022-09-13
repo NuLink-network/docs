@@ -145,7 +145,7 @@ e.g.
 
 Example Input:
 ```shell
-    docker logs -f ursula
+    $ docker logs -f ursula
 ```
 Example Output:
 ```shell
