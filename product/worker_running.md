@@ -1,6 +1,6 @@
 # NuLink Worker Initialization and Running  
 
-If you install your Worker node via Docker, you can initialize and run it following this [instruction](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Docker). And if you install your Worker node via local installation, please read [local operation](https://docs.nulink.org/products/nulink_worker/worker_running#Run-Node-via-Local-Installtion) 
+If you install your Worker node via Docker, you can initialize and run it  by following instruction.  And if you install your Worker node via local installation, please read local operation part.
 
 
 ## Run Node via Docker (Recommended)  
@@ -50,24 +50,25 @@ Replace the following values with your own value:
 Example Input:
 
 ```shell
-$ docker run -it --restart on-failure \
+$ 
+docker run -it --restart on-failure \
 -p 9151:9151 \
--v /nulink:/code \
--v /nulink:/home/circleci/.local/share/nulink \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
 nulink/nulink nulink ursula init \
---signer keystore:///code/keystore_directory/keystore_file \
+--signer keystore:///code/UTC--2022-09-13T01-14-32.465358210Z--8b1819341bec211a45a2186c4d0030681ccce0ee \
 --eth-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
 --network bsc_testnet \
 --payment-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
 --payment-network bsc_testnet \
---operator-address 0x7DEff413E415bd2507da4988393d8540a28bf3c6 \
+--operator-address 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee \
 --max-gas-price 100
 ```
 Example Output:
 
 ```shell
 # step 1
- Detected IPv4 address (8.219.188.70) - Is this the public-facing address of Worker? [y/N]: y
+ Detected IPv4 address (8.219.186.125) - Is this the public-facing address of Ursula? [y/N]: y
  
  Please provide a password to lock Operator keys.
  Do not forget this password, and ideally store it using a password manager.
@@ -78,32 +79,29 @@ Example Output:
  
  Backup your seed words, you will not be able to view them again.
  
- hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
+ xxxxxxxxxxxxxxxxxxxxxxxx
  
  # step 3
  Have you backed up your seed phrase? [y/N]: y
  
  # step 4
- Confirm seed words: hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
+ Confirm seed words: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  
  
- Generated keystore
- 
- 
- Public Key:   02dacea4c7f5563004af37f282ca10f7
- Path to Keystore: /root/.local/share/nulink/keystore
- 
- - You can share your public key with anyone. Others need it to interact with you.
- - Never share secret keys with anyone!
- - Backup your keystore! Character keys are required to interact with the protocol!
- - Remember your password! Without the password, it's impossible to decrypt the key!
- 
- 
- Generated configuration file at non-default filepath /root/.local/share/nulink/ursula-02dacea4.json
- * NOTE: for a non-default configuration filepath use `--config-file "/root/.local/share/nulink/ursula-02dacea4.json"` with subsequent `ursula` CLI commands
- 
- * Review configuration  -> nulink ursula config
- * Start working         -> nulink ursula run
+Public Key:   02bb2067d21a677ce928967c0ece79a9
+Path to Keystore: /home/circleci/.local/share/nulink/keystore
+
+- You can share your public key with anyone. Others need it to interact with you.
+- Never share secret keys with anyone! 
+- Backup your keystore! Character keys are required to interact with the protocol!
+- Remember your password! Without the password, it's impossible to decrypt the key!
+
+
+Generated configuration file at default filepath /home/circleci/.local/share/nulink/ursula.json
+
+* Review configuration  -> nulink ursula config
+* Start working         -> nulink ursula run
+
 ```
 
 ### Launch the Node  
@@ -125,8 +123,8 @@ Example Input：
 $ docker run --restart on-failure -d \
 --name ursula \
 -p 9151:9151 \
--v /nulink:/code \
--v /nulink:/home/circleci/.local/share/nulink \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
 -e NULINK_KEYSTORE_PASSWORD \
 -e NULINK_OPERATOR_ETH_PASSWORD \
 nulink/nulink nulink ursula run --no-block-until-ready
@@ -134,35 +132,36 @@ nulink/nulink nulink ursula run --no-block-until-ready
 Example Output:
 
 ```shell
-8d269b8e845ae0ba7bb9ad106030da1789b0da73554a72fa4b779f1bf4437bd1
+aa3a0f6376b566473cbcde46b0e772feb4d3658188d2cbb424a1e94588d6d8eb
 ```
 
-### View Worker Static IP Address
+### Check Node URI for Worker Account
 The following command describes how to view worker addresses.
 
 ```shell
-    docker logs -f ursula3
+    docker logs -f <docker name>
 ```
 e.g.
 
 Example Input:
 ```shell
-    docker logs -f ursula3
+    docker logs -f ursula
 ```
 Example Output:
 ```shell
-    Authenticating Ursula
-    Loaded Ursula (bsc_testnet)
-    ✓ External IP matches configuration
-    Starting services
-    ✓ Node Discovery (Bsc_testnet)
-    ✓ Work Tracking
-    ✓ Start Operator Bonded Tracker
-    ✓ Rest Server https://8.219.188.70:9151
-    Working ~ Keep Ursula Online!
+Authenticating Ursula
+Loaded Ursula (bsc_testnet)
+✓ External IP matches configuration
+Starting services
+✓ Node Discovery (Bsc_testnet)
+✓ Work Tracking
+✓ Start Operator Bonded Tracker
+✓ Rest Server https://8.219.186.125:9151
+Working ~ Keep Ursula Online!
+
 ```
 
-Now you can save the Node URI(e.g: https://8.219.188.70:9151) and Worker address(e.g: 0x7DEff413E415bd2507da4988393d8540a28bf3c6)  for bonding operation.
+Now you can save the Node URI(e.g: https://8.219.186.125:9151) and Worker address(e.g: 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee)  for bonding operation.
 
 ## Run Node via Local Operation  
 

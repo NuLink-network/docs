@@ -38,8 +38,9 @@ Repeat password:
 
 Your new key was generated
 
-Public address of the key:   0x037353D1988f91aA7b7D4CBB4Bf9135887A101e6  # address
-Path of the secret key file: /root/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2022-09-08T07-30-15.029270584Z--037353d1988f91aa7b7d4cbb4bf9135887a101e6 # keystore file path
+
+Public address of the key:   0x8B1819341BEc211a45a2186C4D0030681cccE0Ee
+Path of the secret key file: /root/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2022-09-13T01-14-32.465358210Z--8b1819341bec211a45a2186c4d0030681ccce0ee
 
 - You can share your public address with anyone. Others need it to interact with you.
 - You must NEVER share the secret key with anyone! The key controls access to your funds!
