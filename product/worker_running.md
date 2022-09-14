@@ -59,7 +59,7 @@ $ docker run -it --rm \
 nulink/nulink nulink ursula init \
 --signer keystore:///code/UTC--2022-09-13T01-14-32.465358210Z--8b1819341bec211a45a2186c4d0030681ccce0ee \
 --eth-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
---network bsc_testnet \
+--network horus \
 --payment-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
 --payment-network bsc_testnet \
 --operator-address 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee \
@@ -152,10 +152,10 @@ Example Input:
 Example Output:
 ```shell
 Authenticating Ursula
-Loaded Ursula (bsc_testnet)
+Loaded Ursula (Horus)
 ✓ External IP matches configuration
 Starting services
-✓ Node Discovery (Bsc_testnet)
+✓ Node Discovery (horus)
 ✓ Work Tracking
 ✓ Start Operator Bonded Tracker
 ✓ Rest Server https://8.219.186.125:9151
@@ -201,7 +201,7 @@ Example Input:
 nulink ursula init \
 --signer keystore:///root/nulink/keystore \
 --eth-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
---network bsc_testnet \
+--network horus \
 --payment-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
 --payment-network bsc_testnet \
 --operator-address 0x8a20d379A4C08c482a617A81a39EB426B6EB8642 \
