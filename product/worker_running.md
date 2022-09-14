@@ -152,10 +152,10 @@ Example Input:
 Example Output:
 ```shell
 Authenticating Ursula
-Loaded Ursula (Horus)
+Loaded Ursula (horus)
 ✓ External IP matches configuration
 Starting services
-✓ Node Discovery (horus)
+✓ Node Discovery (Horus)
 ✓ Work Tracking
 ✓ Start Operator Bonded Tracker
 ✓ Rest Server https://8.219.186.125:9151
@@ -276,10 +276,10 @@ Example Output:
 Enter ethereum account password (0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93):
 Enter nulink keystore password:
 Authenticating Ursula
-Loaded Ursula (heco_testnet)
+Loaded Ursula (horus)
 ✓ External IP matches configuration
 Starting services
-✓ Node Discovery (Heco_testnet)
+✓ Node Discovery (Horus)
 ✓ Operator 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93 is funded with 0.499959405 ETH
 ✓ Operator 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93 is bonded to staking provider 0xf3D6ad89E34b1Cf8325EA614fa901eA4F34Be14a
 ✓ Operator already confirmed.  Not starting worktracker.
