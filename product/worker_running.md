@@ -108,6 +108,10 @@ Generated configuration file at default filepath /home/circleci/.local/share/nul
 ### Launch the Node  
 The following command will start the node. Make sure you use the same host directory as the configuration. 
 
+**Remark1: You need to [claim](https://testnet.binance.org/faucet-smart) some BNB(test) token for Worker account as gas fee.**
+
+**Remark2: If you encounter error when starting Worker node,  first please check that the port 9151 has not been occupied by other process. If still not working, please check there is only one configration json file in the </path/to/host/machine/directory>**
+
 ```shell
 $ docker run --restart on-failure -d \
 --name ursula \
@@ -135,7 +139,7 @@ Example Output:
 ```shell
 aa3a0f6376b566473cbcde46b0e772feb4d3658188d2cbb424a1e94588d6d8eb
 ```
-**If you encounter error when starting Worker node,  first please check that the port 9151 has not been occupiedby other process.**
+
 
 
 
