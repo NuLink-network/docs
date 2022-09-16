@@ -66,11 +66,11 @@ pip install virtualenv
     
     ```
 
-3. [Download](https://github.com/NuLink-network/nulink-core/blob/main/release/nulink/nulink-0.1.0-py3-none-any.whl) and install the Nulink package
+3. [Download](https://filetransfer.nulink.org/release/nulink-0.1.0-py3-none-any.whl) or [Download2](https://filetransfer.nulink.org/release/nulink-0.1.0.tar.gz) and install the Nulink package
 
     ```shell
     
-    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# wget https://github.com/NuLink-network/nulink-core/blob/main/release/nulink/nulink-0.1.0-py3-none-any.whl
+    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# wget https://filetransfer.nulink.org/release/nulink-0.1.0-py3-none-any.whl
       
     (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install nulink-0.1.0-py3-none-any.whl
     
