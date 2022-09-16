@@ -44,7 +44,7 @@ Follow the checklist below to stop the staking and get all funds along with rewa
 #### How to unbound Worker and shut down the Worker node?
 Click  “Unbound worker ". It will prompt a window to confirm unbond operation. 
 
-Remark: There is a bond lock time(10 minutes) for the Horus network, which means the user can not unbond within 10 minutes after bonding Worker.
+Remark: There is a bond lock time(24 hours) for the Horus network, which means the user can not unbond within 24 hours after bonding Worker.
 
  ![image](../miscellaneous/img/unbondWorker1.png)  
 
