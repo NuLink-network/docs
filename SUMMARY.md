@@ -24,3 +24,6 @@
 * [NuLink Agent](./product/nulink_agent.md)
 * [NuLink File Sharing Dapp](./product/file_sharing_Dapp.md)
 
+## Resources
+* [Release Notes](./support/release_notes.md)
+* [Frequently Asked Questions](./support/faqs.md)
