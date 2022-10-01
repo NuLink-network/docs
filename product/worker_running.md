@@ -260,6 +260,8 @@ Generated configuration file at non-default filepath /root/.local/share/nulink/u
 Run worker node using the initialized configuration.
 
 ```shell
+screen -S nulink-worker // use this command if you want to run the worker node in a screen session
+
 nulink ursula run --no-block-until-ready
 ```
 
