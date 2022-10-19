@@ -13,17 +13,17 @@ Now NuLink Agent hasn't been published on Chrome Web Store. You can install NuLi
 3. Enable Developer Mode by clicking the toggle switch next to Developer mode.
 4. Click the Load unpacked button and select the extension directory.
 
-   ![image](../miscellaneous/img/agent/install.png)
+   ![Install Agent](../miscellaneous/img/agent/install.png)
    
    The extension has been successfully installed.
 5. Click Extensions button and pin the NuLink Agent extention to the toolbar.
 
-   ![image](../miscellaneous/img/agent/pin.png)
+   ![Pin Agent](../miscellaneous/img/agent/pin.png)
 
 ## Create wallet
 First time click the Agent, the main page looks like this:
 
-![image](../miscellaneous/img/agent/agent.png)
+![Create Wallet](../miscellaneous/img/agent/agent.png)
 
 1. Click Create wallet button, create wallet first.
 
@@ -31,16 +31,16 @@ First time click the Agent, the main page looks like this:
 NuLink Agent uses passwords to secure the app, once you've restored or created your wallet from your secret recovery phrase, you will use your password to unlock the app.
 Please set a strong password to protect your wallet safety.
 
-   ![image](../miscellaneous/img/agent/password.png)
+   ![Set Password](../miscellaneous/img/agent/password.png)
 
 3. Create
 When creating succeed, go to the backup mnemonic phrase. 
 
-   ![image](../miscellaneous/img/agent/create.png)
+   ![Create](../miscellaneous/img/agent/create.png)
 
 Now can use NuLink Agent.
 
-   ![image](../miscellaneous/img/agent/main.png)
+   ![NuLink Agent](../miscellaneous/img/agent/main.png)
 
 ## Transactions and Gas
 
@@ -48,11 +48,11 @@ Now can use NuLink Agent.
 
 At NuLink File Sharing or other DApp, when connecting to Agent, confirm the connecting website and connecting account, click 'Connect' to confirm the connection of DApp and Agent.
 
-![image](../miscellaneous/img/agent/connect.png)
+![Connect DApp](../miscellaneous/img/agent/connect.png)
 
 ### Payment confirmation
 
-![image](../miscellaneous/img/agent/payment.png)
+![Payment](../miscellaneous/img/agent/payment.png)
 
 
 * Gas fee
@@ -65,7 +65,7 @@ To total is the total cost for the transaction, include gas fee (BNB) and servic
 Gas fee refers to the transaction fee on the blockchain. It is what users pay to get their transaction validated, or completed.
 User can customize gas fee to accelerate the transaction confirmation time.
 
-![image](../miscellaneous/img/agent/gasfee.png)
+![Customize Gas Fee](../miscellaneous/img/agent/gasfee.png)
 
 ## Setting
 Click the icon in the upper right corner of main page, jump into Setting page to make settings.
