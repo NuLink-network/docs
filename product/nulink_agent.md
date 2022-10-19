@@ -7,7 +7,7 @@ NuLink Agent is a web browser extension that allows you to manage your NuLink pr
 
 Now NuLink Agent hasn't been published on Chrome Web Store. You can install NuLink Agent manually.
 
-1. Download [NuLink Agent package](https://filetransfer.nulink.org/release/nulink_agent_0.7.4.zip), unpack it.
+1. Download [NuLink Agent package](https://filetransfer.nulink.org/release/nulink_agent_1.0.zip), unpack it.
 2. Open the Extension Management page by navigating to chrome://extensions.
    The Extension Management page can also be opened by clicking on the Chrome menu, hovering over More Tools then selecting Extensions.
 3. Enable Developer Mode by clicking the toggle switch next to Developer mode.
@@ -69,4 +69,4 @@ User can customize gas fee to accelerate the transaction confirmation time.
 
 ## Setting
 Click the icon in the upper right corner of main page, jump into Setting page to make settings.
-Visit [Agent Setting](./agent_setting.md) to get more helps.
+Visit [Agent Setting](../product/agent_setting.md) to get more helps.
