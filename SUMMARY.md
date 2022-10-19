@@ -23,7 +23,7 @@
   * [NuLink Worker Initialization and Running](./product/worker_running.md)  
   * [NuLink Worker Update](./product/worker_update.md)  
 * [NuLink Agent](./product/nulink_agent.md)
-  * [NuLink Agent Setting](./product/nulink_setting.md)
+  * [NuLink Agent Setting](./product/agent_setting.md)
 * [NuLink File Sharing Dapp](./product/file_sharing_Dapp.md)
 
 ## Resources
