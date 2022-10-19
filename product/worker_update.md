@@ -10,18 +10,18 @@ The NuLink worker node need to be updated when a new version is released. The up
 If the staking account and keystore file of the worker account is still available, then the update procedure is pretty trivial. Simply stop the node, pull the latest image and restart the node.
 
 1. Stop the running node in Docker
- ```shell
-$ docker kill <container ID>
- ```
+    ```shell
+    $ docker kill <container ID>
+    ```
 
 2. Pull the latest NuLink image.
-```shell
-$ docker pull nulink/nulink:latest
-```
+    ```shell
+    $ docker pull nulink/nulink:latest
+    ```
 
 3.  Re-launch the worker node.
-```shell
-$ docker run --restart on-failure -d \
+    ```shell
+    $ docker run --restart on-failure -d \
 --name ursula \
 -p 9151:9151 \
 -v /root/nulink:/code \
@@ -29,7 +29,7 @@ $ docker run --restart on-failure -d \
 -e NULINK_KEYSTORE_PASSWORD \
 -e NULINK_OPERATOR_ETH_PASSWORD \
 nulink/nulink nulink ursula run --no-block-until-ready
-```
+    ```
 
 ### Staking account or worker account is lost
 
