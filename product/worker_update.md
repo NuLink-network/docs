@@ -130,7 +130,7 @@ If the staking account and keystore file of the worker account is still availabl
 3. Uninstall the old package and install the new package   
    ```shell
    pip uninstall nulink-0.1.0-py3-none-any.whl // make sure the package name matches your installed package
-
+      
    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# wget https://download.nulink.org/release/core/nulink-0.2.0-py3-none-any.whl
       
    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install nulink-0.2.0-py3-none-any.whl
@@ -138,10 +138,10 @@ If the staking account and keystore file of the worker account is still availabl
 
 4.   Verify Installation use the same command when install the first time.  Check [Here](https://docs.nulink.org/products/nulink_worker/worker_install#local-install) 
 
-5.  Launch the node use the same config file  
+5.  Launch the node use the same config file   
    ```shell
    screen -S nulink-worker // use this command if you want to run the worker node in a screen session
-
+      
    nulink ursula run --no-block-until-ready
    ```
 
@@ -165,7 +165,7 @@ If the staking account or the worker account is lost(this means either you can n
 3. Uninstall the old package and install the new package  
    ```shell
    pip uninstall nulink-0.1.0-py3-none-any.whl // make sure the package name matches your installed package
-
+      
    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# wget https://download.nulink.org/release/core/nulink-0.2.0-py3-none-any.whl
       
    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install nulink-0.2.0-py3-none-any.whl
@@ -189,7 +189,7 @@ If the staking account or the worker account is lost(this means either you can n
 6. Launch the node use the same config file  
    ```shell
    screen -S nulink-worker // use this command if you want to run the worker node in a screen session
-
+      
    nulink ursula run --rest-port 9152 --no-block-until-ready
    ```
 7. Check the node running status and bond the new worker account to new staking account in [Dapp](https://test-staking.nulink.org/).    
