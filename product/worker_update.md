@@ -16,6 +16,8 @@ If the staking account and keystore file of the worker account is still availabl
 1. Stop the running node in Docker  
     ```shell
     $ docker kill <container ID>
+    
+    $ docker rm <container ID>
     ```
 
 2. Pull the latest NuLink image.  
