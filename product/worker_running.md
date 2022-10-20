@@ -1,6 +1,8 @@
 # NuLink Worker Initialization and Running  
 
-If install the Worker node via Docker, please initialize and run it using Docker as well.  And if install the Worker node via local installation, please read local operation part.
+If install the Worker node via Docker, please initialize and run it using Docker as well.  And if install the Worker node via local installation, please read local operation part.  
+
+**Make sure put a small amount of BNB(test) to the worker account for sending one confirmation transaction.**
 
 
 ## Run Node via Docker (Recommended)  
