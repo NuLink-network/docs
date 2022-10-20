@@ -2,6 +2,10 @@
 
 The NuLink worker node need to be updated when a new version is released. The update procedure could be different for the docker environment and local environment.
 
+**Make sure putting a small amount of BNB(test) to the worker account for sending one confirmation transaction.**
+
+
+
 
 ## Update in docker environment
 
