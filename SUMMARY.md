@@ -24,6 +24,7 @@
   * [NuLink Worker Update](./product/worker_update.md)  
 * [NuLink Agent](./product/nulink_agent.md)
   * [NuLink Agent Setting](./product/agent_setting.md)
+  * [NuLink Agent Update](./product/agent_update.md)
 * [NuLink File Sharing Dapp](./product/file_sharing_Dapp.md)
 
 ## Resources
