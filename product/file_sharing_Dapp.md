@@ -1,17 +1,17 @@
-# NuLink File Sharing Dapp
+# NuLink File Sharing Dapp  
 
-## Overview
+## Overview  
 NuLink File Sharing Dapp is the entrypoint for data sharing users to manage the private file and handle the authorization request. Access NuLink File Sharing Dapp [here](https://filetransfer.nulink.org/).  
 
-## Initialization: Connect Agent and Log in
+## Initialization: Connect Agent and Log in  
 Before using NuLink File Sharing Dapp, please click agent button to connect NuLink-agent. 
 How to register and use NuLink-agent please refer to [this link](https://docs.nulink.org/products/nulink_agent).  
 
  ![image](../miscellaneous/img/login.png)  
- 
-After connecting, user can access the NuLink File Sharing Dapp. It includes three pages: Discover page, User Center page and Notification page.  
 
-## Discover Page
+After connecting, user can access the NuLink File Sharing Dapp. It includes five pages: Discover page, Faucet page, Ranking page, User Center page and Notification page.  
+
+## Discover Page  
 Click on the discover button to access discover page. In this page, user can view and search the file uploaded in the NuLink network.   
 
 ![image](../miscellaneous/img/discover.png)  
@@ -37,7 +37,18 @@ After the data owner has completed approval, the applicant can then go to this d
 
 ![image](../miscellaneous/img/approved.png)  
 
-## User Center Page
+## Faucet Page  
+Click the faucet button to claim tNLK and tBNB for later use. Each account can claim tNLK only once. Simply copy your address in the agent to claim the tNLK. And use the link to claim tBNB in bsc-testnet faucet. 
+
+![image](../miscellaneous/img/faucet.png)   
+
+## Ranking Page  
+Click the ranking-list button to check the current ranking of the file-sharing contest.   
+
+![image](../miscellaneous/img/ranking.png)  
+
+
+## User Center Page  
 Click on name/avatar thumbnail button to access user center page. In this page, user can view personal information, including Avatar Thumbnails, Nickname, Wallet Address and Personal Profile. User center page will also display “My files”, “Sent requests”, “Incoming requests” and “My vault”.  
 
 ![image](../miscellaneous/img/usercenter.png)  
