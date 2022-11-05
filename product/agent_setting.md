@@ -35,10 +35,6 @@ Backup mnemonic phrase is important to protect your assets security. So backup y
 
 ![Export Private key](../miscellaneous/img/agent/privatekey.png)
 
-## Change Password
-If you want to change the Agent password, you should restore your Mnemonic Phrase, and set new password.
-
-![Change Password](../miscellaneous/img/agent/change_password.png)
 
 ## Import Agent
 
