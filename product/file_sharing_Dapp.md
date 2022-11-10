@@ -16,7 +16,7 @@ Click on the discover button to access discover page. In this page, user can vie
 
 ![image](../miscellaneous/img/discover.png)  
 
-Discover page supports following functions: Choose some tags such us “Philosophy”, “Image” to filter the files; Search or fuzzy search by filename or partial filename; Sort files by upload time (from newest to oldest/ from oldest to newest).  
+Discover page supports following functions: Choose some tags such as “Philosophy”, “Image” to filter the files; Search or fuzzy search by filename or partial filename; Sort files by upload time (from newest to oldest/ from oldest to newest).  
 
 ![image](../miscellaneous/img/tags.png)  
 
