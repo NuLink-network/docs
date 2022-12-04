@@ -1,7 +1,7 @@
 # NuLink Agent
 
 ## What is NuLink Agent?
-NuLink Agent is a web browser extension that allows you to manage your NuLink private kay and vault data. It allows you to interact with file sharing or other dapps.
+NuLink Agent is a web browser extension that allows you to manage your NuLink private key and vault data. It allows you to interact with file sharing or other dapps.
 
 ## Install
 
@@ -55,11 +55,11 @@ At NuLink File Sharing or other DApp, when connecting to Agent, confirm the conn
 ![Payment](../miscellaneous/img/agent/payment.png)
 
 
-* Gas fee
+* Gas fee  
 The gas fee is the total, global amount paid for the transaction. It is calculated as: (base fee + priority fee) x units of gas used. Agent initially sets this amount based on the previous block’s history. However, users can edit this amount through custom settings (see below). 
 
-* Total
-To total is the total cost for the transaction, include gas fee (BNB) and service fee (NLK).
+* Total  
+Total is the total cost for the transaction, include gas fee (BNB) and service fee (NLK).
 
 ### Customize gas fee
 Gas fee refers to the transaction fee on the blockchain. It is what users pay to get their transaction validated, or completed.
