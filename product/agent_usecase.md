@@ -18,6 +18,7 @@ Click "Confirm," and the page will automatically jump back to the third-party ap
 ![Connect NuLink Agent](../miscellaneous/img/agent/confirm.png)
 
 The figure below shows the File Transfer page of the third-party application, and it is logged in with the Agent's current account. If you have not uploaded any files, please click "Upload file" to upload files first.
+
 ![File Transfer](../miscellaneous/img/agent/filetransfer.png)
 
 ## File Application
@@ -25,6 +26,7 @@ The figure below shows the File Transfer page of the third-party application, an
 The figure below shows the file details page, and clicking "Request the file" can apply for the file. Enter the number of days you want to apply for and click "Submit."
 
 ![Request File](../miscellaneous/img/agent/request_file.png)
+
 ![Request Submit](../miscellaneous/img/agent/request_submit.png)
 
 Next, the Agent will be called up for file application authorization, which includes the relevant information of the file: file name, owner address, requester address, source URL, and requested days. Click "Confirm" to authorize.

@@ -1,8 +1,7 @@
-# nulink-agent-sdk
-The SDK for third-party integration with nulink-web-agent project.
+# NuLink Agent SDK
+The SDK for third-party integration with [NuLink Agent](../product/nulink_agent.md).
 
 ## How to Use
-
 
 ### Install
 ```bash

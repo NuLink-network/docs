@@ -16,8 +16,7 @@
 ## Developers
 
 * [NuLink SDK](./dev/nulink_sdk.md)
-* [Agent SDK](./dev/agent_sdk.md)
-* [How to integrate]()
+* [NuLink Agent SDK](./dev/agent_sdk.md)
 
 ## Products
 

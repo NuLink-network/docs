@@ -51,6 +51,7 @@ If you already have an account and have saved your mnemonic, you can click "Rest
 Enter your mnemonic and then reset your password. Once completed, a success message will appear.
 
 ![Restore Account](../miscellaneous/img/agent/restore.png)
+
 ![Imported Account](../miscellaneous/img/agent/imported.png)
 
 ## Homepage
