@@ -13,18 +13,24 @@
 * [Fully Homomorphic Encryption](./crypto_primitive/fhe.md)
 
 
+## Developers
+
+* [NuLink SDK](./dev/nulink_sdk.md)
+* [Agent SDK](./dev/agent_sdk.md)
+* [How to integrate]()
+
 ## Products
 
+* [NuLink Agent](./product/nulink_agent.md)
+  * [NuLink Agent Use Case](./product/agent_usecase.md)
+  
 * [Testnet](./product/testnet.md)
 * [Staking Dapp](./product/staking_Dapp.md)
 * [NuLink Worker](./product/nulink_worker.md)
   * [Create Worker Account](./product/eth_account.md)
   * [NuLink Worker Installation](./product/worker_install.md)
   * [NuLink Worker Initialization and Running](./product/worker_running.md)  
-  * [NuLink Worker Update](./product/worker_update.md)  
-* [NuLink Agent](./product/nulink_agent.md)
-  * [NuLink Agent Setting](./product/agent_setting.md)
-  * [NuLink Agent Update](./product/agent_update.md)
+  * [NuLink Worker Update](./product/worker_update.md)
 * [NuLink File Sharing Dapp](./product/file_sharing_Dapp.md)
 
 ## Resources
