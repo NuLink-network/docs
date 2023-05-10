@@ -2,9 +2,7 @@
 
 NuLink SDK is a software development kit designed to support privacy computing in the NuLink network.
 
-## How to Use
-
-### Install via npm
+## Install via npm
 
 
 ```bash
@@ -16,7 +14,6 @@ yarn add @nulink_network/nulink-sdk
 ```
 
 ## Usage
-
 
 ```javascript
 

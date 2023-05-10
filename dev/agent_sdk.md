@@ -1,9 +1,8 @@
 # NuLink Agent SDK
 The SDK for third-party integration with [NuLink Agent](../product/nulink_agent.md).
 
-## How to Use
 
-### Install
+## Install
 ```bash
 npm i @nulink_network/nulink-web-agent-access-sdk
 ```
@@ -12,13 +11,14 @@ or
 yarn add @nulink_network/nulink-web-agent-access-sdk
 ```
 
-### Usage
-#### Api
+## Usage
+
 All APIs take a callback function as a parameter and execute the callBackFunc after the corresponding method is successfully executed.
 
 The callback function type that takes an optional parameter responseData and returns a Promise object.
 When the API call returns, the callback function is called with the responseData parameter, which is the data returned from the API call. The callback function can then process the data and handle any errors that occurred during the API call.
-- connect
+
+### connect
 
 
 ```connect``` is used for handling login functionality for nulink web agent. It opens a new window for the user to complete the login process, and then executes the callBackFunc with the login data when the login is successful.
@@ -51,7 +51,7 @@ loginResponseData : {
 }
 ```
 
-- upload
+### upload
 
 ```upload```used for uploading files and executing a callback function after the upload is successful
 ```typescript
@@ -81,7 +81,7 @@ uploadResponseData : {
     redirectUrl: string
 }
 ```
-- apply
+### apply
 
 
 ```apply``` The apply function is used for applying for filestakes, takes two parameters: applyInfo, which is an object containing information about the file to be applied for, and callBackFunc, which is the callback function to be executed after the application is successful.
@@ -121,7 +121,7 @@ applyResponseData : {
 }
 ```
 
-- approve
+### approve
 
   ```approve```is used for approving files, takes six parameters: applyId, applyUserId, applyUserAddress, days, remark, and callBackFunc.
 
@@ -154,7 +154,7 @@ approveResponseData : {
     redirectUrl: string
 }
 ```
-- download
+### download
 
 The fileDownload API provides the function of downloading files.
 

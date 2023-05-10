@@ -2,8 +2,7 @@
 
 ## Overview
 
-The NuLink Testnet is called the Horus network. It includes four parts: the NuLink Staking Dapp, the NuLink Worker Node, the NuLink Agent and the NuLink File Sharing Dapp. The NuLink Staking Dapp and the  NuLink Worker Node are used by those who want to provide cryptographic service in the Horus network; while the NuLink Agent and the NuLink File Sharing Dapp are used by those who want to use the privacy-preserving service in the Horus network. The token in the Horus network is NLK(test). Please be aware it is only used for testing purpose and has no trading value. 
-
+The NuLink Horus Testnet is a NuLink testnet environment. It includes four parts: the NuLink Staking Dapp, the NuLink Worker Node, the NuLink Agent and the NuLink File Sharing Dapp. The NuLink Staking Dapp and the  NuLink Worker Node are used by those who want to provide cryptographic service in the Horus network; while the NuLink Agent and the NuLink File Sharing Dapp are used by those who want to use the privacy-preserving service in the Horus network. The token in the Horus network is NLK(test). Please be aware it is only used for testing purpose and has no trading value. 
 
 * [**NuLink Staking Dapp:**](staking_Dapp.md) The platform for managing the staker/worker account 
 
