@@ -17,7 +17,7 @@
 * [Overview](./product/README.md)
 * [NuLink Agent](./product/nulink_agent.md)
   * [NuLink Agent Use Case](./product/agent_usecase.md)
-* [NuLink SDK](./dev/nulink_sdk.md)
+* NuLink SDK
 * [NuLink Agent SDK](./dev/agent_sdk.md)  
 * [Horus Testnet](./product/testnet.md)
   * [Staking Dapp](./product/staking_Dapp.md)
