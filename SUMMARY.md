@@ -46,7 +46,7 @@
 ## Resources
 
 * [Release Notes](./support/release_notes.md)
-  * [NuLink Agent Release Notes](notes_agent.md)
-  * [NuLink Agent SDK Release Notes](notes_agent_sdk.md)
-  * [NuLink SDK Release Notes](notes_sdk.md)
+  * [NuLink Agent Release Notes](./support/notes_agent.md)
+  * [NuLink Agent SDK Release Notes](./support/notes_agent_sdk.md)
+  * [NuLink SDK Release Notes](./support/notes_sdk.md)
 * [Frequently Asked Questions](./support/faqs.md)

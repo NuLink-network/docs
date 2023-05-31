@@ -1,6 +1,6 @@
 # Release Notes
 
-| **Project**                                                                      | **Description**                                                                                                                                                   | **Current Version **        | **Open Source ** |
+| **Project**                                                                      | **Description**                                                                                                                                                   | **Current Version**         | **Open Sourced** |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------------- |
 | [**`NuLink Agent`**](https://agent.testnet.nulink.org)                           | NuLink Agent is a web-based digital wallet that facilitates seamless communication and interaction between the NuLink network and applications.                   | [0.1.0](notes_agent.md)     | No               |
 | [**`NuLink Agent SDK`**](https://github.com/NuLink-network/nulink-web-agent-sdk) | The NuLink Agent-SDK provides developers with essential software development tools and resources to integrate NuLink Agent functionality into their applications. | [0.1.1](notes_agent_sdk.md) | Yes              |
