@@ -1,17 +1,3 @@
-# NuLink SDK
-
-NuLink SDK is a software development kit designed to support privacy computing in the NuLink network.
-
-## Install via npm
-
-
-```bash
-npm i @nulink_network/nulink-sdk
-```
-or
-```bash
-yarn add @nulink_network/nulink-sdk
-```
 
 ## Usage
 
@@ -390,7 +376,6 @@ const data = (await getFilesByStatus(
 
 assert(data && !isBlank(data) && data["total"] > 0);
 
-
 // we also can restore wallet by mnemonic
 
 //get mnemonic from current wallet
@@ -411,9 +396,8 @@ privatekeyString = privatekeyString as string;
 //When you are done using it, you can clear the browser's wallet cache data, and use the mnemonic to re-import it the next time you use it
 await logoutWallet();
 
-
 ```
 
 ## More examples
 
-[nulink-sdk-demo](https://github.com/NuLink-network/nulink-sdk-demo) 
+[nulink-sdk-demo](https://github.com/NuLink-network/nulink-sdk-demo)
