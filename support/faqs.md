@@ -29,14 +29,13 @@ In summary, NuLink Agent is the web-based digital wallet that facilitates commun
 
 To integrate NuLink Agent into your Dapp, you can follow these steps:
 
-* Install and import NuLink Agent SDK: Start by installing and import the NuLink Agent SDK in your project. This will provide you with the tools and resources needed to interact with NuLink Agent. You can refer to the [documentation]() provided with the SDK for detailed installation instructions specific to your development environment.
+* Install and import NuLink Agent SDK: Start by installing and import the NuLink Agent SDK in your project. This will provide you with the tools and resources needed to interact with NuLink Agent. You can refer to the [documentation](../dev/agent_sdk.md) provided with the Agent SDK for detailed installation instructions specific to your development environment.
 
 * Set up NuLink Agent connection: Use the SDK to establish a connection between your Dapp and NuLink Agent. This connection will allow you to send requests and receive responses from the NuLink network.
 
 * Implement callback functions: In order to handle responses and execute actions after the corresponding methods are successfully executed, you can define and implement callback functions. The NuLink Agent SDK provides a list of supported callback functions that you can use.
 
 By integrating the NuLink Agent SDK and implementing the appropriate callback functions, you can seamlessly integrate NuLink Agent functionality into your Dapp and enable secure and efficient communication with the NuLink network.
-
 
 ## Horus Testnet
 

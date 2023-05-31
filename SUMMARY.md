@@ -14,9 +14,8 @@
 
 ## Products
 
-* [Introduction](./product/README.md)
+* [Introduction](./product/overview.md)
   
-  * [Overview](./product/overview.md)
   * [Development Guide](./product/dev_guide.md)
   * [Target Audience and Use Cases](./product/target_audience_use_cases.md)
 
