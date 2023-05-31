@@ -19,3 +19,7 @@ The relationships between these components and layers are visualized in a diagra
 In addition, we offer a demonstration Dapp called "File Transfer" that showcases the integration of the NuLink Agent into an application. 
 
 * [**File Transfer:**](agent_usecase.md) The "File Transfer" Dapp serves as a third-party example, illustrating the utilization of the NuLink Agent SDK to interact with the NuLink Agent. This demonstration highlights the seamless integration and functionality provided by the NuLink Application Layer, allowing developers to leverage the NuLink network's capabilities for secure file transfers and data sharing.
+
+Furthermore, we offer a demonstration Dapp to exhibit the seamless integration of the NuLink SDK into an applications. 
+
+* [**NuLink SDK Demo:**](../dev/agent_sdk.md)This Dapp serves as an illustrative example for third-party users, demonstrating how they can incorporate the NuLink SDK to enhance interaction with their own applications. The demo showcases the integration of the NuLink SDK, enabling features such as encrypted file uploads, privacy sharing, and targeted user downloads. The SDK demo consists of two parts: the first part demonstrates the process of integrating encrypted privacy sharing, while the second part showcases the utilization of the web interface to encrypt and upload files to the distributed network for specified users. By integrating the SDK, developers can harness the capabilities of the NuLink network for secure document transfers and data sharing.
