@@ -31,6 +31,6 @@ yarn add @nulink_network/nulink-web-agent-access-sdk
 
 ## How to use
 
-See [Agent SDK example](./agent_example.md) to get how to use NuLink Agent SDK.
+See [nulink-web-agent-integration-demo](https://github.com/NuLink-network/nulink-web-agent-integration-demo.git)  to get how to use NuLink Agent SDK.
 
 Here the [Agent SDK API reference](./agent_api.md).

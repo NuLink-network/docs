@@ -13,10 +13,18 @@ When the API call returns, the callback function is called with the responseData
 type CallBackFunc =  ( responseData?:any ) => Promise<any>;
 ```
 
-[toc]
-
-
 ## Methods
+
+- [connect](#connect)
+- [upload](#upload)
+- [apply](#apply)
+- [approve](#approve)
+- [download](#download)
+- [getFileList](#getFileList)
+- [getFileDetail](#getFileDetail)
+- [getSendApplyFiles](#getSendApplyFiles)
+- [getIncomingApplyFiles](#getIncomingApplyFiles)
+
 
 ### connect
 
@@ -434,4 +442,15 @@ Function to fetch the received application files
     policy_label_id: string - Policy label ID
     hrac: string - Policy HRAC code
 }
+```
+
+#### Example
+```typescript
+const _getIncomingApplyFiles = async () => {
+    let result = await getIncomingApplyFiles(
+        proposerId, status, pageNum, pageSize
+    );
+    dealWithResultList(result);
+};
+
 ```
