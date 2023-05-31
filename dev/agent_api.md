@@ -13,7 +13,7 @@ When the API call returns, the callback function is called with the responseData
 type CallBackFunc =  ( responseData?:any ) => Promise<any>;
 ```
 
-[toc](API)
+[toc]
 
 
 ## Methods

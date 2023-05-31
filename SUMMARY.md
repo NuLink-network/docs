@@ -17,12 +17,14 @@
 * [Introduction](./product/README.md)
 * [NuLink Agent](./product/nulink_agent.md)
   * [DApp interact with NuLink Agent](./product/agent_usecase.md)
+
+* [NuLink Agent SDK](./dev/agent_sdk.md)
+  * [API Reference](./dev/agent_api.md)
+  * [Usage Example](./dev/agent_example.md)
 * [NuLink SDK](./dev/sdk_api/README.md)
   * [API Reference](./dev/sdk_api/modules.md)
   * [Usage Example](./dev/sdk_api/sdk_example.md)
-* [NuLink Agent SDK](./dev/agent_sdk.md)  
-  * [API Reference](./dev/agent_api.md)
-  * [Usage Example](./dev/agent_example.md)
+
 * [Horus Testnet](./product/testnet.md)
   * [Staking Dapp](./product/staking_Dapp.md)
   * [NuLink Worker](./product/nulink_worker.md)
