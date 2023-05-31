@@ -25,11 +25,13 @@ The NuLink Applicaiton Layer consists of three main components: NuLink Agent, Nu
 
 In summary, NuLink Agent is the web-based digital wallet that facilitates communication with the NuLink network, NuLink Agent SDK provides tools for developers to integrate NuLink Agent functionality into their applications, and NuLink SDK is a comprehensive toolkit that enables developers to establish flexible connections, perform cryptographic operations, and interact with the NuLink network. 
 
-**Q: I am a Dapp developer, how can I intergrate NuLink Agent into my Dapp?** 
+**Q: I am a Dapp developer, how can I integrate NuLink Agent into my Dapp?** 
 
 To integrate NuLink Agent into your Dapp, you can follow these steps:
 
-* Install and import NuLink Agent SDK: Start by installing and import the NuLink Agent SDK in your project. This will provide you with the tools and resources needed to interact with NuLink Agent. You can refer to the [documentation](../dev/agent_sdk.md) provided with the Agent SDK for detailed installation instructions specific to your development environment.
+* Install NuLink Agent SDK: Start by installing the NuLink Agent SDK in your project. You can refer to the [documentation](../dev/agent_sdk.md) provided with the SDK for detailed installation instructions specific to your development environment.
+
+* Import NuLink Agent SDK: Once the SDK is installed, import the necessary modules or libraries into your Dapp project. This will provide you with the tools and resources needed to interact with NuLink Agent.
 
 * Set up NuLink Agent connection: Use the SDK to establish a connection between your Dapp and NuLink Agent. This connection will allow you to send requests and receive responses from the NuLink network.
 
