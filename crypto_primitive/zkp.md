@@ -8,7 +8,7 @@ Zero-Knowledge Proof (ZKP) means that the prover makes the verifier believe that
 
 * Zero Knowledge: After the verification process, the verifier verifies that the prover has the knowledge but does not get any information about that knowledge. From the point of view of the prover, they did not breach privacy.
 
-![image](../miscellaneous/img/zkp.png)
+![Zero-Knowledge Proof (ZKP)](../miscellaneous/img/zkp.png)
 
 By whether the participants need to interact or not, Zero-Knowledge Proof can be divided into Interactive Zero-Knowledge Proof and Non-Interactive Zero-Knowledge Proof or NIZK. NIZK is suitable for decentralized scenarios. The commonly used NIZK schemes are zk-SNARK, zk-STARK, Bulletproofs, PLONK, Supersonic, Malin and so on. Each scheme has its own advantages and we can choose the appropriate one depending on the different scenarios involved. 
 
