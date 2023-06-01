@@ -2,7 +2,7 @@
 
 Fully homomorphic encryption (FHE) refers to the ability to calculate ciphertext without the private key. That is to say, for any valid f and plaintext m, there is a special property f(Enc(m)) = Enc(f(m)).
 
-![image](../miscellaneous/img/fhe.png)
+![Fully Homomorphic Encryption (FHE)](../miscellaneous/img/fhe.jpg)
 
 FHE is known as the holy grail of cryptography. This problem was proposed by Rivest in 1978. Thirty-odd years later, in 2009, Craig Gentry constructed the first FHE scheme.
 
