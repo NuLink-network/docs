@@ -28,7 +28,7 @@ NuLink will utilize FHE technology to enable privacy-preserving data computation
 
 The NuLink network integrates the Application Layer, the Cryptography Layer, the Storage Layer, the Blockchain Layer and the Watcher Network.
 
-![image](./miscellaneous/img/architecture.png)
+![Architecture of the NuLink network](./miscellaneous/img/architecture.png)
 
 1. The Application Layer: The Application Layer acts as an interface between the system and the application, facilitating direct communication with the application while also liaising with the Cryptography Layer to validate access to the application's confidential information.
 2. The Cryptograph Layer: The Cryptography Layer carries out cryptographic functions for the Application Layer, such as generating keys, encrypting, decrypting, and other related tasks. It also connects to the Storage Layer to facilitate the uploading and downloading of encrypted privacy data.
