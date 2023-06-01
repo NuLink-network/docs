@@ -6,7 +6,7 @@ Using public key encryption to transmit data has certain shortcomings and risks.
 
 IBE solves this problem by binding the user’s identity information directly to the public key. It is similar to an ideal email system: If you know someone’s identity, you can send them a letter that only they can read. You can authenticate their signature.
 
-![IBE and ABE examples](../miscellaneous/img/abe.png)
+![IBE and ABE example usage](../miscellaneous/img/abe.png)
 
 
 
