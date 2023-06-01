@@ -14,7 +14,7 @@ These components within the Application Layer work in harmony, enabling seamless
 
 The relationships between these components and layers are visualized in a diagram, highlighting the interconnectedness and collaborative nature required for the successful operation of the NuLink network.
 
-![Operation Flow](../miscellaneous/img/flow.png)
+![Operation Flow](../miscellaneous/img/flow.jpg)
 
 In addition, we offer a demonstration Dapp called "File Transfer" that showcases the integration of the NuLink Agent into an application. 
 
