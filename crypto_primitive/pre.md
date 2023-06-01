@@ -2,7 +2,7 @@
 
 Proxy re-encryption (PRE) is a type of public-key encryption (PKE) that allows a proxy entity to transform or re-encrypt data from one public key to another, without having access to the underlying plain text or private keys. The proxy re-encryption operation process is as follows:
 
-![image](../miscellaneous/img/pre.png)
+![Proxy Re-encryption operation process](../miscellaneous/img/pre.png)
 
 1. Publisher Alice encrypts the data m with her own public key into cA, then Alice sends the ciphertext cA to the proxy and generates a re-encryption key for her, which is calculated by Alice herself.
 2. Next, the proxy uses the re-encryption key to convert the ciphertext cA into a ciphertext cB that can be decrypted by Bob with his secret key and sends it to Bob. The proxy only provides computing conversion services and cannot get plaintext. 
