@@ -1,26 +1,23 @@
 [NuLink SDK - v0.0.6](./README.md) / Modules
 
-# NuLink SDK - v0.0.6
 
-## Table of contents
-
-### Enumerations
+## Enumerations
 
 - [FileType](./enums/FileType.md)
 - [FileCategory](./enums/FileCategory.md)
 
-### Classes
+## Classes
 
 - [Strategy](./classes/Strategy.md)
 - [Account](./classes/Account.md)
 - [AccountManager](./classes/AccountManager.md)
 - [NuLinkHDWallet](./classes/NuLinkHDWallet.md)
 
-### Type Aliases
+## Type Aliases
 
 - [FileInfo](./types/FileInfo.md)
 
-### Functions
+## Functions
 
 - [getPolicyServerGasFee](./functions/getPolicyServerGasFee.md)
 - [getPolicyGasFee](./functions/getPolicyGasFee.md)

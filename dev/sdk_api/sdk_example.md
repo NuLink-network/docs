@@ -1,5 +1,9 @@
 
+# NuLink SDK Examples
+
 ## Usage
+
+### Encrypt and Upload file
 
 ```javascript
 
@@ -115,6 +119,10 @@ const uploadFileInfo = resultList["list"][fileIndex];
 
 assert(uploadFileInfo["owner_id"] === accountAlice.id);
 ```
+
+
+### Request and Grant the access
+
 
 ```javascript
 // Bob, far away on the other side of the ocean, wants to use Alice's uploaded file

@@ -1,4 +1,8 @@
 
+# NuLink SDK
+
+NuLink SDK is a software development kit designed to support privacy computing in the NuLink network.
+
 ## Build & Install
 
 ### Build Source
@@ -42,9 +46,9 @@ yarn add @nulink_network/nulink-sdk
 ### The Functions
 * `Functions`: The module mainly includes interfaces for file encryption and uploading, as well as operations related to interacting with the blockchain.
 
-<!--[API](./docs/modules.md) -->
 [API Details](./modules.md)
 
 
 ## Usage Example
 
+See [NuLink SDK Examples](./sdk_example.md)  to get how to use NuLink SDK.
