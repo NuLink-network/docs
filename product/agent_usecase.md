@@ -54,3 +54,28 @@ At this time, the Agent authorization page will be called up, where you can see 
 After the approval is completed, the page will jump back to the third-party application page, and the file status will change to "Approved."
 
 ![Request Approved](../miscellaneous/img/agent/request_approved.png)
+
+## File Download
+
+Applicants revisiting the file details page of their application will see that the application has been approved and they can now download the file.
+
+![Approved File Info](../miscellaneous/img/agent/request_details.png)
+
+By clicking "Download now", as it is an encrypted file, the Agent authorization decryption page will be prompted first. The relevant information of the request can be seen, including File name, Owner's address, Applicant's address, and Source URL. 
+Clicking "Confirm" will initiate the decryption authorization.
+
+![Authorization Request](../miscellaneous/img/agent/request_auth.png)
+
+
+Once decryption is complete, a prompt will appear asking whether to proceed with the download. Clicking "Confirm" will redirect to a third-party page for downloading.
+
+![File Download Confirm](../miscellaneous/img/agent/request_download.png)
+
+The image below shows the redirected third-party page, as indicated in the bottom left corner, where the file has been successfully downloaded to the local machine via the browser.
+
+![The Main](../miscellaneous/img/agent/request_mainpage.png)
+
+
+Clicking on the file will display its contents, as shown in the image below.
+
+![File Image](../miscellaneous/img/agent/request_img.png)
