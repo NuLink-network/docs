@@ -21,6 +21,18 @@ The figure below shows the File Transfer page of the third-party application, an
 
 ![File Transfer](../miscellaneous/img/agent/filetransfer.png)
 
+## File Upload
+Click "Upload file" to upload. You can drag and drop the file into the box to upload. Also click button "UPLOAD FILE" and select files through dialog is supported.
+NuLink Agent supports all file formats, e.g. JPG, PNG, GIF, MP4, DOC, XLS, PDF, etc.
+
+**Notice: the file size can not exceed 5M bytes.**
+
+![File Upload](../miscellaneous/img/agent/upload.png)
+
+After selected file, here show the file list to be uploaded, confirm and upload these files.
+
+![List of Uploaded Files](../miscellaneous/img/agent/upload_list.png)
+
 ## File Application
 
 The figure below shows the file details page, and clicking "Request the file" can apply for the file. Enter the number of days you want to apply for and click "Submit."
