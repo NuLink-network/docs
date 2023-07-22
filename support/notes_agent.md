@@ -1,6 +1,12 @@
 # NuLink Agent Release Notes
 
-The current version is  0.1.0
+The current version is  0.1.1
+
+Version 0.1.1 (2023/07/22):
+1. Increase the sequence number display of mnemonics
+2. Support the Conflux network.
+3. Fix transfer all amount issue
+
 
 Version 0.1.0 (2023/05/15):
 
