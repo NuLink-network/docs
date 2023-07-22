@@ -1,8 +1,8 @@
 # NuLink SDK Release Notes:
 
-Version 0.1.0 (2023/07/22):
-
 The current version is  [0.1.0](https://github.com/NuLink-network/nulink-sdk/releases/tag/v0.1.0)
+
+Version 0.1.0 (2023/07/22):
 
 1. Add batch approval for file requests.
 2. Port IPFS service access to the backend.
