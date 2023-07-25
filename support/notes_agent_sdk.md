@@ -1,6 +1,14 @@
 # NuLink Agent SDK Release Notes
 
-The current version is  [0.1.1](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v_0.1.1)
+The current version is  [0.1.1](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v_0.2.0)
+
+Version 0.2.0 (2023/07/24):
+
+1.Add support for multiple networks
+2.Include batch approval function and corresponding API: batchApprove
+3.Add new APIs: getNetWorkChainId, setNetWorkChainId
+4.Fix login detection errors
+5.Resolve other persistent bugs
 
 Version 0.1.1 (2023/05/15):
 
