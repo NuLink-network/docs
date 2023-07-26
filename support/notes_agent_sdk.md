@@ -1,6 +1,6 @@
 # NuLink Agent SDK Release Notes
 
-The current version is  [0.1.1](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v_0.2.0)
+The current version is  [0.2.0](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v_0.2.0)
 
 Version 0.2.0 (2023/07/24):
 
@@ -12,8 +12,8 @@ Version 0.2.0 (2023/07/24):
 
 Version 0.1.1 (2023/05/15):
 
-1. Introduced functions for connecting, uploading, approving, applying, and downloading files.
-2. Resolved configuration issues related to Agent web address.
-3. Provided interfaces for obtaining file lists, file details, lists of applied files, and approved files.
-4. Included authentication information in backend interface requests.
-5. Addressed known bugs and implemented necessary modification
+1. Introduce functions for connecting, uploading, approving, applying, and downloading files.
+2. Resolve configuration issues related to Agent web address.
+3. Provide interfaces for obtaining file lists, file details, lists of applied files, and approved files.
+4. Include authentication information in backend interface requests.
+5. Address known bugs and implemented necessary modification
