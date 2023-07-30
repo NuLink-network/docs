@@ -51,15 +51,29 @@ After the authorization is completed, the page will jump back to the third-party
 
 ## File Approval
 
-The figure below shows the list of applications received by the author, and clicking the "Review request" button can view the application details.
+The figure below shows the list of applications received by the author.
 
 ![Request Review](../miscellaneous/img/agent/request_review.png)
 
-After reviewing the application details, click "Submit."
+* Single File Approval
+  Click on the "Review request" button next to the file in the list page to view the application details. 
+If everything looks fine, click "Submit."
+
 
 ![Request Review Submit](../miscellaneous/img/agent/request_reviewed.png)
 
-At this time, the Agent authorization page will be called up, where you can see the relevant information of the application: the addresses of both parties, the source URL, the calling method, the gas fee, and the service fee. Click "Confirm" to complete the payment and approval.
+* Batch File Approval
+Select multiple files that you want to approve, then click the "Review request" button. 
+You can view the application details for different files by clicking the "Previous" and "Next" buttons. 
+If everything looks fine, click "Submit."
+
+![Request Review Submit](../miscellaneous/img/agent/request_reviewed_batch.png)
+
+Then the Agent authorization page will be displayed, showing relevant information about the application, including the addresses of the parties involved, the source URL, the method being called, gas fees, and service fees. 
+Click "Confirm" to complete the approval process after making the payment.
+
+
+After reviewing the application details, click "Submit."
 
 ![Request Approve](../miscellaneous/img/agent/request_confirm.png)
 
@@ -91,3 +105,19 @@ The image below shows the redirected third-party page, as indicated in the botto
 Clicking on the file will display its contents, as shown in the image below.
 
 ![File Image](../miscellaneous/img/agent/request_img.png)
+
+## Multi-Network Switching
+
+Currently, Agent supports two networks: Horus (BSC Testnet) and Conflux eSpace Testnet. 
+In the future, it will also support more networks.
+
+![File Image](../miscellaneous/img/agent/network_switching.png)
+
+When switching to another network, a pop-up window will provide a prompt.
+
+![File Image](../miscellaneous/img/agent/network_switch_info.png)
+
+After switching the network, if any operation requiring Agent authorization is needed, the Agent's network will be checked to ensure it matches the network of the third-party application. 
+If they don't match, a pop-up window will prompt the user to switch Agent's network. Otherwise, the authorization for the related operation cannot proceed.
+
+![File Image](../miscellaneous/img/agent/network_switch_confirm.png)
