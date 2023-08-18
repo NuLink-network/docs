@@ -24,7 +24,9 @@ type CallBackFunc =  ( responseData?:any ) => Promise<any>;
 - [getFileDetail](#getFileDetail)
 - [getSendApplyFiles](#getSendApplyFiles)
 - [getIncomingApplyFiles](#getIncomingApplyFiles)
-
+- [getNetWorkChainId](#getNetWorkChainId)
+- [setNetWorkChainId](#setNetWorkChainId)
+- [sendCustomTransaction](#sendCustomTransaction)
 ### connect
 
   ```typescript
@@ -464,4 +466,108 @@ const _getIncomingApplyFiles = async () => {
     dealWithResultList(result);
 };
 
+```
+### getNetWorkChainId
+
+```typescript
+getNetWorkChainId()
+```
+Function to get the network info
+
+#### Parameters
+  None
+
+#### Returns
+```typescript
+    chinId: number - the network chain id
+```
+
+#### Example
+```typescript
+import { getNetWorkChainId }  from "@nulink_network/nulink-web-agent-access-sdk"
+
+const _getNetWorkChainId = async () => {
+    let chainId = await getNetWorkChainId();
+    // do something
+};
+
+```
+
+### setNetWorkChainId
+
+```typescript
+getNetWorkChainId(chainId : string )
+```
+Function to get the network info
+
+#### Parameters
+```typescript
+    chainId : string - the network chain id which you will set
+```
+
+#### Returns
+ None
+
+#### Example
+```typescript
+import { setNetWorkChainId }  from "@nulink_network/nulink-web-agent-access-sdk"
+
+const _setNetWorkChainId = async () => {
+    await getNetWorkChainId(97);
+    // do something
+};
+
+```
+### sendCustomTransaction
+
+```typescript
+  sendCustomTransaction(callBackFunc:CallBackFunc, toAddress: string, rawTxData?: string, value?: string, gasPrice?: string)
+```
+send custom transaction by agent website
+
+#### Parameters
+- Promise: CallBackFunc - A callback function that will be called with the response data from the server.
+- toAddress: string - The recevier of the transaction.
+- rawTxData?: string - The call data of the transaction, can be empty for simple value transfers.
+- value?: string - The value of the transaction in wei.
+- gasPrice?: string - The gas price (wei) set by this transaction, if empty, it will use web3.eth.getGasPrice()
+
+#### Returns
+```typescript
+{
+  accountAddress: string - the address of the logged-in user
+  accountId: string - the Id of the logged-in user
+  toAddress: string - The receiving address
+  rawTxData?: string - The call data of the transaction
+  value?: string - The value of the transaction in wei
+  gasPrice?: string - The gas price (wei) set by this transaction
+  action: string - "transaction"
+  subAction?: string
+  result: string - 'success' or 'filed'
+  transactionHash?: string - the transaction hash, if success
+  errorMsg?: any - the error message
+}
+```
+
+#### Example
+```typescript
+import {
+  sendCustomTransaction
+} from "@nulink_network/nulink-web-agent-access-sdk";
+
+const sendTransaction = async () => {
+  await sendCustomTransaction(sendTransactionCallBack, toAddress, null, value)
+}
+
+const sendTransactionCallBack = async (data) => {
+  try {
+    if ('success' == data.result){
+        //do something
+    } else {
+        //do something
+    }
+  } catch (error) {
+    throw new Error("Transaction failed, Please try again");
+  }
+};
 ```
