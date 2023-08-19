@@ -20,7 +20,7 @@ type CallBackFunc =  ( responseData?:any ) => Promise<any>;
 - [apply](#apply)
 - [approve](#approve)
 - [download](#download)
-- [getFileList](#getFileList)
+- [getFileList](#getfilelist)
 - [getFileDetail](#getFileDetail)
 - [getSendApplyFiles](#getSendApplyFiles)
 - [getIncomingApplyFiles](#getIncomingApplyFiles)
