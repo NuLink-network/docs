@@ -21,12 +21,12 @@ type CallBackFunc =  ( responseData?:any ) => Promise<any>;
 - [approve](#approve)
 - [download](#download)
 - [getFileList](#getfilelist)
-- [getFileDetail](#getFileDetail)
-- [getSendApplyFiles](#getSendApplyFiles)
-- [getIncomingApplyFiles](#getIncomingApplyFiles)
-- [getNetWorkChainId](#getNetWorkChainId)
-- [setNetWorkChainId](#setNetWorkChainId)
-- [sendCustomTransaction](#sendCustomTransaction)
+- [getFileDetail](#getfiledetail)
+- [getSendApplyFiles](#getsendapplyfiles)
+- [getIncomingApplyFiles](#getincomingapplyfiles)
+- [getNetWorkChainId](#getnetworkchainid)
+- [setNetWorkChainId](#setnetworkchainid)
+- [sendCustomTransaction](#sendcustomtransaction)
 ### connect
 
   ```typescript
