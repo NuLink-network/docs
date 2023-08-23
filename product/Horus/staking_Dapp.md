@@ -14,7 +14,7 @@ In order to use NuLink Staking Dapp for the Horus network, the user needs to get
 
 NuLink currently supports only METAMASK wallet. Users need to [download](https://metamask.io/download/) and install METAMASK wallet ahead. If you need more help with METAMASK usage, please refer [here](https://metamask.io/faqs/). Please create an account for staking in METAMASK after installation. 
 
-Once create a staking account in METAMASK  wallet, login and connect the staking account in [Nulink Staking Dapp](https://test-staking.nulink.org). Click the "Connect Wallet" at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.  
+Once create a staking account in METAMASK  wallet, login and connect the staking account in [Nulink Staking Dapp](https://www.nulink.org). Click the "Connect Wallet" at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.  
 
 ![image](../miscellaneous/img/connectWallet.png)  
 
