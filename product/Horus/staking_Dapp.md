@@ -3,7 +3,7 @@
 ## Overview
 Nulink Staking Dapp is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bind Woker account to get the reward. You can access Nulink Staking Dapp through this [link](https://www.nulink.org).
 
-In order to use NuLink Staking Dapp for the Horus network, the user needs to get the initial fund of NLKs(test) and BNBs(test) on [faucet](https://test-staking.nulink.org/faucet). 
+In order to use NuLink Staking Dapp for the Horus network, the user needs to get the initial fund of NLKs(test) and BNBs(test) on [faucet](https://www.nulink.org). 
 
 
 
