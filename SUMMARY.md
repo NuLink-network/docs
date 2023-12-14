@@ -40,7 +40,7 @@
 
 
 * [Horus2.0 Testnet](./product/testnet.md)
-  * [Testnet Integration Status](./product/Horus/agent_snaps_integration.md)
+  * [Testnet Milestones](./product/horus/horus_milestones.md)
 
 ## Resources
 

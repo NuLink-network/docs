@@ -12,7 +12,7 @@ The NuLink Staking Dashboard is a user-friendly interface designed to empower st
 - **Monitoring Contributions:** Stakers can track their contributions to the network, gaining insights into their impact on the NuLink ecosystem.
 - **Ensuring Smooth Operation:** Stakers can utilize the dashboard to ensure the smooth operation of NuLink services, addressing any issues promptly.
 
-Learn more about the [NuLink Staking Dashboard](./staker/staking_Dapp.md).
+Learn more about the [NuLink Staking Dashboard](./staker/dashboard.md).
 
 ## NuLink Worker Installer
 

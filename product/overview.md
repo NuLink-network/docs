@@ -30,10 +30,10 @@ The demand side in NuLink involves users who pay NLK to obtain services from the
 [**DApp builders**](dapp_builders.md) play a crucial role in integrating NuLink's data privacy services into their products. NuLink provides two powerful SDKs to facilitate seamless integration:
 
 
-* [**NuLink Agent SDK:**](./staker/agent_sdk.md)The NuLink Agent SDK equips developers with essential software development tools and resources. It empowers them to seamlessly integrate NuLink Agent functionality into their applications. This SDK enables secure and efficient communication between DApps and the NuLink network.
+* [**NuLink Agent SDK:**](./builder/agent_sdk.md)The NuLink Agent SDK equips developers with essential software development tools and resources. It empowers them to seamlessly integrate NuLink Agent functionality into their applications. This SDK enables secure and efficient communication between DApps and the NuLink network.
 
 
-* [**NuLink SDK:**](./staker/agent_sdk.md)The NuLink SDK is a robust and comprehensive software development kit designed to provide developers with extensive capabilities. It facilitates flexible connections with the NuLink network, enabling advanced cryptographic operations and seamless interaction. Developers can leverage the NuLink SDK to unlock the full potential of the NuLink ecosystem, ensuring enhanced security and privacy for their applications.
+* [**NuLink SDK:**](./builder/agent_sdk.md)The NuLink SDK is a robust and comprehensive software development kit designed to provide developers with extensive capabilities. It facilitates flexible connections with the NuLink network, enabling advanced cryptographic operations and seamless interaction. Developers can leverage the NuLink SDK to unlock the full potential of the NuLink ecosystem, ensuring enhanced security and privacy for their applications.
 
 
 
