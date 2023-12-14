@@ -1,8 +1,9 @@
 # Introduction
 
-NuLink network is a decentralized solution for privacy-preserving application developers to implement the best practices and best-of-breed security and privacy. The NuLink network provides endpoint encryption and cryptographic access control. Sensitive user data can be securely shared from any user platform to cloud or decentralized storage and access to that data is granted automatically by policy in either Proxy Re-Encryption or Attribute-Based Encryption. For the data user on the other side, Zero-Knowledge Proof can help them verify the data source. In more advanced privacy-preserving use cases, NuLink uses Fully Homomorphic Encryption to customize enterprise-level data computation services.
 
-The Nulink technology platform consists of blockchain, access control (Proxy Re-Encryption, Attribute-Based Encryption) and secure computation (Zero-Knowledge Proof, Secure Multi-party Computation, Fully Homomorphic Encryption) as its technical core. It provides enterprise-level data sharing and computation services.
+NuLink, as a Web3-based ZK Provable Data Privacy Solution for DApps(Decentralized Applications), is revolutionizing the landscape of Dapps. This cutting-edge platform empowers application developers with a comprehensive suite of security and privacy features, meticulously designed to adhere to industry best practices.
+
+The NuLink technology platform is a fusion of a robust blockchain foundation, access control mechanisms (Proxy Re-Encryption, Attribute-Based Encryption), and secure computation protocols (Zero-Knowledge Proof, Secure Multi-party Computation, Fully Homomorphic Encryption). This technical foundation establishes NuLink as an integral and indispensable solution for data sharing and computation services, particularly tailored for the realm of preserving data privacy.
 
 ## Solution
 
