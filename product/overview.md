@@ -30,10 +30,10 @@ The demand side in NuLink involves users who pay NLK to obtain services from the
 [**DApp builders**](dapp_builders.md) play a crucial role in integrating NuLink's data privacy services into their products. NuLink provides two powerful SDKs to facilitate seamless integration:
 
 
-* [**NuLink Agent SDK:**](./staker/nulink_sdk.md)The NuLink Agent SDK equips developers with essential software development tools and resources. It empowers them to seamlessly integrate NuLink Agent functionality into their applications. This SDK enables secure and efficient communication between DApps and the NuLink network.
+* [**NuLink Agent SDK:**](./staker/agent_sdk.md)The NuLink Agent SDK equips developers with essential software development tools and resources. It empowers them to seamlessly integrate NuLink Agent functionality into their applications. This SDK enables secure and efficient communication between DApps and the NuLink network.
 
 
-* [**NuLink SDK:**](./staker/nulink_sdk.md)The NuLink SDK is a robust and comprehensive software development kit designed to provide developers with extensive capabilities. It facilitates flexible connections with the NuLink network, enabling advanced cryptographic operations and seamless interaction. Developers can leverage the NuLink SDK to unlock the full potential of the NuLink ecosystem, ensuring enhanced security and privacy for their applications.
+* [**NuLink SDK:**](./staker/agent_sdk.md)The NuLink SDK is a robust and comprehensive software development kit designed to provide developers with extensive capabilities. It facilitates flexible connections with the NuLink network, enabling advanced cryptographic operations and seamless interaction. Developers can leverage the NuLink SDK to unlock the full potential of the NuLink ecosystem, ensuring enhanced security and privacy for their applications.
 
 
 
@@ -42,13 +42,13 @@ The demand side in NuLink involves users who pay NLK to obtain services from the
 [**DApp users**](dapp_users.md) benefit from NuLink's data privacy-focused solutions once DApps are connected to the NuLink network using SDKs. Users can interact with NuLink Agent or Snaps in DApp to manage their privacy data using private keys:
 
 
-* [**NuLink Agent:**](./users/nulink_agent.md) NuLink Agent is a web-based digital wallet that facilitates seamless communication and interaction between the NuLink network and applications. It acts as an intermediary, relaying requests and responses between applications and the underlying layers of the NuLink network.
+* [**NuLink Agent:**](./user/nulink_agent.md) NuLink Agent is a web-based digital wallet that facilitates seamless communication and interaction between the NuLink network and applications. It acts as an intermediary, relaying requests and responses between applications and the underlying layers of the NuLink network.
 
 
-* [**NuLink Snaps(Coming soon):**](./users/nulink_snaps.md) NuLink Snaps serves as a decentralized end-to-end data management tool designed for Web3 Dapps, providing users with a unique perspective on data privacy and access control. Operating as a specialized iteration of MetaMask Snaps, NuLink Snaps leverages the private key stored in MetaMask to efficiently manage digital assets and privacy data. This bespoke solution grants Dapp users intricate control over the access rights to their private data. With NuLink Snaps' tailored features, users can confidently store and share their data while maintaining control, eliminating the need to delegate authority to Dapp Admins.
+* [**NuLink Snaps(Coming soon):**](./user/nulink_snaps.md) NuLink Snaps serves as a decentralized end-to-end data management tool designed for Web3 Dapps, providing users with a unique perspective on data privacy and access control. Operating as a specialized iteration of MetaMask Snaps, NuLink Snaps leverages the private key stored in MetaMask to efficiently manage digital assets and privacy data. This bespoke solution grants Dapp users intricate control over the access rights to their private data. With NuLink Snaps' tailored features, users can confidently store and share their data while maintaining control, eliminating the need to delegate authority to Dapp Admins.
 
 
-* [**Demostration Dapp:**](./users/agent_usecase.md) The "File Transfer" Dapp serves as a third-party example, demonstrating the use of the NuLink Agent SDK to interact with the NuLink Agent. This showcase underscores the effortless integration and functionality made possible by the NuLink Application Layer, empowering developers to harness the capabilities of the NuLink network for secure file transfers and data sharing.
+* [**Demostration Dapp:**](./user/agent_usecase.md) The "File Transfer" Dapp serves as a third-party example, demonstrating the use of the NuLink Agent SDK to interact with the NuLink Agent. This showcase underscores the effortless integration and functionality made possible by the NuLink Application Layer, empowering developers to harness the capabilities of the NuLink network for secure file transfers and data sharing.
 
 
 ## Horus2.0 Testnet
