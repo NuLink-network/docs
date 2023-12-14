@@ -4,7 +4,7 @@ DApp users play a pivotal role in the NuLink ecosystem by leveraging the platfor
 
 ## NuLink Agent
 
-[NuLink Agent](./product/user/nulink_agent.md) serves as a versatile web-based digital wallet, fostering smooth communication between DApps and the NuLink network. Acting as a secure intermediary, it facilitates requests and responses, enhancing the overall user experience.
+[NuLink Agent](./user/nulink_agent.md) serves as a versatile web-based digital wallet, fostering smooth communication between DApps and the NuLink network. Acting as a secure intermediary, it facilitates requests and responses, enhancing the overall user experience.
 
 
 ### Key Features:
@@ -20,7 +20,7 @@ DApp users play a pivotal role in the NuLink ecosystem by leveraging the platfor
 
 ## NuLink Snaps (Coming Soon)
 
-[NuLink Snaps](./product/user/nulink_snaps.md) introduces a groundbreaking approach to decentralized data management for Web3 DApps. This upcoming tool utilizes Private Key signatures, intergraed into MetaMask, offering users control over both digital assets and data privacy.
+[NuLink Snaps](./user/nulink_snaps.md) introduces a groundbreaking approach to decentralized data management for Web3 DApps. This upcoming tool utilizes Private Key signatures, intergraed into MetaMask, offering users control over both digital assets and data privacy.
 
 
 

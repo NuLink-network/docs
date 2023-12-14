@@ -24,4 +24,4 @@ Horus2.0 is NuLink's dedicated testnet designed for developers and community mem
 
 ## Get Started
 
-Please check our [**testnet milestones**](./product/horus/horus_milestones.md) for the latest update.
+Please check our [**testnet milestones**](./horus/horus_milestones.md) for the latest update.

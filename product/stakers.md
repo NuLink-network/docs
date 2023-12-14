@@ -12,15 +12,15 @@ The NuLink Staking Dashboard is a user-friendly interface designed to empower st
 - **Monitoring Contributions:** Stakers can track their contributions to the network, gaining insights into their impact on the NuLink ecosystem.
 - **Ensuring Smooth Operation:** Stakers can utilize the dashboard to ensure the smooth operation of NuLink services, addressing any issues promptly.
 
-Learn more about the [NuLink Staking Dashboard](./product/staker/staking_Dapp.md).
+Learn more about the [NuLink Staking Dashboard](./staker/staking_Dapp.md).
 
 ## NuLink Worker Installer
 
 The NuLink Worker Installer simplifies the deployment of NuLink worker nodes, enabling stakers to contribute computing resources to the NuLink network efficiently. The installation process involves:
 
-1. [**Creating Worker Account:**](./product/staker/eth_account.md) Stakers need to create a dedicated worker account to manage their worker node.
-2. [**Worker Installation:**](./product/staker/worker_install.md) Detailed instructions on installing the NuLink worker on the staker's infrastructure.
-3. [**Initialization and Running:**](./product/staker/worker_running.md) Guidance on initializing and running the NuLink worker node for optimal performance.
-4. [**Worker Update:**](./product/staker/worker_update.md) Information on updating the NuLink worker to the latest version for access to new features and improvements.
+1. [**Creating Worker Account:**](./staker/eth_account.md) Stakers need to create a dedicated worker account to manage their worker node.
+2. [**Worker Installation:**](./staker/worker_install.md) Detailed instructions on installing the NuLink worker on the staker's infrastructure.
+3. [**Initialization and Running:**](./staker/worker_running.md) Guidance on initializing and running the NuLink worker node for optimal performance.
+4. [**Worker Update:**](./staker/worker_update.md) Information on updating the NuLink worker to the latest version for access to new features and improvements.
 
-Explore the [NuLink Worker Installer](./product/staker/nulink_worker.md) for step-by-step instructions.
+Explore the [NuLink Worker Installer](./staker/nulink_worker.md) for step-by-step instructions.
