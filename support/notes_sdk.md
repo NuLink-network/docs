@@ -2,6 +2,15 @@
 
 The current version is  [0.1.0](https://github.com/NuLink-network/nulink-sdk/releases/tag/v0.1.0)
 
+Version 0.5.0 (unstable):
+
+1. Support the cross-chain function
+2. Optimize the sdk interface logic
+3. Update to the latest nulink-contract for the sdk
+4. Added batch approval function to sdk
+5. Update dependent packages for sdk
+6. Fix bugs
+   
 Version 0.1.0 (2023/07/22):
 
 1. Add batch approval for file requests.
