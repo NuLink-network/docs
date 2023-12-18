@@ -25,6 +25,7 @@
     * [NuLink Worker Installation](./product/staker/worker_install.md)
     * [NuLink Worker Initialization and Running](./product/staker/worker_running.md)  
     * [NuLink Worker Update](./product/staker/worker_update.md)
+	* [NuLink Worker Bond Update](./product/staker/worker_bond_update.md)
 
 * [NuLink for DApp Builders](./product/dapp_builders.md)
   * [NuLink SDK](./product/builder/sdk_api/README.md)
