@@ -82,7 +82,7 @@ If the staking account or the worker account is lost(this means either you can n
 
     ```shell
     $ docker run -it --rm \
-    -p 9152:9151  \
+    -p 9151:9151  \
     -v /root/nulink:/code \
     -v /root/nulink:/home/circleci/.local/share/nulink \
     -e NULINK_KEYSTORE_PASSWORD \
@@ -101,13 +101,13 @@ If the staking account or the worker account is lost(this means either you can n
     ```shell
     $ docker run --restart on-failure -d \
     --name ursula \
-    -p 9152:9151 \
+    -p 9151:9151 \
     -v /root/nulink:/code \
     -v /root/nulink:/home/circleci/.local/share/nulink \
     -e NULINK_KEYSTORE_PASSWORD \
     -e NULINK_OPERATOR_ETH_PASSWORD \
     nulink/nulink nulink ursula run \
-    --rest-port 9152 \
+    --rest-port 9151 \
     --config-file /home/circleci/.local/share/nulink/ursula.json  \
     --no-block-until-ready
     ```

@@ -292,11 +292,11 @@ Starting services
 ✓ Operator 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93 is bonded to staking provider 0xf3D6ad89E34b1Cf8325EA614fa901eA4F34Be14a
 ✓ Operator already confirmed.  Not starting worktracker.
 ✓ Start Operator Bonded Tracker
-✓ Rest Server https://8.219.188.70:9157
+✓ Rest Server https://8.219.188.70:9151
 Working ~ Keep Ursula Online!
 ```
 
-Now the Worker address(e.g: 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93) and Node URI(e.g: https://8.219.188.70:9157)  are ready for bonding operation.
+Now the Worker address(e.g: 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93) and Node URI(e.g: https://8.219.188.70:9151)  are ready for bonding operation.
 
 
 

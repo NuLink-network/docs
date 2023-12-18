@@ -22,5 +22,5 @@ The NuLink Worker Installer simplifies the deployment of NuLink worker nodes, en
 2. [**Worker Installation:**](./staker/worker_install.md) Detailed instructions on installing the NuLink worker on the staker's infrastructure.
 3. [**Initialization and Running:**](./staker/worker_running.md) Guidance on initializing and running the NuLink worker node for optimal performance.
 4. [**Worker Update:**](./staker/worker_update.md) Information on updating the NuLink worker to the latest version for access to new features and improvements.
-
+5. [**Worker Bond Update:**](./staker/worker_bond_update.md) Steps to follow for rebonding NuLink worker after unbonding or unstaking.
 Explore the [NuLink Worker Installer](./staker/nulink_worker.md) for step-by-step instructions.
