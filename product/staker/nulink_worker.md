@@ -36,14 +36,14 @@ Initialize the configuration and start the Worker Node. If install via docker, n
 
 ## Bond the Worker node with your staking account  
 
-Don't forget to bond it with your staking account to get reward after successfully running a NuLink Worker node using the NuLink Staking Dapp. 
+Don't forget to bond it with your staking account to get reward after successfully running a NuLink Worker node using the NuLink Staking Dashboard. 
 
-- Navigate to [NuLink Staking Dapp](https://dashboard.testnet.nulink.org)
+- Navigate to [NuLink Staking Dashboard](https://dashboard.testnet.nulink.org)
 - Connect with the Staking account and make sure you have staked tokens in the staking pool
 - Enter the Worker address to bond
 - Click “Bond Worker”
 
-Refer [here](./staking_Dapp.md) for more usage of NuLink Staking Dapp.
+Refer [here](./dashboard.md) for more usage of NuLink Staking Dashboard.
 
 
 

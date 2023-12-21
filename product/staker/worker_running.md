@@ -2,7 +2,7 @@
 
 If install the Worker node via Docker, please initialize and run it using Docker as well.  And if install the Worker node via local installation, please read local operation part.  
 
-**Make sure putting a small amount of BNB(test) to the worker account for sending one confirmation transaction.**
+**Make sure putting a small amount of native token(tBNB) to the worker account for sending one confirmation transaction.**
 
 
 ## Run Node via Docker (Recommended)  
@@ -145,8 +145,8 @@ aa3a0f6376b566473cbcde46b0e772feb4d3658188d2cbb424a1e94588d6d8eb
 
 
 
-### Check Node URI for Worker Account
-The following command describes how to view worker addresses.
+### Check Node Status for Worker Account
+The following command describes how to view worker status.
 
 ```shell
     docker logs -f <docker name>
@@ -169,7 +169,18 @@ Working ~ Keep Ursula Online!
 
 ```
 
-Now the Node URI(e.g: https://8.219.186.125:9151) and Worker address(e.g: 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee)  are ready for bonding operation.
+Now the Worker address(e.g: 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee)  is ready for bonding operation.
+
+### Restart the Worker Node
+
+Occasionally, the staker may find it necessary to restart the worker node. Below is the command for restarting the currently running nodes:
+
+```shell
+$ docker restart  <container ID>
+
+```
+
+
 
 ## Run Node via Local Operation  
 
@@ -296,9 +307,16 @@ Starting services
 Working ~ Keep Ursula Online!
 ```
 
-Now the Worker address(e.g: 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93) and Node URI(e.g: https://8.219.188.70:9151)  are ready for bonding operation.
+Now the Worker address(e.g: 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93) is ready for bonding operation.
 
+### Restart the Worker Node
 
+Occasionally, the staker may find it necessary to restart the worker node. Below is the command for restarting the currently running nodes:
 
-Remark: If you use a LAN address in the first step, please use --no-ip-checkup. If you start the node without bonding, use --no-block-until-ready
+```shell
+screen -x nulink-worker // use this command if you run the worker node in a screen session
 
+press ctrl+c
+
+nulink ursula run --rest-port 9151 --no-block-until-ready
+```
