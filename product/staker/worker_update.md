@@ -112,7 +112,7 @@ If the staking account or the worker account is lost(this means either you can n
     --no-block-until-ready
     ```
 
-8. Check the node running status and bond the new worker account to new staking account in [Dapp](https://test-staking.nulink.org/).  
+8. Check the node running status and bond the new worker account to new staking account in [Dapp](https://dashboard.testnet.nulink.org/).  
 
 ## Update in local environment
 
@@ -198,4 +198,4 @@ If the staking account or the worker account is lost(this means either you can n
       
    nulink ursula run --rest-port 9151 --no-block-until-ready
    ```
-7. Check the node running status and bond the new worker account to new staking account in [Dashboard](https://test-staking.nulink.org/).    
+7. Check the node running status and bond the new worker account to new staking account in [Dashboard](https://dashboard.testnet.nulink.org/).    
