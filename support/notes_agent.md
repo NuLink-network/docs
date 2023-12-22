@@ -1,6 +1,12 @@
 # NuLink Agent Release Notes
 
-The current version is  0.1.1
+The current version is  0.5.0
+Version 0.5.0 (2023/12/22):
+1. Fixed some bugs.
+2. Added cross-chain support to the code logic.
+3. Updated some dependency packages.
+4. Updated the Nulink contract to the latest version.
+5. Added batch approval functionality.
 
 Version 0.1.1 (2023/07/22):
 1. Add the sequence number display of mnemonics
