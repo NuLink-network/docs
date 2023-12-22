@@ -1,6 +1,7 @@
 # NuLink Agent SDK Release Notes
 
 The current version is  [0.5.0](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v_0.5.0)
+
 Version 0.5.0 (2023/12/22):
 
 1. add backup node param in approve api.
