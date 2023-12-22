@@ -1,6 +1,7 @@
 # NuLink Agent Release Notes
 
 The current version is  0.5.0
+
 Version 0.5.0 (2023/12/22):
 1. Fixed some bugs.
 2. Added cross-chain support to the code logic.
