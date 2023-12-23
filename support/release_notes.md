@@ -5,7 +5,7 @@
 | **Project**                                                                      | **Description**                                                                                                                                                   | **Current Version**         | **Open Sourced** |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------------- |
 | [**`NuLink Worker Node`**](https://github.com/NuLink-network/nulink-core)                          | The NuLink Worker Node is the node to provide cryptographic service in the NuLink network. It provides Proxy Re-encryption service in the Horus network and it will provide more services such as ABE, IBE, ZKP and FHE in NuLink mainnet. .                   | [0.5.0](notes_worker.md)     | Yes               |
-| **`NuLink Staking Dashboard`** | A user-friendly interface empowering stakers to efficiently manage staking activities. It allows them to stake token, bond node, monitor contributions, track rewards, and ensure the smooth operation of NuLink services. | 0.5.0 | No              |
+| **`NuLink Staking Dashboard`** | A user-friendly interface empowering stakers to efficiently manage staking activities. It allows them to stake token, bond node, monitor contributions, track rewards, and ensure the smooth operation of NuLink services. | [0.5.0](notes_horus.md) | No              |
 
 
 ## For DApp Builders In Demand Side
