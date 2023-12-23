@@ -2,7 +2,7 @@
 
 The current version is  [0.5.0](https://github.com/NuLink-network/nulink-sdk/releases/tag/v5.0.0_2288856)
 
-## Version 0.5.0 (2023/12/20):
+## v0.5.0 (2023/12/20):
 
 1. Fixed some SDK interface bugs
 2. Added cross-chain logic support to the SDK
@@ -12,14 +12,14 @@ The current version is  [0.5.0](https://github.com/NuLink-network/nulink-sdk/rel
 6. Added batch approval functionality to the SDK
 
    
-## Version 0.1.0 (2023/07/22):
+## v0.1.0 (2023/07/22):
 
 1. Add batch approval for file requests.
 2. Port IPFS service access to the backend.
 3. Add support for multiple networks.
 4. Support the Conflux network.
 
-## Version 0.0.6 (2023/05/15):
+## v0.0.6 (2023/05/15):
 
 1. Initial release of NuLink SDK.
 2. Added support for secure file transfer and data sharing.
