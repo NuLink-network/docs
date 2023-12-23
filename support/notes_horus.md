@@ -1,4 +1,4 @@
-# Release Notes
+# NuLink Dashboard Release Notes
 
 The current version is  [v0.5.0](https://dashboard.testnet.nulink.org/)
 
