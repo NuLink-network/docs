@@ -1,6 +1,6 @@
 # NuLink Agent Release Notes
 
-The current version is  0.5.0
+The current version is  [0.5.0](https://agent.testnet.nulink.org/)
 
 Version 0.5.0 (2023/12/22):
 1. Fixed some bugs.
