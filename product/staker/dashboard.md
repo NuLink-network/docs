@@ -3,7 +3,7 @@
 ## Overview
 Nulink Staking Dashboard is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bind Woker account to get the reward. You can access Nulink Staking Dapp through this [link](https://dashboard.testnet.nulink.org).
 
-In order to use NuLink Staking Dapp for the Horus network, the user needs to get the initial fund of NLKs(test) and BNBs(test) on [faucet](https://dashboard.testnet.nulink.org/faucet). 
+In order to use NuLink Staking Dapp for the Horus network, the user needs to get the initial fund of NLKs(test) and BNBs(test) on [faucet](https://dashboard.testnet.nulink.org/).
 
 
 
@@ -25,7 +25,7 @@ After connecting with METAMASK Wallet, the system will automatically detect whet
 **Remark:** The default RPC server for BSC testnet sometime is unstable. If you find the current server is done, please find an active one [here](https://chainlist.org/)  and replace it in METAMASK network setting. Need [help](https://metamask.zendesk.com/hc/en-us/articles/4404424659995-User-Guide-Custom-networks-and-sidechains) editing RPC server in METAMASK?
 
 ### Step2- Stake NLKs(test) to the staking pool
-Once log in with METAMASK wallet, please check the balance and click the "Staking" button to stake tokens to the staking pool. Make sure [claim](https://dashboard.testnet.nulink.org/faucet) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember bonding an active worker after staking, otherwise no reward will be issued. 
+Once log in with METAMASK wallet, please check the balance and click the "Staking" button to stake tokens to the staking pool. Make sure [claim](https://dashboard.testnet.nulink.org/) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember bonding an active worker after staking, otherwise no reward will be issued. 
 
 ![image](../miscellaneous/img/staking.png)  
 
