@@ -129,7 +129,7 @@ nulink/nulink nulink ursula run --no-block-until-ready
 
 Example Input：
 ```shell
-$ docker run --restart on-failure -d \
+docker run --restart on-failure -d \
 --name ursula \
 -p 9151:9151 \
 -v /root/nulink:/code \
@@ -151,11 +151,11 @@ aa3a0f6376b566473cbcde46b0e772feb4d3658188d2cbb424a1e94588d6d8eb
 The following command describes how to view worker status.
 
 ```shell
-    docker logs -f <docker name>
+docker logs -f <docker name>
 ```
 Example Input:
 ```shell
-    $ docker logs -f ursula
+docker logs -f ursula
 ```
 Example Output:
 ```shell
