@@ -24,7 +24,7 @@ NuLink can be run either from a docker container or via local installation. Runn
    ```
    **Please ensure that this directory has 777 permissions**:
    ```shell
-    chmod -R 777 /root/nulink
+   chmod -R 777 /root/nulink
    ```
 
 
