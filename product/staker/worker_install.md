@@ -79,26 +79,22 @@ pip install virtualenv
     Activate your virtual environment, if not activated already:
 
     ```shell
-    
     source /root/nulink-venv/bin/activate
-    
-    
-    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# 
-    
     ```
 
     Next, verify nulink is importable. No response is successful, silence is golden:
 
     ```shell
-    
     python -c "import nulink"
-    
     ```
 
     Then, run the nulink --help command:
 
     ```shell
-    
+    nulink --help
+    ```
+    You will get this output:
+    ```shell
     Usage: nulink [OPTIONS] COMMAND [ARGS]...
     
     
@@ -134,10 +130,7 @@ pip install virtualenv
     
       unbond    Unbonds an operator from an authorized staking provider.
     
-      ursula    "Ursula the Untrusted" PRE Re-encryption node management...
-    
-    root@iZt4niz7s1ss0908w31u5pZ:~# 
-    
+      ursula    "Ursula the Untrusted" PRE Re-encryption node management...   
     ```
 
 
