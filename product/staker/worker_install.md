@@ -52,20 +52,13 @@ pip install virtualenv
     Create a virtual environment in a folder somewhere on your machine. This virtual environment is a self-contained directory tree that will contain a python installation for a particular version of Python, and various installed packages needed to run the node.
 
     ```shell
-    
     virtualenv /root/nulink-venv
-    
-    ...
-    
     ```
 
 2. Activate the newly created virtual environment
 
     ```shell
-    
     source /root/nulink-venv/bin/activate
-    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# 
-    
     ```
 
 3. [Download built package](https://download.nulink.org/release/core/nulink-0.5.0-py3-none-any.whl) or [Download source package](https://download.nulink.org/release/core/nulink-0.5.0.tar.gz) and install the Nulink package
