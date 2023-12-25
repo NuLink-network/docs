@@ -55,7 +55,7 @@ Replace the following values with your own value:
 Example Input:
 
 ```shell
-$ docker run -it --rm \
+docker run -it --rm \
 -p 9151:9151 \
 -v /root/nulink:/code \
 -v /root/nulink:/home/circleci/.local/share/nulink \
