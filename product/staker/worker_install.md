@@ -74,7 +74,7 @@ pip install virtualenv
     
     (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# wget https://download.nulink.org/release/core/nulink-0.5.0-py3-none-any.whl
       
-    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install nulink-0.2.0-py3-none-any.whl
+    (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install nulink-0.5.0-py3-none-any.whl
     
     ```
 
