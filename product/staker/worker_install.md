@@ -8,7 +8,7 @@ NuLink can be run either from a docker container or via local installation. Runn
 1. Install [Docker Engine](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 2. Pull the latest NuLink image.
     ```shell
-    $ docker pull nulink/nulink:latest
+    docker pull nulink/nulink:latest
     ```
 
 3. Create a directory in your host machine for later usage.
