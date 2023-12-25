@@ -32,7 +32,9 @@ NuLink can be run either from a docker container or via local installation. Runn
 
 
 NuLink supports Python 3.9. If you don’t already have it, install [Python](https://www.python.org/downloads/).
-
+```shell
+apt install python3-pip
+```
 
 In order to isolate global system dependencies from nulink-specific dependencies, we highly recommend using python-virtualenv to install nulink inside a dedicated virtual environment.
 
@@ -41,9 +43,7 @@ For full documentation on [virtualenv see](https://virtualenv.pypa.io/en/latest/
 
 
 ```shell
-
 pip install virtualenv
-
 ```
 
 
