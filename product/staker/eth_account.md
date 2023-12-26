@@ -10,26 +10,26 @@ This section will demonstrate how to generate a Worker account using the officia
 
 
 1. Download [Geth](https://geth.ethereum.org/downloads/), select the installation packages of various versions applicable to different systems.
+```shell
+wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.23-d901d853.tar.gz
+```
 2. Unzip the downloaded installation package
+```shell
+tar -xvzf geth-linux-amd64-1.10.23-d901d853.tar.gz
+```
 3. Enter the unzipped directory
+```shell
+cd geth-linux-amd64-1.10.23-d901d853/
+```
 4. Use. / get account new -- keystore. / keystore to generate Ethereum account and keystore
+```shell
+./geth account new --keystore ./keystore
+```
 5. You will be prompted to enter the password and confirm the password.  Please remember this password for late use.
 
-e.g.：
+Example：
 
 ```shell
-# step 1
-wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.23-d901d853.tar.gz
-
-# step 2
-tar -xvzf geth-linux-amd64-1.10.23-d901d853.tar.gz
-
-# step 3
-cd geth-linux-amd64-1.10.23-d901d853/
-
-# step 4
-./geth account new --keystore ./keystore
-
 INFO [09-08|15:30:11.904] Maximum peer count                       ETH=50 LES=0 total=50
 INFO [09-08|15:30:11.905] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
 Your new account is locked with a password. Please give a password. Do not forget this password.
