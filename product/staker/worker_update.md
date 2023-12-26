@@ -11,21 +11,23 @@ The NuLink worker node need to be updated when a new version is released.The upd
 
 Make sure you still hold your staking account and worker account. The update in docker is simple: stop the node, pull the latest image and restart the node.
 
-1. Stop the running node in Docker  
+1. Stop the running node in Docker: 
     ```shell
-    $ docker kill <container ID>
-    
-    $ docker rm <container ID>
+    docker kill <container ID>
+    ```
+    Delete the container:
+    ```shell
+    docker rm <container ID>
     ```
 
-2. Pull the latest NuLink image.  
+3. Pull the latest NuLink image.  
     ```shell
-    $ docker pull nulink/nulink:latest
+    docker pull nulink/nulink:latest
     ```
 
-3.  Re-launch the worker node.  
+4.  Re-launch the worker node.  
     ```shell
-    $ docker run --restart on-failure -d \
+    docker run --restart on-failure -d \
     --name ursula \
     -p 9151:9151 \
     -v /root/nulink:/code \
@@ -41,7 +43,6 @@ The update procedure in local environment is:
 1. Access to your virtual environment  
    ```shell
    source /root/nulink-venv/bin/activate
-   (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~#    
    ```
 
 2. Stop the running node   
@@ -53,11 +54,11 @@ The update procedure in local environment is:
 
 3. Uninstall the old package and install the new package   
    ```shell
-   pip uninstall nulink-0.1.0-py3-none-any.whl // make sure the package name matches your installed package
+   pip uninstall nulink-0.2.0-py3-none-any.whl // make sure the package name matches your installed package
       
-   (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# wget https://download.nulink.org/release/core/nulink-0.2.0-py3-none-any.whl
+   wget https://download.nulink.org/release/core/nulink-0.5.0-py3-none-any.whl
       
-   (nulink-venv) root@iZt4niz7s1ss0908w31u5pZ:~# pip install nulink-0.2.0-py3-none-any.whl
+   pip install nulink-0.5.0-py3-none-any.whl
    ```
 
 4.   Verify Installation use the same command when install the first time.  Check [Here](https://docs.nulink.org/products/nulink_worker/worker_install#local-install) 
