@@ -8,7 +8,6 @@ In order to use NuLink Staking DApp for the Horus network, the user needs to get
 
 
 ## Work Flow
-![image](../../miscellaneous/img/dashboard/stakeflow.png)
 
 ### Step1- Connect Wallet and Log in staking account
 
@@ -25,14 +24,36 @@ After connecting with METAMASK Wallet, the system will automatically detect whet
 **Remark:** The default RPC server for BSC testnet sometime is unstable. If you find the current server is done, please find an active one [here](https://chainlist.org/)  and replace it in METAMASK network setting. Need [help](https://metamask.zendesk.com/hc/en-us/articles/4404424659995-User-Guide-Custom-networks-and-sidechains) editing RPC server in METAMASK?
 
 ### Step2- Stake NLKs(test) to the staking pool
-Once log in with METAMASK wallet, please check the balance and click the "Staking" button to stake tokens to the staking pool. Make sure [claim](https://dashboard.testnet.nulink.org/) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember bonding an active worker after staking, otherwise no reward will be issued. 
+Once log in with METAMASK wallet, please check the balance.
+
+![image](../../miscellaneous/img/dashboard/balance.png)
+
+Click the "Staking" button to stake tokens to the staking pool. Make sure [claim](https://dashboard.testnet.nulink.org/) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember bonding an active worker after staking, otherwise no reward will be issued. 
+
+**If the account isn't approved, there will be a prompt to initiate the approval process first.**
 
 ![image](../../miscellaneous/img/dashboard/staking.png)  
 
-### Step3- Bond an active worker to gain reward
-An active Worker node is needed before clicking `Bond Worker`. Please refer [here](nulink_worker.md) for running a Worker. The Bond Worker page will  pop-up when click `Bond Worker`.  Simply enter the Worker Address and Node URI, and then confirm the bonding. Now the whole staking process is completed and the reward NLKs(test) will be issued.
+You can customize the input for the amount to stake. 
+Clicking "MAX" will input the entire balance. 
+After confirming the amount, clicking the "STAKE" button will trigger the wallet to pay the gas fee. 
+Upon successful payment, the staking process will be completed.
 
-![image](../../miscellaneous/img/dashboard/bondWorker2.png)  
+### Step3- Bond an active worker to gain reward
+
+An active Worker node is needed, please refer [here](nulink_worker.md) for running a Worker.
+Here showcases `Node Information`, displaying data such as: NODE IP, STAKER ADDRESS, WORKER ADDRESS, and WORKER STATUS. 
+Configuring the Worker node is a prerequisite to obtaining Staking rewards and Service bonuses.
+
+![image](../../miscellaneous/img/dashboard/node1.png)
+
+The Bond Worker page will  pop-up when click `Bond Worker`.  Simply enter the Worker Address and Node URI, and then confirm the bonding.
+
+![image](../../miscellaneous/img/dashboard/bondWorker2.png)
+
+Now the whole staking process is completed and the reward NLKs(test) will be issued.
+
+![image](../../miscellaneous/img/dashboard/node2.png)
 
 ### Step4- Stop staking and quit
 
@@ -42,32 +63,44 @@ Follow the checklist below to stop the staking and get all funds along with rewa
 * Claim reward
 
 #### How to unbound Worker and shut down the Worker node?
+
+![image](../../miscellaneous/img/dashboard/node2.png)
+
 Click  `Unbound Worker`. It will prompt a window to confirm unbond operation. 
 
 Remark: There is a bond lock time(24 hours) for the Horus network, which means the user can not unbond within 24 hours after bonding Worker.
 
- ![image](../../miscellaneous/img/dashboard/unbondWorker1.png)  
-
 After unbonding Worker, the Worker node is free to closed.
 
 #### How to unstake?
-Click the "Unstake" pop-up a  window to prompt whether to unstake. The staking will be released after confirming.
+Click the `Unstake` pop-up a  window to prompt whether to unstake. The staking will be released after confirming.
 
- ![image](../../miscellaneous/img/dashboard/unstake.png)  
+ ![image](../../miscellaneous/img/dashboard/unstake.png)
+
+**It's important to note that the NLK staked for this period is available immediately.**
+As shown in the image, 1 NLK recently staked is displayed. 
+However, the remaining 1 NLK will be credited after the current period concludes.
+
+![image](../../miscellaneous/img/dashboard/unstake2.png)
+
+Clicking `CLAIM DEPOSITS` will prompt the wallet to pay the gas fee. Once the payment is completed, the withdrawal will be successful.
+
+![image](../../miscellaneous/img/dashboard/unstake3.png)
 
 #### How to withdraw your reward?
-Click "Claim" to withdraw the reward after unstaking fund.
 
- ![image](../../miscellaneous/img/dashboard/claim.png)  
-
-### Transaction Notification
-
-For all the above operation, the DApp will send a corresponding transaction on BSC testnet.  Click the bell in the right up corner to view the notice list. Click `View details` to see details of each transaction massage.  
+The image below displays the details of "My Reward": 
+"CLAIMABLE REWARDS" indicates the currently available withdrawable rewards, 
+while "ACCUMULATED REWARD" reflects the total accumulated rewards from all epochs. 
 
 
- ![image](../../miscellaneous/img/dashboard/messages.png)  
+![image](../../miscellaneous/img/dashboard/reward.png)
 
-## Term Explaination in DApp.
+Clicking `CLAIM REWARDS` triggers the wallet to pay the gas fee. 
+Upon successful payment, the reward can be withdrawn.
+
+
+## Term Explanation in DApp.
 
 1.  **Total Value Locked**: Total lock-in value of the Horus network.  
 2.  **Total Nodes**: Total number of Worker nodes in the Horus network.  
