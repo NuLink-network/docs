@@ -25,7 +25,7 @@ cd geth-linux-amd64-1.10.23-d901d853/
 ```shell
 ./geth account new --keystore ./keystore
 ```
-5. You will be prompted to enter the password and confirm the password.  Please remember this password for late use.
+5. You will be prompted to enter the password and confirm the password. **Please remember this password for late use.**
 
 Example：
 
