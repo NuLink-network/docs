@@ -1,10 +1,12 @@
 # NuLink Staking Dashboard
 
 ## Overview
-NuLink Staking Dashboard is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bind `Worker` account to get the reward. You can access NuLink Staking DApp through this [link](https://dashboard.testnet.nulink.org).
+NuLink Staking Dashboard is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bond `Worker` account to get the reward. You can access NuLink Staking DApp through this [link](https://dashboard.testnet.nulink.org).
 
-In order to use NuLink Staking DApp for the Horus network, the user needs to get the initial fund of NLKs(test) and BNBs(test) on [faucet](https://dashboard.testnet.nulink.org/).
+**Remark:**
+To access the NuLink Dashboard for the Horus network, users must obtain the initial funds of NLKs (test) and BNBs (test) by clicking the faucet button located in the upper right corner.
 
+![image](../../miscellaneous/img/dashboard/faucet.png)  
 
 
 ## Work Flow
@@ -17,7 +19,7 @@ Once create a staking account in METAMASK wallet, log in and connect the staking
 
 ![image](../../miscellaneous/img/dashboard/connectWallet.png)  
 
-After connecting with METAMASK Wallet, the system will automatically detect whether you connect to the Horus network. If not, it automatically prompts a window for you to switch to the correct network.  
+After connecting with METAMASK Wallet, the system will automatically detect whether you connect to the NuLink network. If not, it automatically prompts a window for you to switch to the correct network.  
 
 ![image](../../miscellaneous/img/dashboard/networkError.png)  
 
@@ -28,30 +30,33 @@ Once log in with METAMASK wallet, please check the balance.
 
 ![image](../../miscellaneous/img/dashboard/balance.png)
 
-Click the "Staking" button to stake tokens to the staking pool. Make sure [claim](https://dashboard.testnet.nulink.org/) enough NLKs(test) and BNBs(test) in the staking account as initial funds. Remember bonding an active worker after staking, otherwise no reward will be issued. 
+If the account is not approved, a prompt will appear to initiate the approval process first.
 
-**If the account isn't approved, there will be a prompt to initiate the approval process first.**
+![image](../../miscellaneous/img/dashboard/approve.png)
+
+After approval, click the "Stake" button to stake tokens in the staking pool. Ensure there is a sufficient token deposit in the staking account as initial funds. Remember to bond an active worker after staking; otherwise, no rewards will be issued.
+
+
+
 
 ![image](../../miscellaneous/img/dashboard/staking.png)  
 
-You can customize the input for the amount to stake. 
-Clicking "MAX" will input the entire balance. 
-After confirming the amount, clicking the "STAKE" button will trigger the wallet to pay the gas fee. 
-Upon successful payment, the staking process will be completed.
+You can customize the input for the amount to stake. Clicking "MAX" will input the entire balance. After confirming the amount, clicking the "STAKE" button will trigger the wallet to pay the gas fee. Upon successful payment, the staking process will be completed.
 
 ### Step3- Bond an active worker to gain reward
 
-An active Worker node is needed, please refer [here](nulink_worker.md) for running a Worker.
-Here showcases `Node Information`, displaying data such as: NODE IP, STAKER ADDRESS, WORKER ADDRESS, and WORKER STATUS. 
-Configuring the Worker node is a prerequisite to obtaining Staking rewards and Service bonuses.
+
+To be eligible for rewards, an active Worker node is required. Please refer [here](nulink_worker.md) for instructions on running a Worker. Here showcases `Node Information`, displaying data such as: NODE IP, STAKER ADDRESS, WORKER ADDRESS, and WORKER STATUS. Configuring the Worker node is a prerequisite for earning Staking rewards and Service bonuses.
+
 
 ![image](../../miscellaneous/img/dashboard/node1.png)
 
-The Bond Worker page will  pop-up when click `Bond Worker`.  Simply enter the Worker Address and Node URI, and then confirm the bonding.
+
+The "Bond Worker" page will pop up when you click on `Bond Worker`. Simply enter the Worker Address, and then confirm the bonding.
 
 ![image](../../miscellaneous/img/dashboard/bondWorker2.png)
 
-Now the whole staking process is completed and the reward NLKs(test) will be issued.
+Now that the entire staking process is complete, your staked amount will be displayed in two sections: the staking pool and the pending pool. When you stake during the current epoch, it will initially be transferred to the pending pool. It will automatically move to the staking pool when the next epoch begins. Rewards in NLKs (test) will be distributed based on the staked amount in the staking pool.
 
 ![image](../../miscellaneous/img/dashboard/node2.png)
 
@@ -60,7 +65,7 @@ Now the whole staking process is completed and the reward NLKs(test) will be iss
 Follow the checklist below to stop the staking and get all funds along with reward:
 * Unbound Worker and shut down the Worker node
 * Unstake your fund from staking pool
-* Claim reward
+* Claim reward and deposit
 
 #### How to unbound Worker and shut down the Worker node?
 
@@ -68,22 +73,20 @@ Follow the checklist below to stop the staking and get all funds along with rewa
 
 Click  `Unbound Worker`. It will prompt a window to confirm unbond operation. 
 
-Remark: There is a bond lock time(24 hours) for the Horus network, which means the user can not unbond within 24 hours after bonding Worker.
 
 After unbonding Worker, the Worker node is free to closed.
 
 #### How to unstake?
-Click the `Unstake` pop-up a  window to prompt whether to unstake. The staking will be released after confirming.
+Click the `Unstake` pop-up a  window to prompt whether to unstake. 
 
  ![image](../../miscellaneous/img/dashboard/unstake.png)
 
-**It's important to note that the NLK staked for this period is available immediately.**
-As shown in the image, 1 NLK recently staked is displayed. 
-However, the remaining 1 NLK will be credited after the current period concludes.
+Please note that the staked amount in the pending pool can be claimed immediately upon unstaking, whereas the staking amount in the staking pool becomes claimable starting from the next epoch. 
+As shown in the image,  1 NLK in the pending pool is eligible for immediate retrieval. However, the outstanding 1 NLK in the staking pool will be credited subsequent to the conclusion of the current period.
 
 ![image](../../miscellaneous/img/dashboard/unstake2.png)
 
-Clicking `CLAIM DEPOSITS` will prompt the wallet to pay the gas fee. Once the payment is completed, the withdrawal will be successful.
+Initiating the deposit claim can be done by clicking `CLAIM DEPOSITS`. This action triggers a prompt for the wallet to pay the gas fee. Upon completion of the payment, the withdrawal is successful, and the deposited amount will be returned to your balance.
 
 ![image](../../miscellaneous/img/dashboard/unstake3.png)
 
@@ -97,27 +100,5 @@ while "ACCUMULATED REWARD" reflects the total accumulated rewards from all epoch
 ![image](../../miscellaneous/img/dashboard/reward.png)
 
 Clicking `CLAIM REWARDS` triggers the wallet to pay the gas fee. 
-Upon successful payment, the reward can be withdrawn.
+Upon successful payment, the rewards will be withdrawn to your balance.
 
-
-## Term Explanation in DApp.
-
-1.  **Total Value Locked**: Total lock-in value of the Horus network.  
-2.  **Total Nodes**: Total number of Worker nodes in the Horus network.  
-3.  **My Balance**: Current balance in user's account, can be used for staking to pool.   
-4.  **Reward**: Unclaimed reward of the user's account.    
-5.  **My Node Info**: Displays user node details, including the following data:  
-      * Node URI: IP and Port of users’ Worker node.
-      * Worker Status: The current status of user's Worker node. Either online or offline.
-      * Staker Address: Address of the user's staking account.
-      * Woker Address: Address of the user's Worker node.
-      * Start time:  The time start to earn reward(finish staking and bonding), accurate to second.
-      * Accumulated time:  Accumulated time for earning reward, accurate to second.
-      * Reward: Unclaimed rewards for the user .
-      * Staking Amount: The amount of fund which user stake in the pool.
-6.  **Node List**: Displays all active nodes in the Horus network, including the following data:   
-      * Node URI: IP and Port of the Worker node.
-      * Staker Address: Address of the node's staking account.
-      * Woker Address: Address of the node's Worker node.
-      * Worker Status: The current status of user's Worker node. Either online or offline.
-    
