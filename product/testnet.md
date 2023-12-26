@@ -25,3 +25,11 @@ Horus2.0 is NuLink's dedicated testnet designed for developers and community mem
 ## Get Started
 
 Please check our [**testnet milestones**](./horus/horus_milestones.md) for the latest update.
+
+## Horus2.0 Testnet Constant
+
++ [testnet NLK token address](https://testnet.bscscan.com/address/0x435Ad44fb2A08D7068E135959DbA1b6Be328D437) 
++ Epoch Length:  24 hours
++ Batch Length:  4 epochs
++ Staking Rewards Per Epoch:  100 TNLK
+
