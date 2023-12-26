@@ -178,10 +178,8 @@ Now the Worker address(e.g: 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee)  is read
 Occasionally, the staker may find it necessary to restart the worker node. Below is the command for restarting the currently running nodes:
 
 ```shell
-$ docker restart  <container ID>
-
+docker restart <container ID>
 ```
-
 
 
 ## Run Node via Local Operation  
