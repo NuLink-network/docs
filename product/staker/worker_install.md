@@ -94,7 +94,7 @@ pip install virtualenv
     nulink --help
     ```
     You will get this output:
->
+    ```shell
     Usage: nulink [OPTIONS] COMMAND [ARGS]...
     
     
@@ -130,6 +130,5 @@ pip install virtualenv
     
       unbond    Unbonds an operator from an authorized staking provider.
     
-      ursula    "Ursula the Untrusted" PRE Re-encryption node management...   
->
-
+      ursula    "Ursula the Untrusted" PRE Re-encryption node management...
+      ```
