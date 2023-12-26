@@ -4,7 +4,7 @@ Stakers are crucial contributors to the NuLink network, playing a vital role in 
 
 ## Staking Dashboard
 
-The NuLink Staking Dashboard is a user-friendly interface designed to empower stakers in managing their staking activities. Key features include:
+[NuLink Staking Dashboard](https://dashboard.testnet.nulink.org) is a user-friendly interface designed to empower stakers in managing their staking activities. Key features include:
 
 - **Managing Staking Activities:** Stakers can efficiently manage their staking activities(stake,unstake,claim deposit and claim reward) through the dashboard.
 - **Bonding/Unbonding Service Nodes:** Detailed instructions on bonding service nodes to the staker's account.
@@ -16,7 +16,7 @@ Learn more about the [NuLink Staking Dashboard](./staker/dashboard.md).
 
 ## NuLink Worker Installer
 
-The NuLink Worker Installer simplifies the deployment of NuLink worker nodes, enabling stakers to contribute computing resources to the NuLink network efficiently. The installation process involves:
+The [**NuLink Worker Installer**](./staker/nulink_worker.md) simplifies the deployment of NuLink worker nodes, enabling stakers to contribute computing resources to the NuLink network efficiently. The installation process involves:
 
 1. [**Creating Worker Account:**](./staker/eth_account.md) Stakers need to create a dedicated worker account to manage their worker node.
 2. [**Worker Installation:**](./staker/worker_install.md) Detailed instructions on installing the NuLink worker on the staker's infrastructure.

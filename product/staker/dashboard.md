@@ -1,7 +1,7 @@
 # NuLink Staking Dashboard
 
 ## Overview
-NuLink Staking Dashboard is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bond `Worker` account to get the reward. You can access NuLink Staking DApp through this [link](https://dashboard.testnet.nulink.org).
+NuLink Staking Dashboard is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bond `Worker` account to get the reward. You can access NuLink Staking Dashboard through this [link](https://dashboard.testnet.nulink.org).
 
 **Remark:**
 To access the NuLink Dashboard for the Horus network, users must obtain the initial funds of NLKs (test) and BNBs (test) by clicking the faucet button located in the upper right corner.
@@ -15,7 +15,7 @@ To access the NuLink Dashboard for the Horus network, users must obtain the init
 
 NuLink currently supports only METAMASK wallet. Users need to [download](https://metamask.io/download/) and install METAMASK wallet ahead. If you need more help with METAMASK usage, please refer [here](https://metamask.io/faqs/). Please create an account for staking in METAMASK after installation. 
 
-Once create a staking account in METAMASK wallet, log in and connect the staking account in [NuLink Staking DApp](https://dashboard.testnet.nulink.org). Click the "Connect Wallet" at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.  
+Once create a staking account in METAMASK wallet, log in and connect the staking account in [NuLink Staking Dashboard](https://dashboard.testnet.nulink.org). Click the "Connect Wallet" at the top right corner of the page, and a pop-up window connecting to METAMASK wallet will appear. Click the "Connect Wallet " in the pop-up window, and the METAMASK wallet plug-in will be invoked.  
 
 ![image](../../miscellaneous/img/dashboard/connectWallet.png)  
 
