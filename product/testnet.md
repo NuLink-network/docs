@@ -1,6 +1,6 @@
 # Horus2.0 Testnet Overview
 
-Horus2.0 is NuLink's dedicated testnet designed for developers and community members to test and implement proprietary security infrastructure components within their Web3 applications. This testnet specifically focuses on proxy workers for the supply side, featuring essential tools for stakers and providing a platform for DApp builders, users, and grant program participants.
+Horus2.0 is NuLink's dedicated testnet designed for developers and community members to test and implement proprietary security infrastructure components within their Web3 applications. 
 
 ## Horus2.0 Testnet Parameters
 
@@ -9,8 +9,8 @@ Horus2.0 is NuLink's dedicated testnet designed for developers and community mem
 + **Epoch Length:**  24 hours
 + **Batch Length:**  4 epochs
 + **Staking Pool Per Epoch:**  100 TNLK
-+ **Minimal Staking Amount:** 1
-+ **Maximum Staking Amount:** 5
++ **Minimal Staking Amount:** 1 TNLK
++ **Maximum Staking Amount:** 5 TNLK
 
 ## Testnet Components
 

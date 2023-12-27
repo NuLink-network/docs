@@ -2,13 +2,13 @@
 
 Horus 2.0 is structured to evolve through three distinct phases, each bringing valuable features and enhancements to the NuLink testnet environment. Currently, we are in phase 1.
 
-### Phase 1 (2023.Q4)
+### Phase 1 (2023.Q4-2024,Q1)
 
 1. **Staking Dashboard Release:**
-   - The NuLink Staking Dashboard, a user-friendly interface for managing staking activities, will be released for testing. [dashboard](../staker/dashboard.md).
+   - [The NuLink Staking Dashboard](../staker/dashboard.md), a user-friendly interface for managing staking activities, will be released for testing. 
 
 2. **Worker Node Installer Testing:**
-   - The NuLink Worker Node Installer, a tool simplifying the deployment of NuLink worker nodes, will be released for testing by the community. [more details](../staker/worker_install.md)
+   - [The NuLink Worker Node Installer](../staker/worker_install.md), a tool simplifying the deployment of NuLink worker nodes, will be released for testing by the community.
 
 ### Phase 2
 
