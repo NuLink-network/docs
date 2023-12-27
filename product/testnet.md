@@ -12,6 +12,9 @@ Horus2.0 is NuLink's dedicated testnet designed for developers and community mem
 + **Minimal Staking Amount:** 1 TNLK
 + **Maximum Staking Amount:** 5 TNLK
 
+
+For the latest updates and progress, refer to our [testnet milestones](./horus/horus_milestones.md). The Horus 2.0 testnet is only for test purposes. The token in the testnet has no value to trade. And for each phase, all data and records will be cleared, so please do not store your valuable data in Horus testnet.
+
 ## Testnet Components
 
 1. **Supply Side Integration:**

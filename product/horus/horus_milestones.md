@@ -34,6 +34,5 @@ Horus 2.0 is structured to evolve through three distinct phases, each bringing v
 
 The phased development of Horus 2.0 on the NuLink testnet reflects our commitment to providing a robust, secure, and feature-rich environment for developers and users alike.
 
-## Remark
-The Horus 2.0 testnet is only for test purposes. The token in the testnet has no value to trade. And for each phase, all data and records will be cleared, so please do not store your valuable data in Horus testnet.
+
 
