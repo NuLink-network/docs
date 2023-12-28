@@ -50,5 +50,5 @@
   * [NuLink Agent SDK Release Notes](./support/notes_agent_sdk.md)
   * [NuLink SDK Release Notes](./support/notes_sdk.md)
   * [NuLink Worker Release Notes](./support/notes_worker.md)
-  * [NuLink Dashboard Release Notes](./support/notes_horus.md)
+  * [NuLink Dashboard Release Notes](./support/notes_dashboard.md)
 * [Frequently Asked Questions](./support/faqs.md)

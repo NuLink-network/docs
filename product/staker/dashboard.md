@@ -36,12 +36,16 @@ If the account is not approved, a prompt will appear to initiate the approval pr
 
 After approval, click the "Stake" button to stake tokens in the staking pool. Ensure there is a sufficient token deposit in the staking account as initial funds. Remember to bond an active worker after staking; otherwise, no rewards will be issued.
 
-
-
-
 ![Staking](../../miscellaneous/img/dashboard/staking.png)  
 
-You can customize the input for the amount to stake. Clicking "MAX" will input the entire balance. After confirming the amount, clicking the "STAKE" button will trigger the wallet to pay the gas fee. Upon successful payment, the staking process will be completed.
+
+You have the flexibility to customize the input for the amount you wish to stake. By clicking "MAX," you can input your entire balance for staking. After confirming the chosen amount, clicking the "STAKE" button will prompt your wallet to process the payment for the gas fee.
+
+Upon successful payment, you'll observe your staked amount reflected in two sections: the staking pool and the pending pool. When you stake during the current epoch, the amount will initially be transferred to the pending pool. It automatically transitions to the staking pool as soon as the next epoch begins. NLK (test) rewards will be distributed based on the staked amount in the staking pool.
+
+![Staking Amount](../../miscellaneous/img/dashboard/stakingamount.png)
+
+
 
 ### Step3- Bond an active worker to gain reward
 
@@ -56,7 +60,7 @@ The "Bond Worker" page will pop up when you click on `Bond Worker`. Simply enter
 
 ![Bonding](../../miscellaneous/img/dashboard/bondWorker2.png)
 
-Now that the entire staking process is complete, your staked amount will be displayed in two sections: the staking pool and the pending pool. When you stake during the current epoch, it will initially be transferred to the pending pool. It will automatically move to the staking pool when the next epoch begins. Rewards in NLKs (test) will be distributed based on the staked amount in the staking pool.
+Now that the entire staking process is complete, and  you can now monitor the status of your worker node in the dashboard.
 
 ![After Bonding](../../miscellaneous/img/dashboard/node2.png)
 
