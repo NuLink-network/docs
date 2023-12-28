@@ -42,7 +42,7 @@ Getting started with the Horus2.0 Testnet is quick and easy. Follow the steps be
 ### For Stakers
 
 1. **Set Up Your Development Environment:**
-   Ensure you have a suitable development environment with the necessary tools for staking and worker node running.
+   Ensure you have a [suitable development environment](./staker/nulink_worker.md#minimum-system-requirements) with the necessary tools for staking and worker node running.
 
 2. **Acquire Test Tokens:**
    Head over to our [faucet in the dashboard](https://dashboard.testnet.nulink.org/) to claim your test tokens (tBNB and tNLK). These tokens are essential for participating in staking activities on the testnet.
