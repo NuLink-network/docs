@@ -53,38 +53,6 @@ Getting started with the Horus2.0 Testnet is quick and easy. Follow the steps be
 4. **Deploy and Monitor Worker Node:**
    Deploy worker nodes using the [**NuLink Worker Installer**](./staker/nulink_worker.md) and monitor your worker status in the Dashboard.
 
-### For Developers
-
-1. **Set Up Your Development Environment:**
-   Ensure you have a suitable development environment for deploying and interacting with the Horus2.0 Testnet. 
-
-2. **Acquire Test Tokens:**
-   Claim test tokens (tBNB and tNLK) from our [faucet in the dashboard](https://dashboard.testnet.nulink.org/) to initiate transactions and test your application's functionality on the Horus2.0 testnet.
-
-3. **Choose the SDK:**
-   Select the SDK that aligns with your development preferences. You can find detailed instructions and resources for different SDKs in [here](dapp_builders.md).
-
-4. **Integrate Your DApp in Horus 2.0:**
-   Integrate your application with the Horus2.0 Testnet using the chosen SDK and test it.
-
-5. **Provide Feedback and Engage with the Community:**
-   Share your experiences and report any issues or suggestions in our [Discord Channel](https://discord.gg/25CQFUuwJS). Your feedback is valuable in enhancing the performance and functionality of NuLink's solutions. Collaboration within the community is essential for mutual growth and support.
-
-
-### For Users
-
-1. **Create an Account in NuLink Agent or Install and Create an Account in NuLink Snaps:**
-   To engage with applications on the Horus2.0 Testnet, you need to either create an account in the [NuLink Agent](./user/nulink_agent.md) or install [NuLink Snaps](./user/nulink_snaps.md) and create an account. These accounts will be used to interact with various decentralized applications (DApps) on the testnet.
-
-2. **Acquire Test Tokens:**
-   Claim test tokens (tBNB and tNLK) from our [faucet in the dashboard](https://dashboard.testnet.nulink.org/) to initiate transactions and test your account's functionality on the testnet.
-
-3. **Explore Demonstration DApps or Other Supported DApps:**
-   Experience the functionality of the Horus2.0 Testnet through [demonstration DApps](./user/agent_usecase.md) or other supported DApps. Try out the "Secure File Transfer" DApp for secure file transfers and explore the NuLink Snaps Showcase for decentralized data management.
-
-4. **Engage with the Community:**
-   Connect with the NuLink community on [Telegram](https://t.me/NuLink2021) and [Discord](https://discord.gg/25CQFUuwJS). Share your experiences, seek assistance, and stay informed about the testnet progress.
-
 
 Now you're all set to embark on your journey with NuLink's Horus2.0 Testnet. If you have any questions or need assistance, feel free to reach out to the community or our support channels. Happy testing!
 
