@@ -43,7 +43,7 @@ You have the flexibility to customize the input for the amount you wish to stake
 
 Upon successful payment, you'll observe your staked amount reflected in two sections: the staking pool and the pending pool. When you stake during the current epoch, the amount will initially be transferred to the pending pool. It automatically transitions to the staking pool as soon as the next epoch begins. NLK (test) rewards will be distributed based on the staked amount in the staking pool.
 
-![Staking Amount](../../miscellaneous/img/dashboard/stakingamount.png)
+![Staking Amount](../../miscellaneous/img/dashboard/stakingamount.jpg)
 
 
 
