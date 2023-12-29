@@ -1,6 +1,6 @@
 # NuLink SDK Release Notes:
 
-The current version is  [0.5.0](https://github.com/NuLink-network/nulink-sdk/releases/tag/v5.0.0_2288856)
+The current version is  [0.5.0](https://github.com/NuLink-network/nulink-sdk/releases/tag/v0.5.0_9e77a59)
 
 ## v0.5.0 (2023/12/20):
 
