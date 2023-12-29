@@ -5,7 +5,7 @@ Horus2.0 is NuLink's dedicated testnet designed for developers and community mem
 ## Horus2.0 Testnet Parameters
 
 + **Blockchain:** [BNB Smart Chain Testnet](https://testnet.bscscan.com/) 
-+ **Horus 2.0 Token address:** [0x435Ad44fb2A08D7068E135959DbA1b6Be328D437](https://testnet.bscscan.com/address/0x435Ad44fb2A08D7068E135959DbA1b6Be328D437)
++ **Horus 2.0 Token address:** [0xa22BFb00bE8938C50833BFD2444ec721A9eeACc1](https://testnet.bscscan.com/address/0xa22BFb00bE8938C50833BFD2444ec721A9eeACc1)
 + **Epoch Length:**  24 hours
 + **Batch Length:**  4 epochs
 + **Staking Pool Per Epoch:**  100 TNLK
