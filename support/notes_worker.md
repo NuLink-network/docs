@@ -1,6 +1,6 @@
 # NuLink Worker Release Notes
 
-The current version is  [0.5.0](https://github.com/NuLink-network/nulink-core/releases/tag/v5.0.0_9a95963)
+The current version is  [0.5.0](https://github.com/NuLink-network/nulink-core/releases/tag/v0.5.0_d98e1de)
 
 ## v0.5.0（2023/12/20）
 
