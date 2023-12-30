@@ -9,8 +9,8 @@ The Staking Reward page is the primary landing page for the NuLink Staking Dashb
 
 The left panel displays the `Staking Amount` information:
 
-  *  `VALID AMOUNT` shows the valid staking amount of the displayed epoch
-  *  `TOTAL AMOUNT` indicates the total staking amount in the epoch user selected
+  *  `VALID AMOUNT` shows the total valid staking amount of all stakers in the selected epoch.
+  *  `TOTAL AMOUNT` indicates the total staking amount of all stakers in the selected epoch.
 
 ![Staking Amount](../../miscellaneous/img/dashboard/stakingAmount.png)
 
@@ -18,7 +18,7 @@ The left panel displays the `Staking Amount` information:
 
 The right panel showcases the `Staking Reward` details:
 
-  * `CURRENT EPOCH REWARD` represents the staking rewards generated in the epoch user selected
+  * `CURRENT EPOCH REWARD` represents the staking rewards generated in the selected epoch.
   *  `ACCUMULATED REWARD` is the cumulative staking rewards generated across all Epochs.
 
 ![Staking Reward](../../miscellaneous/img/dashboard/stakingReward.png)
@@ -27,8 +27,8 @@ The right panel showcases the `Staking Reward` details:
 
    Further below, there are three boxes displaying:
 
-   * `Total Staking Nodes Count`: This reveals the total number of staking nodes in the displayed epoch.
-   * `Current Epoch`: It indicates the epoch use selected.
+   * `Total Staking Nodes Count`: This reveals the total number of stakers in the displayed epoch.
+   * `Current Epoch`: It indicates the user selected epoch number.
    * `Total Epoch`: It represents the total count of all epochs.
 
 ![Total Staking](../../miscellaneous/img/dashboard/stakingTotal.png)

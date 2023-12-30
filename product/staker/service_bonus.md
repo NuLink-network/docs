@@ -12,7 +12,7 @@ The left panel displays the `Service Bonus` information:
 
 ## Batches
 The right panel showcases the `Batches` details:
-* `CURRENT BATCH` shows the batch number user selected.
+* `CURRENT BATCH` shows the user selected batch number.
 * `TOTAL BATCH` represents the total count of all batches.
 
 ## Service bonus from each blockchain

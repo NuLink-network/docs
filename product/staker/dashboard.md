@@ -3,11 +3,12 @@
 ## Overview
 NuLink Staking Dashboard is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bond `Worker` account to get the reward. You can access NuLink Staking Dashboard through this [link](https://dashboard.testnet.nulink.org).
 
-**Remark:**
+
 To engage to the NuLink Dashboard for the Horus network, users must obtain the initial funds of NLKs (test) and BNBs (test) by clicking the faucet button located in the upper right corner.
 
 ![Faucet](../../miscellaneous/img/dashboard/faucet.png)  
 
+NuLink Staking dashboard provides users with the flexibility to choose between Dark and Light modes. To switch between these modes simply clicking the button next to the faucet button.
 
 # Getting Started with the Staking Dashboard
 

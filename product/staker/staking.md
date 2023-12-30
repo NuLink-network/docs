@@ -28,14 +28,14 @@ After successfully logging in, the screen will display comprehensive staking inf
 
 As shown in the figure below, the left panel displays the `Staking Amount` information:
 
- * `VALID STAKING AMOUNT` shows the total valid staking amount for the current epoch.
- * `TOTAL STAKING AMOUNT` represents the total staking amount for the current epoch.
+ * `VALID STAKING AMOUNT` shows the total valid staking amount of all stakers for the current epoch.
+ * `TOTAL STAKING AMOUNT` represents the total staking amount of all stakers for the current epoch.
 
 ![Staking Amount](../../miscellaneous/img/dashboard/myAmount.png)
 
 ### Staking Node
 
-The right panel shows the "Staking Node" information: displaying the total count of staked nodes in the current epoch.
+The right panel shows the "Staking Node" information, displaying the total count of stakers in the current epoch.
 
 ![Staking Node](../../miscellaneous/img/dashboard/myNode.png)
 
@@ -77,6 +77,8 @@ Users can claim these rewards by clicking `CLAIM REWARDS` button.
 ### Node Information
 
 The following image displays the worker Node Information relate to the logged-in user, including NODE IP, STAKER ADDRESS, WORKER ADDRESS, WORKER STATUS. User can start the bonding process by clicking `BOND WORKER`.
+
+![Worker Node Information](../../miscellaneous/img/dashboard/node1.png)
 
 ### Node Staking Amount
 
