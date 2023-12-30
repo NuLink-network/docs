@@ -66,11 +66,11 @@ An **Epoch** is a defined time period within a NuLink network batch. Key process
 
 ### Reputation Score
 
-**Reputation Score** is a metric within the NuLink network that gauges a staker's historical contribution for a single batch. It assesses the quality of positive behavior epochs relative to the total quality of epochs in one batch. This score serves as an indicator of a staker's reliability and positive engagement with the NuLink network.
+**Reputation Score** is a metric in the NuLink network assesses a staker's historical contribution within a single batch. It counts the number of active epochs within a batch, considering epochs with a living ratio higher than a specified threshold (currently set to 0.8) as active. The reputation score serves as an indicator of a staker's reliability and positive engagement with the NuLink network
 
 ### Reputation Score Quota
 
-**Reputation Score Quota** is a measurement that represents the proportion of an individual user's reputation score in relation to the total user's reputation score within the NuLink network. This metric provides insights into the relative contribution of a user's reputation to the overall reputation dynamics of the NuLink ecosystem.
+**Reputation Score Quota** is a measurement represents the proportion of an individual user's reputation score relative to the total user's reputation score within the NuLink network. The metric provides insights into the relative contribution of a user's reputation to the overall reputation dynamics of the NuLink ecosystem.
 
 ## S
 
@@ -113,11 +113,11 @@ A **Staker** is an entity within the NuLink network that actively participates i
 
 ### Valid Staking Amount
 
-**Valid Staking Amount** is a dynamically adjusted quantity of tokens committed by a staker to the NuLink network as part of the staking process. It is calculated by multiplying the staking amount by the living ratio. This adjustment ensures that the staker's contribution is proportionate to the overall engagement and participation of stakers within the network.
+**Valid Staking Amount** is a dynamically adjusted quantity of tokens committed by a staker to the NuLink network as part of the staking process. It is calculated by multiplying the staking amount by the living ratio. This adjustment ensures that the staker's contribution is proportionate to the overall engagement and participation of stakers within the network..
 
 ### Valid Staking Quota
 
-**Valid Staking Quota** represents the portion or percentage of the total valid staking capacity that a staker is eligible or allowed to contribute within the NuLink network for a specific epoch. It is calculated by dividing the staker's valid staking amount by the total valid staking amount in that epoch. This metric provides insights into the relative contribution of an individual staker to the overall staking dynamics of the NuLink ecosystem.
+**Valid Staking Quota** represents the percentage of the total valid staking capacity that a staker contributes to the NuLink network for a specific epoch. It is calculated by dividing the staker's valid staking amount by the total valid staking amount in that epoch. This metric provides insights into the relative contribution of an individual staker to the overall staking dynamics of the NuLink ecosystem.
 
 ## W
 

@@ -20,6 +20,9 @@
 
 * [NuLink for Stakers](./product/stakers.md)
   * [Staking Dashboard](./product/staker/dashboard.md)
+    * [Staking Reward Statistics](./product/staker/staking_reward.md)
+    * [Service Bonus Statistics](./product/staker/service_bonus.md)
+    * [Staking Management](./product/staker/staking.md)
   * [NuLink Worker Installer](./product/staker/nulink_worker.md)
     * [Create Worker Account](./product/staker/eth_account.md)
     * [NuLink Worker Installation](./product/staker/worker_install.md)
