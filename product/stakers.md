@@ -24,3 +24,6 @@ The [**NuLink Worker Installer**](./staker/nulink_worker.md) simplifies the depl
 4. [**Worker Update:**](./staker/worker_update.md) Information on updating the NuLink worker to the latest version for access to new features and improvements.
 5. [**Worker Bond Update:**](./staker/worker_bond_update.md) Steps to follow for rebonding NuLink worker after unbonding or unstaking.
 Explore the [NuLink Worker Installer](./staker/nulink_worker.md) for step-by-step instructions.
+
+
+**Warning:** Do not use same address for staker account and worker account.

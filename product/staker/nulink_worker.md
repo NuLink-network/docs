@@ -10,6 +10,8 @@ There are four steps to run a NuLink Worker:
 3. Configure and Run a Worker node
 4. Bond the Worker node with your staking account
 
+**Warning:** Do not use same address for staker account and worker account. Make sure to generate a new one for worker account.
+
 ## Minimum System Requirements  
 
 * Debian/Ubuntu (Recommended)
