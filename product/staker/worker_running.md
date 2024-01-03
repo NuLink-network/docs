@@ -110,6 +110,22 @@ Generated configuration file at default filepath /home/circleci/.local/share/nul
 ```
 
 ### Launch the Node  
+Before performing this step, make sure that the environment variable has been set successfully.
+You can verify it using the following method, execute the following command: 
+```shell
+
+root@xxx:~#echo $NULINK_KEYSTORE_PASSWORD
+12345678
+root@xxx:~#echo $NULINK_OPERATOR_ETH_PASSWORD
+12345678
+```
+
+If the password is not displayed, please reset the environment variables.
+```shell
+export NULINK_KEYSTORE_PASSWORD=<YOUR NULINK STORAGE PASSWORD>
+export NULINK_OPERATOR_ETH_PASSWORD=<YOUR WORKER ACCOUNT PASSWORD>
+```
+
 The following command will start the node. Make sure you use the same host directory as the configuration. 
 
 **Remark1: You need to [claim](https://testnet.binance.org/faucet-smart) some BNB(test) token for Worker account as gas fee.**
