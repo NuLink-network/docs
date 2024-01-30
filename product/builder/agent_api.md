@@ -15,18 +15,25 @@ type CallBackFunc =  ( responseData?:any ) => Promise<any>;
 
 ## Methods
 
+### Workflow API
 - [connect](#connect)
-- [upload](#upload)
+- [uploadData](#uploaddata)
+- [uploadDataBatch](#uploaddatabatch)
+- [uploadFile](#uploadfile)
+- [uploadFileBatch](#uploadfilebatch)
 - [apply](#apply)
 - [approve](#approve)
 - [download](#download)
+### Platform data API
 - [getFileList](#getfilelist)
 - [getFileDetail](#getfiledetail)
 - [getSendApplyFiles](#getsendapplyfiles)
 - [getIncomingApplyFiles](#getincomingapplyfiles)
+- [getUrsulaNumber](#getursulanumber)
 - [getNetWorkChainId](#getnetworkchainid)
 - [setNetWorkChainId](#setnetworkchainid)
 - [sendCustomTransaction](#sendcustomtransaction)
+
 ### connect
 
   ```typescript
@@ -70,37 +77,185 @@ const loginSuccessHandler: CallBackFunc = async (responseData) => {
 }
 ```
 
-### upload
+### uploadData
 ```typescript
-upload(callBackFunc:CallBackFunc)
+uploadData(_uploadData: UploadData, callBackFunc:CallBackFunc)
 ```
-```upload```used for uploading files and executing a callback function after the upload is successful
+
+```uploadData```used for uploading data and executing a callback function after the upload is successful
+
+``` 
+type UploadData = {
+    dataLabel : string,
+    fileBinaryArrayBuffer: Blob
+}
+```
 
 #### Parameters
-- Promise : CallBackFunc - A callback function that will be called with the response data from the server.
+- _uploadData: UploadData - The type UploadData is defined as an object with properties dataLabel of type string and fileBinaryArrayBuffer of type Blob
+- Promise : CallBackFunc - A callback function that will be called with the response data from the server
 
 #### Returns
 ```
  {
-    accountAddress: string - the address of the logged-in user
-    accountId: string - the ID of the logged-in user
+    accountAddress: string
+    accountId: string
     action: 'upload'
     subAction?: string
-    result: string
+    dataInfo?: [{dataHash: string, dataLabel : string}]
+    result: 'success' | 'failed'
     redirectUrl: string
+    errorMsg?: any
 }
 ```
 
 #### Example
 
 ```typescript
-import { upload } from "@nulink_network/nulink-web-agent-access-sdk"
+import { uploadData } from "@nulink_network/nulink-web-agent-access-sdk"
 
 const _uploadAction = async () => {
-    await upload(async (data) => {
+    await uploadData({ dataLabel : dataLabel, fileBinaryArrayBuffer: blob }, async (responseData) => {
       if (responseData) {
         // Do something with the responseData
-        console.log(responseData);
+        console.log(responseData.dataInfo);
+      } else {
+        // Handle the error case
+        console.error('Failed to upload');
+      }
+    })
+}
+```
+
+### uploadDataBatch
+```typescript
+uploadDataBatch(dataList: UploadData[], callBackFunc:CallBackFunc)
+```
+
+```uploadDataBatch``` allows batch uploading of data and executes a callback function after the upload is successful
+
+``` 
+type UploadData = {
+    dataLabel : string,
+    fileBinaryArrayBuffer: Blob
+}
+```
+
+#### Parameters
+- dataList: UploadData[] - an array of UploadData objects
+- Promise : CallBackFunc - A callback function that will be called with the response data from the server
+
+#### Returns
+```
+ {
+    accountAddress: string
+    accountId: string
+    action: 'upload'
+    subAction?: string
+    dataInfo?: [{dataHash: string, dataLabel : string}]
+    result: 'success' | 'failed'
+    redirectUrl: string
+    errorMsg?: any
+}
+```
+
+#### Example
+
+```typescript
+import { uploadDataBatch } from "@nulink_network/nulink-web-agent-access-sdk"
+
+const _uploadAction = async () => {
+    await uploadDataBatch(dataList, async (responseData) => {
+      if (responseData) {
+        // Do something with the responseData
+        console.log(responseData.dataInfo);
+      } else {
+        // Handle the error case
+        console.error('Failed to upload');
+      }
+    })
+}
+```
+
+### uploadFile
+```typescript
+uploadFile(file: File, callBackFunc:CallBackFunc)
+```
+
+```uploadFile``` uploading file and executing a callback function after the upload is successful
+
+
+#### Parameters
+- file : File - the file to be uploaded, of type File
+- Promise : CallBackFunc - A callback function that will be called with the response data from the server
+
+#### Returns
+```
+ {
+    accountAddress: string
+    accountId: string
+    action: 'upload'
+    subAction?: string
+    dataInfo?: [{dataHash: string, dataLabel : string}]
+    result: 'success' | 'failed'
+    redirectUrl: string
+    errorMsg?: any
+}
+```
+
+#### Example
+
+```typescript
+import { uploadFile } from "@nulink_network/nulink-web-agent-access-sdk"
+
+const _uploadAction = async () => {
+    await uploadFile( file, async (responseData) => {
+      if (responseData) {
+        // Do something with the responseData
+        console.log(responseData.dataInfo);
+      } else {
+        // Handle the error case
+        console.error('Failed to upload');
+      }
+    })
+}
+```
+
+### uploadFileBatch
+```typescript
+uploadFileBatch(files: File[], callBackFunc:CallBackFunc)
+```
+
+```uploadFileBatch``` allows batch uploading of file and executes a callback function after the upload is successful
+
+#### Parameters
+- files: File[] - the files to be uploaded, an array of File
+- Promise : CallBackFunc - A callback function that will be called with the response data from the server
+
+#### Returns
+```
+ {
+    accountAddress: string
+    accountId: string
+    action: 'upload'
+    subAction?: string
+    dataInfo?: [{dataHash: string, dataLabel : string}]
+    result: 'success' | 'failed'
+    redirectUrl: string
+    errorMsg?: any
+}
+```
+
+#### Example
+
+```typescript
+import { uploadFileBatch } from "@nulink_network/nulink-web-agent-access-sdk"
+
+const _uploadAction = async () => {
+    await uploadFileBatch( files, async (responseData) => {
+      if (responseData) {
+        // Do something with the responseData
+        console.log(responseData.dataInfo);
       } else {
         // Handle the error case
         console.error('Failed to upload');
@@ -112,17 +267,30 @@ const _uploadAction = async () => {
 ### apply
 
 ```typescript
-apply(fileCreatorAddress:string, fileId:string, fileName:string, usageDays: string, callBackFunc:CallBackFunc)
+apply(dataName: string,
+      dataId: string,
+      dataCreatorAddress: string,
+      dataStorageUrl: string,
+      dataHash: string,
+      zkProof: string,
+      usageDays: number,
+      callBackFunc:CallBackFunc)
 ```
 
-```apply``` The apply function is used for applying for files, takes four parameters: fileCreatorAddress,fileId,fileName,usageDays and callBackFunc, which is the callback function to be executed after the application is successful.
+```apply``` The apply function is used for applying for files, takes eight parameters: dataCreatorAddress,dataId,dataName,dataStorageUrl,
+dataHash,zkProof,usageDays and callBackFunc, which is the callback function to be executed after the application is successful.
 
 #### Parameters
-- fileCreatorAddress : string - The file creator Address
-- fileId : string - The file id
-- fileName : string - The file name
-- usageDays : string - The number of days applied
+- dataName : string - The data name
+- dataId : string - The data id
+- dataCreatorAddress : string - The data creator Address
+- dataUrl : string - The data storage url
+- dataHash : string - The data hash
+- zkProof : string - The data zkProof
+- usageDays : number - The number of days applied
 - Promise : CallBackFunc - A callback function that will be called with the response data from the server.
+
+The parameters in the ``` apply ``` API can be obtained from the response of the ``` getFileList``` ``` getFileDetail```
 
 #### Returns
 ```
@@ -141,10 +309,10 @@ apply(fileCreatorAddress:string, fileId:string, fileName:string, usageDays: stri
 #### Example
 
 ```typescript
-import { upload } from "@nulink_network/nulink-web-agent-access-sdk"
+import { apply } from "@nulink_network/nulink-web-agent-access-sdk"
 
 const applyForFile = async () => {
-  await apply(fileCreatorAddress,fileId, fileName, usageDays, async () => {
+  await apply(_dataName, _dataId, _dataCreatorAddress, _dataUrl, _dataHash, _zkProof, _usageDays, async () => {
     if (responseData) {
       // Do something with the responseData
       console.log(responseData);
@@ -158,21 +326,27 @@ const applyForFile = async () => {
 
 ### approve
 ```typescript
-approve(applyId:string,
-         applyUserId:string,
-         applyUserAddress:string,
-         days:string,
-         remark:string,
-         callBackFunc:CallBackFunc)
+approve(applyId : string,
+        applyUserAddress : string,
+        applyUserId : string,
+        dataName : string,
+        dataHash : string,
+        dataStorageUrl : string,
+        days : string,
+        backupNodeNum : number,
+        callBackFunc : CallBackFunc)
 ```
 
-```approve```is used for approving files, takes six parameters: applyId, applyUserId, applyUserAddress, days, remark, and callBackFunc.
+```approve```is used for approving files, takes parameters: applyId, applyUserAddress, applyUserId, dataName, dataHash, dataUrl, days, backupNodeNum and callBackFunc.
 #### Parameters
 - applyId : string - the application ID
 - applyUserId : string - the application user id
 - applyUserAddress : string - the application user address
+- dataName : string - The data name
+- dataUrl : string - The data storage url
+- dataHash : string - The data hash
 - days : string - the application days
-- remark : string - the remark
+- backupNodeNum : number - number of nodes used for data backup, this number is the response of ``` getUrsulaNumber ``` API
 - Promise : CallBackFunc - A callback function that will be called with the response data from the server.
 
 #### Returns
@@ -196,7 +370,7 @@ approve(applyId:string,
 import { approve } from "@nulink_network/nulink-web-agent-access-sdk"
 
 const approveSubmit = async () => {
-    await approve(applyId, userAccountId, currentRecord.proposer_address, currentRecord.days, currentRecord.remark, async () => {
+    await approve(_applyId, _applyUserId, _applyUserAddress, _dataName, _dataUrl, _dataHash,  _days, _backupNodeNum, async () => {
       if (responseData) {
         // Do something with the responseData
         console.log(responseData);
@@ -211,29 +385,41 @@ const approveSubmit = async () => {
 ### download
 
 ```typescript
-download(fileId:string, fileName:string, applyUserAddress:string, callBackFunc:CallBackFunc)
+download(dataId:string,
+         dataName:string,
+         dataHash: string,
+         ownerAddress:string,
+         zkProof: string,
+         dataUrl: string,
+         encryptedDataSize: string,
+         callBackFunc:CallBackFunc)
 ```
 
-The fileDownload API provides the function of downloading files.
+The dataDownload API provides the function of downloading files.
 
 #### Parameters
 
-- fileId : string - The ID of the file to be downloaded.
-- fileName : string - The name of the file to be downloaded.
-- applyUserAddress : string - The address of the user who has applied to download the file.
+- dataId : string - The ID of the data to be downloaded
+- dataName : string - The name of the data to be downloaded
+- dataHash : string - The hash of the data to be downloaded
+- ownerAddress : string - The owner of the data
+- zkProof : string - The zk proof of the data
+- dataUrl : string - The data storage url
+- encryptedDataSize - The size of encrypted data
 - Promise : CallBackFunc - A callback function that will be called with the response data from the server.
 
 #### Returns
 ```
 {
-  accountAddress: string - the address of the logged-in user
-  accountId: string - the Id of the logged-in user
-  fileName: string - the request file name
-  action: 'decrypted'
-  subAction?: string
-  result: string
-  redirectUrl: string
-  url?: string - the file ipfs address
+  accountAddress: string
+    accountId: string
+    fileName: string
+    action: 'decrypted'
+    subAction?: string
+    result: 'success' | 'failed'
+    redirectUrl: string
+    arrayBuffer?: string - The ArrayBuffer of the raw data
+    errorMsg?: any
 }
 ```
 
@@ -243,27 +429,35 @@ The fileDownload API provides the function of downloading files.
 import { download }  from "@nulink_network/nulink-web-agent-access-sdk"
 
 const fileDownload = async () => {
-    await download(detailItem.file_id,detailItem.file_name, detailItem.file_owner_address, fileDownloadCallBack);
-  };
+    await download(
+        detailItem.file_id,
+        detailItem.file_name,
+        detailItem.file_hash,
+        detailItem.creator_address,
+        detailItem.file_zk_poof,
+        detailItem.file_url,
+        detailItem.file_encrypted_size,
+        fileDownloadCallBack,
+    );
+};
 
-  const fileDownloadCallBack = async (data) => {
+const fileDownloadCallBack = async (data) => {
     try {
-      if (!!data && data.url) {
-        const arraybuffer = await getData(decodeURIComponent(data.url))
-        const blob = new Blob([arraybuffer], { type: "arraybuffer" });
-        let url = window.URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.style.display = "none";
-        link.href = url;
-        link.setAttribute("download", data.fileName);
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
+        if (!!data && data.arrayBuffer) {
+            const blob = new Blob([data.arrayBuffer], { type: 'arraybuffer' })
+            const url = window.URL.createObjectURL(blob)
+            const link = document.createElement("a");
+            link.style.display = "none";
+            link.href = url
+            link.setAttribute("download", data.fileName);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     }catch (error){
-      throw new Error("Decryption failed, Please try again")
+        throw new Error("Decryption failed, Please try again")
     }
-  }
+}
 ```
 
 ### getFileList
@@ -285,17 +479,23 @@ Get the list of files belonging to other users.
 {
     total: number
     list: [{
-        file_id: string - File ID
-        file_name: string - File name
-        category: string - File category/type
-        format: string - File format
-        suffix: string - File suffix
-        address: string - File address
-        thumbnail: string - File thumbnail
-        owner: string - File owner
-        owner_id: string - File owner's account ID
-        owner_avatar: string - File owner's avatar
-        created_at: number - File upload timestamp
+        file_id: string - the file ID
+        file_name: string - the file name
+        file_hash: string - the file hash
+        file_raw_size: string - the original file size
+        file_zkproof: string - the zero-knowledge proof of file
+        file_encrypted_size: string - The size of the encrypted file
+        category: string - the file category/type
+        format: string - file format
+        suffix: string - file suffix
+        address: string - file address
+        thumbnail: string - file thumbnail
+        owner: string - file owner
+        file_url: string - file storage url
+        address: string - the file hash in backend
+        owner_id: string - file owner's account ID
+        owner_avatar: string - file owner's avatar
+        created_at: number - file upload timestamp
     }]
 }
 ```
@@ -326,9 +526,13 @@ get file details
 
 #### Returns
 ```typescript
-{
+[{
     file_id: string - File ID
     file_name: string - File name
+    file_hash: string - the file hash
+    file_raw_size: string - the original file size
+    file_zkproof: string - the zero-knowledge proof of file
+    file_encrypted_size: string - The size of the encrypted file
     thumbnail: string - File thumbnail
     creator: string - Owner of the file (policy creator)
     creator_id: string - Owner ID of the file (policy creator ID)
@@ -352,7 +556,7 @@ get file details
     policy_encrypted_pk: string - Encrypted public key of the policy
     encrypted_treasure_map_ipfs_address: string - Policy treasure map address
     alice_verify_pk: string - File owner's Verify public key
-}
+}]
 ```
 
 #### Example
@@ -383,9 +587,13 @@ Function to fetch send application files
 
 #### Returns
 ```typescript
-{
+[{
     file_id: string - File ID
     file_name: string - File name
+    file_hash: string - the file hash
+    file_raw_size: string - the original file size
+    file_zkproof: string - the zero-knowledge proof of file
+    file_encrypted_size: string - The size of the encrypted file
     thumbnail: string - File thumbnail
     apply_id: number - Application record ID
     proposer: string - Applicant name
@@ -402,7 +610,7 @@ Function to fetch send application files
     policy_id: number - Policy ID
     policy_label_id: string - Policy label ID
     hrac: string - Policy HRAC code
-}
+}]
 ```
 
 #### Example
@@ -433,17 +641,21 @@ Function to fetch the received application files
 
 #### Returns
 ```typescript
-{
+[{
     file_id: string - File ID
     file_name: string - File name
+    file_hash: string - the file hash
+    file_raw_size: string - the original file size
+    file_zkproof: string - the zero-knowledge proof of file
+    file_encrypted_size: string - The size of the encrypted file
     thumbnail: string - File thumbnail
     apply_id: number - Application record ID
     proposer: string - Applicant name
     proposer_id: string - Applicant account ID
-    proposer_address: string - Applicant's Ethereum address
+    proposer_address: string - Applicant's address
     file_owner: string - File owner name
     file_owner_id: string - File owner account ID
-    file_owner_address: string - File owner's Ethereum address
+    file_owner_address: string - File owner's address
     status: number - Application status, 1: applying, 2: approved, 3: rejected
     remark: string - Approval comment or remark
     start_at: number - Application start timestamp
@@ -452,7 +664,7 @@ Function to fetch the received application files
     policy_id: number - Policy ID
     policy_label_id: string - Policy label ID
     hrac: string - Policy HRAC code
-}
+}]
 ```
 
 #### Example
@@ -467,6 +679,31 @@ const _getIncomingApplyFiles = async () => {
 };
 
 ```
+
+### getUrsulaNumber
+
+```typescript
+getUrsulaNumber()
+```
+Function to fetch the backup nodes number of ursula
+
+#### Parameters
+    None
+
+#### Returns
+```typescript
+    ursulaNumber : number 
+```
+
+#### Example
+```typescript
+import { getUrsulaNumber }  from "@nulink_network/nulink-web-agent-access-sdk"
+
+let ursulaNum = await getUrsulaNumber()
+
+```
+
+
 ### getNetWorkChainId
 
 ```typescript
