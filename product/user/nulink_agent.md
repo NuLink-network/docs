@@ -15,74 +15,84 @@ When browsing third-party DApps, if the application supports NuLink account auth
 
 Open NuLink Agent [https://agent.testnet.nulink.org ](https://agent.testnet.nulink.org) or https://agent.nulink.org (in development). 
 
-If you are a new user, you need to register by clicking "Create an Agent account" and proceeding to the next step.
+If you are a new user, you need to register by clicking `CREATE AN AGENT ACCOUNT` and proceed to the next step.
 
-![Create Account](../miscellaneous/img/agent/create.png)
+![Create Account](../../miscellaneous/img/agent/create.png)
 
-Read the prompts, user agreement, and privacy policy, and continue to create your account by clicking "Sign Up."
+Enter the password setting page, where the password needs to be entered twice for confirmation.
+Make sure you can remember the password, which will be used to verify your identity during certain account security operations.
 
-![Sign Up Account](../miscellaneous/img/agent/signup.png)
-
-Continue to the next step to set your password. You need to repeat the password twice to ensure that you remember it. This password is used to confirm your identity when performing certain account security-related operations.
-
-![Set Password](../miscellaneous/img/agent/password.png)
+![Set Password](../../miscellaneous/img/agent/password.png)
 
 ## Backup Mnemonic
 
 After registration, it is essential to back up your mnemonic. The mnemonic is used to restore your account. Even if you change your computer, you can recover your account as long as you have your mnemonic.
 
-![Backup Mnemonic](../miscellaneous/img/agent/backup.png)
+After registration, it is essential to back up your mnemonics. The mnemonics are used to recover your account. Even if you switch computers, as long as you have the mnemonic phrase, you can retrieve your account. 
+Click `Start backing up` to proceed.
 
-Here is your mnemonic, which can be copied to your computer by clicking "Copy." It is best to write it down in your notebook to prevent accidental deletion or loss.
+![Backup Mnemonic](../../miscellaneous/img/agent/backup.png)
 
-![](../miscellaneous/img/agent/mnemonics.png)
+Here is your mnemonic phrases. You can click `Copy` to copy it to your computer, but it's best to handwrite it in your notebook to prevent accidental deletion or loss.
 
-Finally, to ensure that you have saved your mnemonic correctly, verify its accuracy by writing down the corresponding words as prompted. Once completed, a verification success message will appear.
+![Display Mnemonic](../../miscellaneous/img/agent/mnemonics.png)
 
-![Verify Mnemonic](../miscellaneous/img/agent/verify.png)
+Finally, to ensure you have saved the mnemonic phrase correctly, verify the accuracy of the saved phrase by writing the corresponding words as prompted. 
+A successful verification message will appear upon completion.
 
-![Mnemonic Verified](../miscellaneous/img/agent/verified.png)
+![Verify Mnemonic](../../miscellaneous/img/agent/verify.png)
+
 
 ## Account Recovery
-If you already have an account and have saved your mnemonic, you can click "Restore your account" and enter your mnemonic to recover your account.
 
-![Recovery Account](../miscellaneous/img/agent/create.png)
+If you already have an account and have saved your mnemonic phrases, you can directly click `RESTORE YOUR ACCOUNT` on the "Home" page. 
+Enter your mnemonic phrases and reset your password to successfully recover and log into your account.
 
-Enter your mnemonic and then reset your password. Once completed, a success message will appear.
+![Restore Account](../../miscellaneous/img/agent/restore.png)
 
-![Restore Account](../miscellaneous/img/agent/restore.png)
-
-![Imported Account](../miscellaneous/img/agent/imported.png)
 
 ## Homepage
-After registering or recovering your account, the page will automatically redirect to your account homepage, where you can see all your token balances. Currently, two tokens are supported: NLK and BNB, and you can also see your transaction records.
 
-![Homepage](../miscellaneous/img/agent/main.png)
+After registering or recovering your account, the page will automatically redirect to the account homepage, where you can see all your token balances. 
+Currently, two types of tokens are supported: NLK and BNB. You can also view each of your transaction records.
+
+![Homepage](../../miscellaneous/img/agent/main.png)
 
 ## Transfer
-Click "Send" on the account homepage to enter the transfer page. Choose the token, enter the receiver's address and amount, or click "Transfer all" to transfer all your balances at once. After verifying the information, click "Confirm and transfer" to complete the transfer. A certain amount of gas fees will be charged for each transaction.
 
-![Transfer](../miscellaneous/img/agent/transfer.png)
+After selecting the Token, click `Send` to enter the transfer page. 
+Enter the "Receiver's address" and "Amount". You can also click `Max` to transfer all balances. 
+After confirming the information, click `Next` to complete the transfer. A certain amount of gas fees will be charged for each transaction.
+
+![Transfer](../../miscellaneous/img/agent/transfer.png)
 
 ## Receive
-Click "Receive," and your account address and a QR code will appear. The QR code contains your account address, making it easy for others to transfer funds by scanning it without manually entering the address.
 
-![Receive](../miscellaneous/img/agent/receive.png)
+Click `Receive` to display your account address and a QR code. The QR code contains your account address, which is convenient for others to scan and transfer without manual input.
+
+![Receive](../../miscellaneous/img/agent/receive.png)
 
 ## Settings
-Click "Settings" and switch to "Network Set up." The system has already preset the RPC URL, but if you have a faster RPC URL, you can set it yourself to get a better experience.
 
-![Setting](../miscellaneous/img/agent/setting.png)
+Click `Setting`, switch to `Setup Network`. 
+The system has preset the RPC URL. If you have a faster RPC URL, you can set it yourself for a better experience.
+
+![Setting](../../miscellaneous/img/agent/setting.png)
 
 ## Export Private Key
 The private key contains all account information. The purpose of exporting the private key is to enable users to view their account information in other wallets. For example, users can import the private key of NuLink Agent to MetaMask to view their account information on NuLink Agent.
 
-![Export Private Keys](../miscellaneous/img/agent/export.png)
+The private key contains all account information. The purpose of exporting the private key is to enable users to view their account information in other wallets. 
+For example, you can view your NuLink Agent account information on Metamask by importing the NuLink Agent's private key.
 
-Please read the following security tips carefully to ensure the privacy during the export process. Click "Start backing up," enter the account password, and the private key information will be displayed.
+![Export Private Keys](../../miscellaneous/img/agent/export.png)
 
-![Enter Password](../miscellaneous/img/agent/enter_password.png)
+Read the security tips carefully to ensure privacy during the export process.
+Click `EXPORT PRIVATE KEYS`, enter your account password, and you can view your private key.
 
-After obtaining the private key, click "copy" below to quickly save your private key. Please follow the security tips below to keep your private key safe.
+![Enter Password](../../miscellaneous/img/agent/enter_password.png)
 
-![Export Private Keys](../miscellaneous/img/agent/exported.png)
+After obtaining the private key, click `COPY PRIVATE KEYS` below to quickly copy your private key. 
+Follow the security tips below to keep your private key safe.
+
+![Export Private Keys](../../miscellaneous/img/agent/exported.png)
