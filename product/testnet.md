@@ -54,6 +54,16 @@ Getting started with the Horus2.0 Testnet is quick and easy. Follow the steps be
    Deploy worker nodes using the [**NuLink Worker Installer**](./staker/nulink_worker.md) and monitor your worker status in the Dashboard.
 
 
+### For Builders
+
+1. **Builder Your DAPP:** You can use our SDK([Nulink SDK](./builder/sdk_api/README.md),[Nulink Agent SDK](./builder/agent_sdk.md)) to develop dapps with functions such as privacy computing, data encryption and sharing, etc.
+   
+2. **Test Your DAPP:** You can get the test token from the [faucet in the dashboard](https://dashboard.testnet.nulink.org/) and test your dapp in our testnet
+
+### For Users
+
+1. **File Transfer DAPP:** We provide a [Demonstration DAPP](./user/agent_usecase.md) that users can use to participate in the process of privacy computing and encrypted data sharing.
+
 Now you're all set to embark on your journey with NuLink's Horus2.0 Testnet. If you have any questions or need assistance, feel free to reach out to the community or our support channels. Happy testing!
 
 
