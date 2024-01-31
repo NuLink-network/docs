@@ -29,17 +29,16 @@ Before official authorization, enter your account password and click `confirm` t
 ![Enter Password](../../miscellaneous/img/agent/enter_password.png)
 
 As shown in the authorization page below, it displays the request source's address and my Agent account address.
-Click `Confirm` and the page will automatically return to the third-party application page.
 
 ![Connect NuLink Agent](../../miscellaneous/img/agent/confirm.png)
 
-The figure below shows the File Transfer page of the third-party application, and it is logged in with the Agent's current account. If you have not uploaded any files, please click "Upload file" to upload files first.
-
+Click `Confirm` and the page will automatically return to the third-party application page.
 
 The image below shows the third-party application 'File Transfer' page in the logged-in state, with the account being the currently logged-in Agent account. 
-If you have not uploaded any files, please click `Upload File` first.
 
 ![File Transfer](../../miscellaneous/img/agent/filetransfer.png)
+
+If you have not uploaded any files, please click `Upload File` first.
 
 ## File Upload -> Single File Upload
 
