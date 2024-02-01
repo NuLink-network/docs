@@ -160,7 +160,7 @@ const _uploadAction = async () => {
     })
 }
 ```
-![uploaddata.png](../miscellaneous/img/builder/uploaddata.png)
+![uploaddata.png](../../miscellaneous/img/builder/uploaddata.png)
 
 By calling the ``` getFileList ``` API, you can retrieve all the uploaded data within the Agent.
 
