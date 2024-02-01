@@ -186,6 +186,7 @@ const applyForFile = async () => {
 };
 ```
 ![applyData.png](../../miscellaneous/img/builder/requestdata.png)
+
 You can retrieve the data that the user has applied for by using the ``` getSendApplyFiles``` function
 In the response data of ``` getSendApplyFiles```, the value of the "status" field indicates the approval status of the data,
 where 1 represents "applying" 2 represents "approved" and 3 represents "rejected"
@@ -193,6 +194,7 @@ where 1 represents "applying" 2 represents "approved" and 3 represents "rejected
 ### Approve the apply data as publisher
 
 By calling the ``` getIncomingApplyFiles``` function, you can retrieve all the incoming apply data of the user
+
 ![incomingdata.png](../../miscellaneous/img/builder/incomingdata.png)
 
 calling the ``` approve ``` function, you can pass the data that needs to be approved to NuLink Agent.
