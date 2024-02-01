@@ -132,23 +132,23 @@ After completing the approval, you will return to the third-party application pa
 
 ## File Download
 
-The applicant re-enters the file detail page and sees that the application has been approved and can now download the file.
+When the applicant re-enters the file details page, they will see that their request has been approved and they can now download the file.
 
 ![Approved File Info](../../miscellaneous/img/agent/request_details.png)
 
 Click `Download now`.
-Since it is an encrypted file, Agent authorization decryption page will be called up first. 
-The request for decryption authorization information is shown below. 
+Since it is an encrypted file, the encrypted file will be downloaded first, click `NEXT`,
+as shown in the image below, 
 
 ![Authorization Request](../../miscellaneous/img/agent/request_auth.png)
 
-Click `NEXT` to start file decryption.
+further decrypt the file by clicking `Confirm`.
 
-After decryption, you will enter the file download page. 
+![File Decryption Confirm](../../miscellaneous/img/agent/request_download.png)
 
-![File Download Confirm](../../miscellaneous/img/agent/request_download.png)
+A message indicating successful decryption will appear, and after 1 second, you will automatically return to the third-party application page.
 
-Click `Confirm` and you will return to the third-party page to download.
+![File Decrypted](../../miscellaneous/img/agent/request_decryption.png)
 
 The image below shows the returned third-party page, and as shown in the lower left corner, the file has been downloaded to the local machine through the browser.
 
@@ -158,6 +158,12 @@ Click on the file to view its content, as shown below.
 
 ![File Image](../../miscellaneous/img/agent/request_img.png)
 
+## Storage Capacity
+To meet users' needs for encrypted file storage capacity, 
+Agent offers a storage capacity recharge plan for users, as shown in the image below.
 
+![Storage Upgrade](../../miscellaneous/img/agent/storage_status.png)
+
+![Storage Plan Chose](../../miscellaneous/img/agent/storage_plan.png)
 
 
