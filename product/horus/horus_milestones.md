@@ -13,10 +13,10 @@ Horus 2.0 is structured to evolve through three distinct phases, each bringing v
 ### Phase 2
 
 1. **NuLink Agent Integration:**
-   - The NuLink Agent will be connected to the Horus 2.0 testnet, allowing developers to test and interact with this privacy-focused solution.
+   - The [NuLink Agent](../user/nulink_agent.md) will be connected to the Horus 2.0 testnet, allowing developers to test and interact with this privacy-focused solution.
 
 2. **NuLink Demo DApp Integration:**
-   - A demonstration DApp showcasing NuLink functionalities will be connected to the testnet, providing hands-on experience for users and developers.
+   - A [demonstration DApp](../user/agent_usecase.md) showcasing NuLink functionalities will be connected to the testnet, providing hands-on experience for users and developers.
 
 3. **Blockchain Support:**
    - Horus will expand its compatibility by supporting multiple blockchains, enhancing the versatility and accessibility of the testnet.
