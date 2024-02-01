@@ -160,7 +160,7 @@ const _uploadAction = async () => {
     })
 }
 ```
-![uploaddata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/agent/uploaddata.png)
+![uploaddata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/builder/uploaddata.png)
 
 By calling the ``` getFileList ``` API, you can retrieve all the uploaded data within the Agent.
 
@@ -185,7 +185,7 @@ const applyForFile = async () => {
   });
 };
 ```
-![applyData.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/agent/applyData.png)
+![applyData.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/builder/requestdata.png)
 You can retrieve the data that the user has applied for by using the ``` getSendApplyFiles``` function
 In the response data of ``` getSendApplyFiles```, the value of the "status" field indicates the approval status of the data,
 where 1 represents "applying" 2 represents "approved" and 3 represents "rejected"
@@ -193,13 +193,13 @@ where 1 represents "applying" 2 represents "approved" and 3 represents "rejected
 ### Approve the apply data as publisher
 
 By calling the ``` getIncomingApplyFiles``` function, you can retrieve all the incoming apply data of the user
-![incomingdata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/agent/incomingdata.png)
+![incomingdata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/builder/incomingdata.png)
 
 calling the ``` approve ``` function, you can pass the data that needs to be approved to NuLink Agent.
 The data information can be obtained from the ``` getIncomingApplyFiles ``` API.
 The number of backup nodes required for the ```approve ``` method can be obtained by calling the ```getUrsulaNumber ``` API
 
-![approvedata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/agent/approvedata.png)
+![approvedata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/builder/approve.png)
 
 In the response data of ``` getIncomingApplyFiles```, the value of the "status" field indicates the approval status of the data,
 where 1 represents "applying" 2 represents "approved" and 3 represents "rejected"
@@ -245,7 +245,7 @@ const fileDownloadCallBack = async (data) => {
     }
 }
 ```
-![downloaddata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/agent/incomingdata.png)
+![downloaddata.png](https://github.com/NuLink-network/docs/blob/main/miscellaneous/img/builder/download.png)
 
 ## Utilities
 
