@@ -38,8 +38,9 @@
 
 * [NuLink for DApp Users](./product/dapp_users.md)
   * [NuLink Agent](./product/user/nulink_agent.md)
+  * [DApp Example](./product/user/agent_usecase.md)
   * [NuLink Snaps](./product/user/nulink_snaps.md)
-  * [DApp Demonstration](./product/user/agent_usecase.md)
+
 
 
 * [Horus2.0 Testnet](./product/testnet.md)
