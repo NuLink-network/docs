@@ -1,6 +1,11 @@
 # NuLink Agent Release Notes
 
-The current version is  [0.5.0](https://agent.testnet.nulink.org/)
+The current version is  [0.5.1](https://agent.testnet.nulink.org/)
+
+## v0.5.1 (2024/02/03):
+1. Add storage purchase records
+2. Agent UI revision
+3. Fix known issues
 
 ## v0.5.0 (2023/12/22):
 1. Fixed some bugs.
