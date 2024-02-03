@@ -1,6 +1,6 @@
 # NuLink Agent SDK Release Notes
 
-The current version is  [0.5.0](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v0.5.0_1513f1a8)
+The current version is  [0.5.5](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v0.5.5_88ac4101)
 
 ## v0.5.5 (2024/02/03):
 
