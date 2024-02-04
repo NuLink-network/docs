@@ -1,54 +1,33 @@
 # NuLink Agent SDK
-The SDK for third-party integration with [NuLink Agent](../product/nulink_agent.md).
 
-``` nulink web agent access sdk ```is a complete library to interact with the NuLink blockchain. You can use it in the browser, or in Node.js runtime.
-These APIs allow you to access Nulink Web Agent programmatically and perform various actions, such as connect, upload data, apply, approve and download.
+The NuLink Agent SDK is a robust toolkit designed to empower developers in seamlessly integrating [NuLink Agent](../product/nulink_agent.md) functionality into their decentralized applications (DApps). Bridging the communication between DApps and the NuLink Agent, this comprehensive SDK provides essential software development tools and resources. You can use it in the browser or in a Node.js runtime. By incorporating the NuLink Agent SDK into your DApp, you enable a secure and efficient connection to the NuLink Agent, which acts as an intermediary for handling privacy-sensitive data requests,such as connect, upload data, apply, approve, and download.
 
-## Supported
+Explore the potential of the NuLink Agent SDK with this documentation, guiding you through the integration process to create DApps that prioritize privacy and innovative functionalities. 
 
-### Networks
 
-| Network | Chain ID |
-|--------|----------|
-| Horus (BSC Testnet) | 97       |
-| Conflux eSpace Testnet | 71       |
 
-### NuLink Agent
+## Environment
 
-TestNet:https://agent.testnet.nulink.org
+The following is the supported blockchain and its associated chain ID for your reference.
+
+| Network                  | Chain ID |
+|--------------------------|----------|
+| Horus (BSC Testnet)      | 97       |
+| Conflux eSpace Testnet   | 71       |
+
+
+The following are the URLs for the NuLink Agent:
+
+- Testnet: https://agent.testnet.nulink.org
+
+
 
 ## Getting Started
 
-The default address in the Nulink Web Agent Access SDK:
-
-* NuLink Agent: https://agent.testnet.nulink.org
-* Backend service address: https://agent-integration-demo.nulink.org/bk
-* NuLink Staking Service Address: https://staking-api.testnet.nulink.org
-* NuLink Porter Service Address: https://porter-api.testnet.nulink.org
-
-The default network is Horus (BSC Testnet), default chain id is 97.
-If you need to change these addresses and network, you will need to write the following configurations in the .env file of your project:
-- REACT_APP_NULINK_AGENT_URL:  the web agent address
-- REACT_APP_CENTRALIZED_SERVER_URL: the centralized service address
-- REACT_APP_STAKING_SERVICE_URL: the staking service address
-- REACT_APP_BSC_TESTNET_PORTER_URL: the porter service address
-- REACT_APP_DEFAULT_NETWORK_CHAIN_ID: the network chain id
-
-```
-// modify .env in your project
-// web agent address
-REACT_APP_NULINK_AGENT_URL=xxxxxx
-// agent centralized bcakend service address
-REACT_APP_CENTRALIZED_SERVER_URL=xxxxxx
-// staking service address
-REACT_APP_STAKING_SERVICE_URL=https://staking-api.testnet.nulink.org
-// porter service address
-REACT_APP_BSC_TESTNET_PORTER_URL=https://porter-api.testnet.nulink.org
-// chain Id
-REACT_APP_DEFAULT_NETWORK_CHAIN_ID=xx
-```
 
 ## Install
+To get started, you need to install the NuLink Agent SDK into your project using either of the following commands:
+
 ```bash
 npm i @nulink_network/nulink-web-agent-access-sdk
 ```
@@ -56,6 +35,43 @@ or
 ```bash
 yarn add @nulink_network/nulink-web-agent-access-sdk
 ```
+
+
+## Initial configration 
+
+After the installation, you'll need to set the configurations in the .env file of your project:
+
+ - REACT_APP_NULINK_AGENT_URL:  the web agent address
+ - REACT_APP_CENTRALIZED_SERVER_URL: the backend service address
+ - REACT_APP_STAKING_SERVICE_URL: the staking service address
+ - REACT_APP_BSC_TESTNET_PORTER_URL: the porter service address
+ - REACT_APP_DEFAULT_NETWORK_CHAIN_ID: the network chain id
+
+Here's an example of how to modify the .env file in your project:
+
+```
+// modify .env in your project
+// web agent address
+REACT_APP_NULINK_AGENT_URL=xxxxxx
+// agent backend service address
+REACT_APP_CENTRALIZED_SERVER_URL=xxxxxx
+// staking service address
+REACT_APP_STAKING_SERVICE_URL=xxxxxx
+// porter service address
+REACT_APP_BSC_TESTNET_PORTER_URL= xxxxxx
+// chain Id
+REACT_APP_DEFAULT_NETWORK_CHAIN_ID=xx
+```
+
+The following lists the default configuration in the NuLink Agent SDK:
+
+* NuLink web agent address: https://agent.testnet.nulink.org
+* Backend service address: https://agent-integration-demo.nulink.org/bk
+* NuLink staking service address: https://staking-api.testnet.nulink.org
+* NuLink porter service address: https://porter-api.testnet.nulink.org
+* The network chain id: 97
+
+
 ## How to use
 
 - [Interacting with NuLink Agent](#interacting-with-nulink-agent)
@@ -253,10 +269,8 @@ const fileDownloadCallBack = async (data) => {
 
 The default network for the NuLink Agent SDK is Horus (BSC Testnet), with a chain ID of 97
 
-``` getNetWorkChainId``` function can be used to retrieve information about the current network.
-``` setNetWorkChainId``` function can be used to change current network.
+``` getNetWorkChainId``` can be used to retrieve information about the current chain ID.
+``` setNetWorkChainId``` can be used to change the chain ID.
 
+Explore the [nulink-web-agent-integration-demo](https://github.com/NuLink-network/nulink-web-agent-integration-demo.git) repository for a practical example of Dapp integration with the NuLink Agent SDK.
 
-See [nulink-web-agent-integration-demo](https://github.com/NuLink-network/nulink-web-agent-integration-demo.git)  to get how to use NuLink Agent SDK.
-
-Here the [Agent SDK API reference](./agent_api.md).

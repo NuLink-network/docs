@@ -30,16 +30,17 @@
     * [NuLink Worker Update](./product/staker/worker_update.md)
 
 * [NuLink for DApp Builders](./product/dapp_builders.md)
+  * [NuLink Agent SDK](./product/builder/agent_sdk.md)
+    * [API Reference](./product/builder/agent_api.md)
   * [NuLink SDK](./product/builder/sdk_api/README.md)
     * [API Reference](./product/builder/sdk_api/modules.md)
     * [Usage Example](./product/builder/sdk_api/sdk_example.md)
-  * [NuLink Agent SDK](./product/builder/agent_sdk.md)
-    * [API Reference](./product/builder/agent_api.md)
 
 * [NuLink for DApp Users](./product/dapp_users.md)
   * [NuLink Agent](./product/user/nulink_agent.md)
+  * [DApp Example](./product/user/agent_usecase.md)
   * [NuLink Snaps](./product/user/nulink_snaps.md)
-  * [DApp Demonstration](./product/user/agent_usecase.md)
+
 
 
 * [Horus2.0 Testnet](./product/testnet.md)
