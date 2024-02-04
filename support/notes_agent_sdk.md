@@ -1,11 +1,12 @@
 # NuLink Agent SDK Release Notes
 
-The current version is  [0.5.5](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v0.5.5_88ac4101)
+The current version is  [0.5.6](https://github.com/NuLink-network/nulink-web-agent-sdk/releases/tag/v0.5.6_4a0b66ca)
 
-## v0.5.5 (2024/02/03):
+## v0.5.6 (2024/02/04):
 
 1. Modify the upload and download process
-2. Modify the upload and download process
+2. Add an API to retrieve the number of backup nodes
+3. Add the empty parameter validation for the API
 
 ## v0.5.0 (2023/12/22):
 

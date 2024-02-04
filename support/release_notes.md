@@ -12,7 +12,7 @@
 
 | **Project**                                                                      | **Description**                                                                                                                                                   | **Current Version**         | **Open Sourced** |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |-----------------------------| ---------------- |
-| [**`NuLink Agent SDK`**](https://github.com/NuLink-network/nulink-web-agent-sdk) | The NuLink Agent-SDK provides developers with essential software development tools and resources to integrate NuLink Agent functionality into their applications. | [0.5.5](notes_agent_sdk.md) | Yes              |
+| [**`NuLink Agent SDK`**](https://github.com/NuLink-network/nulink-web-agent-sdk) | The NuLink Agent-SDK provides developers with essential software development tools and resources to integrate NuLink Agent functionality into their applications. | [0.5.6](notes_agent_sdk.md) | Yes              |
 | [**`NuLink SDK`**](https://github.com/NuLink-network/nulink-sdk/tree/crosschain)                 | The NuLink SDK is a robust and comprehensive software development kit designed to provide developers with a wide range of capabilities.                           | [0.5.0 ](notes_sdk.md)      | Yes              |
 
 ## For DApp Users In Demand Side
