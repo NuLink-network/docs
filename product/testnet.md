@@ -8,9 +8,9 @@ Horus2.0 is NuLink's dedicated testnet designed for developers and community mem
 + **Horus 2.0 Token address:** [0x06A0F0fa38AE42b7B3C8698e987862AfA58e90D9](https://testnet.bscscan.com/address/0x06A0F0fa38AE42b7B3C8698e987862AfA58e90D9)
 + **Epoch Length:**  24 hours
 + **Batch Length:**  4 epochs
-+ **Staking Pool Per Epoch:**  100 TNLK
++ **Staking Pool Per Epoch:**  100000 TNLK
 + **Minimal Staking Amount:** 1 TNLK
-+ **Maximum Staking Amount:** 5 TNLK
++ **Maximum Staking Amount:** 1000 TNLK
 
 
 For the latest updates and progress, refer to our [testnet milestones](./horus/horus_milestones.md). The Horus 2.0 testnet is only for test purposes. The token in the testnet has no value to trade. And for each phase, all data and records will be cleared, so please do not store your valuable data in Horus testnet.
