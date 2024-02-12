@@ -469,7 +469,9 @@ Get the list of files belonging to other users.
 
 #### Parameters
 - accountId : string - ID of the currently logged-in user
+- fileName : string - File name, supports fuzzy matching, can be empty.
 - include : boolean - If include=false, exclude the files belonging to the current account; otherwise, the files belonging to the current user will be placed at the beginning of the list.
+- format : string - the format of file,can be empty.
 - desc : boolean - Whether to sort in descending order by upload time
 - pageNum : number - page number (starting from 1)
 - pageSize : number - page size
