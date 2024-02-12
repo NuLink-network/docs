@@ -1,20 +1,15 @@
 # DApp example
-We provide a third-party demo example, a private file-sharing platform called [File Transfer](https://agent-integration-demo.nulink.org). 
-The business process is as follows: users can freely upload and encrypt their own files on the platform, 
-and other users can apply for the files they are interested in. 
-Once the author approves the application, the applicant can download and view the encrypted file. 
-Due to the privacy and security considerations of the files, all operations of this platform must be conducted through on-chain contracts. 
-Next, we will focus on introducing the business scenario of the application and Agent integration.
 
-We provide a third-party demo case, a private file-sharing platform called [File Transfer](https://agent-integration-demo.nulink.org).  
-The business process is as follows: 
+Welcome to the NuLink Agent SDK's third-party demonstration case, showcasing a private file-sharing platform known as [File Transfer](https://agent-integration-demo.nulink.org). This platform ensures privacy and security by encrypting all files uploaded and shared among users.
+
+The workflow of File Transfer is simple and efficient:
 * Users can freely upload and encrypt their files on the platform. 
 * Other users can apply for files they are interested in. 
 * Once the author approves the application, the applicant can download and view the encrypted files. 
 
-Considering the privacy and security of files, all operations on this platform must call on-chain contracts.
+To maintain the utmost privacy and security of files, all operations within this platform are executed through on-chain contracts.
 
-Next, we will focus on introducing the business scenario of the application and Agent integration.
+In the following sections, we will dive deeper into the detailed usage of this application and its seamless integration with the NuLink Agent.
 
 This application requires authorization to log into the Agent account for normal access and operation.
 
