@@ -20,7 +20,7 @@
 
 ## 2022 - Q4
 
-1. **Launch NuLink’s Testnet Horus1.0 in BNB Smart Chain:**
+1. **Launch NuLink’s Testnet Horus 1.0 in BNB Smart Chain:**
    - Release NuLink worker node installer.
    - Introduce NuLink staking Dapp.
    - Deploy NuLink Agent.
@@ -36,14 +36,14 @@
 
 ## 2023 - Q4
 
-1. **Launch NuLink’s Testnet Horus2.0:**
+1. **Launch NuLink’s Testnet Horus 2.0:**
    - Introduce the NuLink Dashboard.
    - Release the NuLink Worker Node Package.
    - Support the NuLink Token Incentive Mechanism.
 
 ## 2024 - Q1
 
-1. **Update NuLink’s Testnet Horus2.0:**
+1. **Update NuLink’s Testnet Horus 2.0:**
    - Release NuLink Snaps.
    - Launch NuLink Web Agent.
    - Deploy NuLink Ecosystem Dapps.
