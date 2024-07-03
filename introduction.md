@@ -11,7 +11,7 @@ The NuLink technology platform is a fusion of a robust blockchain foundation, ac
 
 At our core, we are committed to safeguarding data privacy. One of our primary objectives is to address the issue of data availability, which is typically divided into two parts. Firstly, we strive to provide consumers with the means to ascertain that the seller has the required data before making a request. Secondly, we aim to establish a mechanism for verifying the authenticity of the data in its encrypted form.
 
-Within the NuLink network, Zero-Knowledge Proof is used to ensure that all functional nodes, including storage nodes, computing nodes, and proxy nodes, have publicly verifiable data processing and computing operations. At the same time, prior to authorizing data access, the data owner is required to present a Zero-Knowledge Proof. This proof verifies that the encrypted data is aligned with its plaintext counterpart, irrespective of the encryption scheme being used. This approach endows NuLink network with enhanced flexibility.
+Within the NuLink network, Zero-Knowledge Proof is used to ensure that all functional nodes, including storage nodes, computing nodes, and proxy nodes, conduct publicly verifiable data processing and computing operations. At the same time, prior to authorizing data access, the data owner is required to present a Zero-Knowledge Proof. This proof verifies that the encrypted data is aligned with its plaintext counterpart, irrespective of the encryption scheme being used. This approach endows NuLink network with enhanced flexibility.
 
 ### Data Sharing
 
