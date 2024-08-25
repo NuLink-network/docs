@@ -1,6 +1,8 @@
 # Service Bonus Statistics
 
-To navigate to the Service Bonus page, simply click the `Service Bonus` button located in the dashboard menu. The displayed data is categorized by batches, with the default view set to the current batch. Users can easily scroll down to explore information from other batches.
+To navigate to the Service Bonus page, simply click the `Service Bonus` button located in the dashboard menu. 
+The displayed data is categorized by batches, with the default view set to the current batch. 
+Users can easily scroll down to explore information from other batches.
 
 ![Service Bonus](../../miscellaneous/img/dashboard/serviceBonus.png)
 
@@ -25,16 +27,12 @@ Currently, only BSC is supported, and other chains will gradually become availab
 
 ## Service bonus distribution
 
-The following image illustrates the Service bonus distribution for the active stakers in the displayed batch. All the active stakers in this batch can share the pool of 80% of the `Service Bonus` based on their reputation score quota.
+Scrolling further, you will see the `Service Bonus Distribution` section. 
+Only users who have installed a Stake Grid and bound it to a worker are eligible to receive service bonuses. 
+The distribution of 80% of the service bonus from each batch is based on each user’s Reputation Score Quota (the Reputation Score is related to the uptime of the node—the higher the uptime, the higher the score).
 
 ![Bonus from each chain](../../miscellaneous/img/dashboard/bonusDistribution.png)
 
-   * `Address`: The account address where the user engages in staking activities.
-   * `Node IP`: Node IP records the corresponding IP address of the worker nodes that the staker bonds
-   * `Reputtion score`: A metric in the NuLink network assesses a staker's historical contribution within a single batch. It counts the number of active epochs within a batch, considering epochs with a living ratio higher than a specified threshold (currently set to 0.8) as active. The reputation score serves as an indicator of a staker's reliability and positive engagement with the NuLink network.
-   * `Reputtion score quota`: A measurement represents the proportion of an individual user's reputation score relative to the total user's reputation score within the NuLink network. The metric provides insights into the relative contribution of a user's reputation to the overall reputation dynamics of the NuLink ecosystem.
-   * `Quantity(NLK)`: This calculates the user's service bonus based on the reputtion score quota.
-   
 
 ## Foundation Distribution
 The image below demonstrates the Foundation Distribution, where 15% of the service bonus generated in each Batch is allocated to the NuLink Network Foundation's account.
