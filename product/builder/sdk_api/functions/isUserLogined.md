@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / isUserLogined
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / isUserLogined
 
 # Function: isUserLogined
 
@@ -17,4 +17,4 @@ UnauthorizedError get logined account failed, must be login account first
 
 #### Defined in
 
-[api/pre.ts:139](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/pre.ts#L139)
+[api/pre.ts:296](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/pre.ts#L296)

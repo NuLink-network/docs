@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / unlockWallet
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / unlockWallet
 
 # Function: unlockWallet
 
@@ -20,4 +20,4 @@ Attempts to unlock the NuLinkHDWallet with the given password.
 
 #### Defined in
 
-[api/wallet.ts:259](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/wallet.ts#L259)
+[api/wallet.ts:270](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/wallet.ts#L270)

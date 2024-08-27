@@ -5,26 +5,46 @@ NuLink SDK is a software development kit designed to support privacy computing i
 
 ## Build & Install
 
-### Build Source
+### <a id="BuildSource">Build Source</a>
 
-```bash
-1. Rename .env.example to .env
-2. Modify config:
-  // The SDK backend testnet server address. In the NuLink testnet,
-  // you can use the address: https://agent.testnet.nulink.org/bk
-  REACT_APP_CENTRALIZED_SERVER_URL=xxxxx
-  // Your IPFS address, requires permission to write data. In the NuLink testnet,
-  // you can use the address: https://agent.testnet.nulink.org/nuipfs
-  REACT_APP_IPFS_NODE_URL=xxxxx
-  // The NuLink porter address. In the NuLink testnet,
-  // you can use the address: https://agent.testnet.nulink.org/porter
-  REACT_APP_PORTER_URL= xxxxx
-  // The BSC testnet Web3 RPC URL. Example:
-  REACT_APP_WEB3_RPC_URL=xxxxx
+#### Set up your environment
 
-3. yarn install
-4. yarn build:main
+1. select a configuration file of your usage environment
+
+- Development Environment (.env.dev)
+- Production Environment (.env.prod)
+- Custom Environment (.env.example)
+
+2. Rename configuration file to .env
+
+- for Development Environment: rename .env.dev to .env
+- for Production Environment: rename .env.prod to .env
+- for Custom Environment: rename .env.example to .env, [then you need to modify the configuration file manually](#customEnvConfig)
+
+##### <a id="customEnvConfig">Set configuration for a custom environment </a>
+
+```javascript
+//Modify config:
+//the sdk backend testnet server address. in the nulink testnet,
+//you can use the address: https://agent.testnet.nulink.org/bk
+REACT_APP_CENTRALIZED_SERVER_URL=xxxxx
+
+//Configure the parameters of the network that you connect to. Parameters for networks that are not connected do not need to be configured.
+
+//the nulink bsc testnet porter address. in the nulink testnet,
+//you can use the address: https://agent.testnet.nulink.org/porter
+REACT_APP_BSC_TESTNET_PORTER_URI= xxxxx
+//the network's (e.g. bsc testnet) web3 rpc url. example:
+REACT_APP_BSC_TESTNET_WEB3_RPC_URL=xxxxx
 ```
+
+#### build project
+
+```shell
+1. yarn install
+2. yarn build:main
+```
+
 ### Install via npm
 
 ```bash

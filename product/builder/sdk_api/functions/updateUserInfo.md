@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / updateUserInfo
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / updateUserInfo
 
 # Function: updateUserInfo
 
@@ -29,4 +29,4 @@ UnauthorizedError get logined account failed, must be login account first
 
 #### Defined in
 
-[api/pre.ts:219](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/pre.ts#L219)
+[api/pre.ts:379](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/pre.ts#L379)

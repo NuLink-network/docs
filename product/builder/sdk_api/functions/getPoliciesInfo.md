@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / getPoliciesInfo
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / getPoliciesInfo
 
 # Function: getPoliciesInfo
 
@@ -11,8 +11,8 @@ Obtains a list of the information of the policies published on the blockchain.
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `policyId?` | `number` | `undefined` | policyId |
-| `creatorId?` | `string` | `undefined` | the publisher's account id of the file |
-| `consumerId?` | `string` | `undefined` | the user's account id of the file |
+| `creatorId?` | `string` | `undefined` | the publisher's account id of the file/data |
+| `consumerId?` | `string` | `undefined` | the user's account id of the file/data |
 | `policyLabelId?` | `string` | `undefined` | the `label` fields of the Strategy object in the Account Object |
 | `pageIndex` | `number` | `1` | (Optional) number default 1 |
 | `pageSize` | `number` | `10` | (Optional) number default 10 |
@@ -46,4 +46,4 @@ Obtains a list of the information of the policies published on the blockchain.
 
 #### Defined in
 
-[core/pre/api/workflow.ts:1180](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/pre/api/workflow.ts#L1180)
+[core/pre/api/workflow.ts:1343](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/pre/api/workflow.ts#L1343)

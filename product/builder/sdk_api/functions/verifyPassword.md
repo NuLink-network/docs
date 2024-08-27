@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / verifyPassword
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / verifyPassword
 
 # Function: verifyPassword
 
@@ -24,4 +24,4 @@ AssertionError - Throws an error if the hdWallet or passwordHash is blank.
 
 #### Defined in
 
-[api/wallet.ts:195](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/wallet.ts#L195)
+[api/wallet.ts:202](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/wallet.ts#L202)

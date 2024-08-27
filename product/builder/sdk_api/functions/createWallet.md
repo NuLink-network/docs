@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / createWallet
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / createWallet
 
 # Function: createWallet
 
@@ -22,4 +22,4 @@ If no mnemonic phrase is provided, one will be generated automatically.
 
 #### Defined in
 
-[api/wallet.ts:157](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/wallet.ts#L157)
+[api/wallet.ts:162](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/wallet.ts#L162)

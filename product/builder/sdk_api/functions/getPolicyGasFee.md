@@ -1,10 +1,10 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / getPolicyGasFee
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / getPolicyGasFee
 
 # Function: getPolicyGasFee
 
-▸ **getPolicyGasFee**(`userAccountId`, `applyId`, `ursulaShares`, `ursulaThreshold`, `startSeconds`, `endSeconds`, `serverFee`): `Promise`<`string`\>
+▸ **getPolicyGasFee**(`userAccountId`, `applyId`, `ursulaShares`, `ursulaThreshold`, `startSeconds`, `endSeconds`, `serverFee`, `gasPrice?`): `Promise`<[`GasInfo`](../types/GasInfo.md)\>
 
-estimate service gas fees for sharing files
+estimate service gas fees for sharing data/files
 Please unlock account with your password first by call getWalletDefaultAccount(userpassword), otherwise an UnauthorizedError exception will be thrown.
 
 **`Throws`**
@@ -15,24 +15,29 @@ UnauthorizedError get logined account failed, must be login account first
 
 PolicyHasBeenActivedOnChain Policy has been actived(created) on chain (policy is currently active)
 
+**`Throws`**
+
+PolicyApproving Policy are under review, please wait for the review to complete
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `userAccountId` | `string` | the account Id of the file applicant (Bob) |
-| `applyId` | `string` | The application ID returned to the user by the interface when applying to use a specific file |
+| `userAccountId` | `string` | the account Id of the data/file applicant (Bob) |
+| `applyId` | `string` | The application ID returned to the user by the interface when applying to use a specific data/file |
 | `ursulaShares` | `number` | Number of service shares |
-| `ursulaThreshold` | `number` | The file user can download the file after obtaining the specified number of service data shares |
-| `startSeconds` | `number` | Start time of file usage application in seconds |
-| `endSeconds` | `number` | End time of file usage application in seconds |
-| `serverFee` | `BigNumber` | server fees by call function of `getPolicyServerGasFee` |
+| `ursulaThreshold` | `number` | The data/file user can download the data/file after obtaining the specified number of service data shares |
+| `startSeconds` | `number` | Start time of data/file usage application in seconds |
+| `endSeconds` | `number` | End time of data/file usage application in seconds |
+| `serverFee` | `BigNumber` | server fees by call function of `getPolicyServerFee` |
+| `gasPrice` | `BigNumber` | the user can set the gas rate manually, and if it is set to 0, the gasPrice is obtained in real time |
 
 #### Returns
 
-`Promise`<`string`\>
+`Promise`<[`GasInfo`](../types/GasInfo.md)\>
 
-- the amount of bnb/tbnb in wei
+- the GasInfo of bnb/tbnb in wei
 
 #### Defined in
 
-[api/pre.ts:60](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/pre.ts#L60)
+[api/pre.ts:124](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/pre.ts#L124)

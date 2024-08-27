@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / NuLinkHDWallet
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / NuLinkHDWallet
 
 # Class: NuLinkHDWallet
 
@@ -48,7 +48,7 @@ nulink wallet object
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1559](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1559)
+[core/hdwallet/api/account.ts:1601](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1601)
 
 ## Methods
 
@@ -72,7 +72,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1610](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1610)
+[core/hdwallet/api/account.ts:1652](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1652)
 
 ___
 
@@ -106,7 +106,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1625](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1625)
+[core/hdwallet/api/account.ts:1667](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1667)
 
 ___
 
@@ -130,7 +130,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1675](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1675)
+[core/hdwallet/api/account.ts:1718](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1718)
 
 ___
 
@@ -152,7 +152,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1718](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1718)
+[core/hdwallet/api/account.ts:1761](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1761)
 
 ___
 
@@ -185,20 +185,20 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1732](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1732)
+[core/hdwallet/api/account.ts:1775](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1775)
 
 ___
 
 ### restoreHDWallet
 
-▸ `Static` **restoreHDWallet**(`mnemonic`, `newPassword`, `dataFileBinaryString?`): `Promise`<[`NuLinkHDWallet`](NuLinkHDWallet.md)\>
+▸ `Static` **restoreHDWallet**(`mnemonic`, `newPassword`, `dataBinaryString?`): `Promise`<[`NuLinkHDWallet`](NuLinkHDWallet.md)\>
 
-Restores a NuLinkHDWallet using a mnemonic phrase and optional data file binary string.
+Restores a NuLinkHDWallet using a mnemonic phrase and optional data/file binary string.
 attention please: you need to call the createAccountIfNotExist method outside of this function for add user account to the center server for decouple
 
 **`Throws`**
 
-Error - Throws an error if the restore wallet tag is missing or if the wallet could not be restored from the data file.
+- Throws an error if the restore wallet tag is missing or if the wallet could not be restored from the data/file.
 
 **`Static`**
 
@@ -212,7 +212,7 @@ NuLinkHDWallet
 | :------ | :------ | :------ | :------ |
 | `mnemonic` | `string` | `undefined` | The mnemonic phrase used to restore the wallet. |
 | `newPassword` | `string` | `undefined` | The password used to encrypt the wallet. |
-| `dataFileBinaryString?` | `string` | `''` | The optional binary string of a data file to restore the wallet from. The dataFileBinaryString is returned by the exportWalletData function If a data file binary string is provided, the wallet's account data will be restored from it. Otherwise, a new account will be created. |
+| `dataBinaryString?` | `string` | `''` | The optional binary string of a data/file to restore the wallet from. The dataBinaryString is returned by the exportWalletData function If a data/file binary string is provided, the wallet's account data will be restored from it. Otherwise, a new account will be created. |
 
 #### Returns
 
@@ -222,13 +222,13 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1751](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1751)
+[core/hdwallet/api/account.ts:1794](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1794)
 
 ___
 
 ### restoreHDWalletByRootExtendedPrivateKey
 
-▸ `Static` **restoreHDWalletByRootExtendedPrivateKey**(`privateKeyString`, `newPassword`, `dataFileBinaryString?`): `Promise`<[`NuLinkHDWallet`](NuLinkHDWallet.md)\>
+▸ `Static` **restoreHDWalletByRootExtendedPrivateKey**(`privateKeyString`, `newPassword`, `dataBinaryString?`): `Promise`<[`NuLinkHDWallet`](NuLinkHDWallet.md)\>
 
 Restores an HDWallet object using a root extended private key and optional user data.
 
@@ -242,7 +242,7 @@ attention please: you need to call the createAccountIfNotExist method outside of
 
 **`Throws`**
 
-Error  Throws an InvalidRootExtendedPrivateKeyError if the provided private key does not follow the BIP32 standard.
+Throws an InvalidRootExtendedPrivateKeyError if the provided private key does not follow the BIP32 standard.
 
 **`Static`**
 
@@ -256,7 +256,7 @@ NuLinkHDWallet
 | :------ | :------ | :------ | :------ |
 | `privateKeyString` | `string` | `undefined` | The root extended private key used to generate sub-accounts and access funds. |
 | `newPassword` | `string` | `undefined` | The password used to encrypt the HDWallet object. |
-| `dataFileBinaryString?` | `string` | `''` | Optional parameter that contains user data, such as account information, in binary form. |
+| `dataBinaryString?` | `string` | `''` | Optional parameter that contains user data, such as account information, in binary form. |
 
 #### Returns
 
@@ -266,7 +266,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1813](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1813)
+[core/hdwallet/api/account.ts:1856](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1856)
 
 ___
 
@@ -298,7 +298,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1897](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1897)
+[core/hdwallet/api/account.ts:1940](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1940)
 
 ___
 
@@ -330,13 +330,13 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1914](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1914)
+[core/hdwallet/api/account.ts:1957](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1957)
 
 ___
 
 ### restoreHDWalletByData
 
-▸ `Static` **restoreHDWalletByData**(`newPassword`, `dataFileBinaryString`): `Promise`<[`NuLinkHDWallet`](NuLinkHDWallet.md)\>
+▸ `Static` **restoreHDWalletByData**(`newPassword`, `dataBinaryString`): `Promise`<[`NuLinkHDWallet`](NuLinkHDWallet.md)\>
 
 Restores an account by data info (including the mnemonic (or root extended private key) and user data (strategy infos)).
 
@@ -355,7 +355,7 @@ NuLinkHDWallet
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `newPassword` | `string` | The password for the new wallet. |
-| `dataFileBinaryString` | `string` | The binary string data file used to restore the wallet. The dataFileBinaryString is returned by the exportWalletData function. |
+| `dataBinaryString` | `string` | The binary string data/file used to restore the wallet. The dataBinaryString is returned by the exportWalletData function. |
 
 #### Returns
 
@@ -365,7 +365,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:1934](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L1934)
+[core/hdwallet/api/account.ts:1977](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L1977)
 
 ___
 
@@ -394,15 +394,15 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2025](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2025)
+[core/hdwallet/api/account.ts:2068](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2068)
 
 ___
 
 ### recoverUserData
 
-▸ **recoverUserData**(`newPassword`, `dataFileBinaryString?`, `_mode?`): `Promise`<`void`\>
+▸ **recoverUserData**(`newPassword`, `dataBinaryString?`, `_mode?`): `Promise`<`void`\>
 
-Recover user data to current NuLinkHDWallet object using the provided encrypted data file.
+Recover user data to current NuLinkHDWallet object using the provided encrypted data/file.
 
 **`Memberof`**
 
@@ -413,7 +413,7 @@ NuLinkHDWallet
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `newPassword` | `string` | `undefined` | New password for encryption |
-| `dataFileBinaryString` | `string` | `''` | Encrypted data file as a binary string |
+| `dataBinaryString` | `string` | `''` | Encrypted data/file as a binary string |
 | `_mode` | `DataStrategyRecoveryMode` | `DataStrategyRecoveryMode.Union` | Recovery mode for restoring data strategies |
 
 #### Returns
@@ -424,7 +424,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2070](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2070)
+[core/hdwallet/api/account.ts:2113](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2113)
 
 ___
 
@@ -432,7 +432,7 @@ ___
 
 ▸ **exportUserData**(`password`): `Promise`<`string`\>
 
-Export user data as an encrypted file.
+Export user data as an encrypted data/file.
 
 **`Memberof`**
 
@@ -448,11 +448,11 @@ NuLinkHDWallet
 
 `Promise`<`string`\>
 
-- Promise object representing the encrypted data file as a string
+- Promise object representing the encrypted data/file as a string
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2120](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2120)
+[core/hdwallet/api/account.ts:2163](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2163)
 
 ___
 
@@ -480,7 +480,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2158](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2158)
+[core/hdwallet/api/account.ts:2201](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2201)
 
 ___
 
@@ -508,7 +508,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2200](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2200)
+[core/hdwallet/api/account.ts:2243](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2243)
 
 ___
 
@@ -536,7 +536,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2216](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2216)
+[core/hdwallet/api/account.ts:2259](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2259)
 
 ___
 
@@ -568,7 +568,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2257](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2257)
+[core/hdwallet/api/account.ts:2300](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2300)
 
 ___
 
@@ -588,7 +588,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2281](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2281)
+[core/hdwallet/api/account.ts:2324](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2324)
 
 ___
 
@@ -614,7 +614,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2290](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2290)
+[core/hdwallet/api/account.ts:2333](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2333)
 
 ___
 
@@ -636,7 +636,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2552](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2552)
+[core/hdwallet/api/account.ts:2595](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2595)
 
 ___
 
@@ -658,7 +658,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2561](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2561)
+[core/hdwallet/api/account.ts:2604](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2604)
 
 ___
 
@@ -680,19 +680,19 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2570](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2570)
+[core/hdwallet/api/account.ts:2613](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2613)
 
 ___
 
 ### parseUserDataVersionInfo
 
-▸ `Static` **parseUserDataVersionInfo**(`dataFileBinaryString`): `Promise`<`any`\>
+▸ `Static` **parseUserDataVersionInfo**(`dataBinaryString`): `Promise`<`any`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `dataFileBinaryString` | `string` |
+| `dataBinaryString` | `string` |
 
 #### Returns
 
@@ -700,7 +700,7 @@ ___
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2598](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2598)
+[core/hdwallet/api/account.ts:2641](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2641)
 
 ___
 
@@ -732,7 +732,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2702](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2702)
+[core/hdwallet/api/account.ts:2745](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2745)
 
 ___
 
@@ -761,7 +761,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2891](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2891)
+[core/hdwallet/api/account.ts:2934](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2934)
 
 ___
 
@@ -789,7 +789,7 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2924](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2924)
+[core/hdwallet/api/account.ts:2967](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2967)
 
 ___
 
@@ -820,4 +820,4 @@ NuLinkHDWallet
 
 #### Defined in
 
-[core/hdwallet/api/account.ts:2955](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/hdwallet/api/account.ts#L2955)
+[core/hdwallet/api/account.ts:2998](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/hdwallet/api/account.ts#L2998)

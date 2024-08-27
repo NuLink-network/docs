@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / updateAccountInfo
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / updateAccountInfo
 
 # Function: updateAccountInfo
 
@@ -19,4 +19,4 @@ update info of current user account
 
 #### Defined in
 
-[core/pre/api/workflow.ts:176](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/pre/api/workflow.ts#L176)
+[core/pre/api/workflow.ts:281](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/pre/api/workflow.ts#L281)

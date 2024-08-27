@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / getAccountInfo
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / getAccountInfo
 
 # Function: getAccountInfo
 
@@ -36,4 +36,4 @@ get account info by account id
 
 #### Defined in
 
-[core/pre/api/workflow.ts:153](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/pre/api/workflow.ts#L153)
+[core/pre/api/workflow.ts:190](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/pre/api/workflow.ts#L190)

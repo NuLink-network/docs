@@ -1,4 +1,4 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / IsExistAccount
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / IsExistAccount
 
 # Function: IsExistAccount
 
@@ -20,4 +20,4 @@ Determines whether an account exists on the server.
 
 #### Defined in
 
-[core/pre/api/workflow.ts:97](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/pre/api/workflow.ts#L97)
+[core/pre/api/workflow.ts:132](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/pre/api/workflow.ts#L132)

@@ -1,10 +1,10 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / getInUsePoliciesInfo
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / getInUsePoliciesInfo
 
 # Function: getInUsePoliciesInfo
 
 ▸ **getInUsePoliciesInfo**(`account`, `pageIndex?`, `pageSize?`): `Promise`<`object`\>
 
-The applicant of the file obtains a list of the policy information. 
+The applicant of the file/data obtains a list of the policy information. 
 get information about the current of all using policies by publiser others, the current account as Bob
 
 #### Parameters
@@ -44,4 +44,4 @@ get information about the current of all using policies by publiser others, the 
 
 #### Defined in
 
-[core/pre/api/workflow.ts:1104](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/core/pre/api/workflow.ts#L1104)
+[core/pre/api/workflow.ts:1265](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/core/pre/api/workflow.ts#L1265)

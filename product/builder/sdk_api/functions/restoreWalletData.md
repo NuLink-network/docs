@@ -1,8 +1,8 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / restoreWalletData
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / restoreWalletData
 
 # Function: restoreWalletData
 
-▸ **restoreWalletData**(`newPassword`, `dataFileBinaryString`): `Promise`<[`NuLinkHDWallet`](../classes/NuLinkHDWallet.md)\>
+▸ **restoreWalletData**(`newPassword`, `dataBinaryString`): `Promise`<[`NuLinkHDWallet`](../classes/NuLinkHDWallet.md)\>
 
 Restores an account by data info (including the mnemonic (or root extended private key) and user data (strategy infos)).
 
@@ -15,7 +15,7 @@ UserDataCorruptedError, UserDataVersionLowError
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `newPassword` | `string` | The password for the new wallet. |
-| `dataFileBinaryString` | `string` | The binary string data file used to restore the wallet. The dataFileBinaryString is returned by the exportWalletData function. |
+| `dataBinaryString` | `string` | The binary string data/file used to restore the wallet. The dataBinaryString is returned by the exportWalletData function. |
 
 #### Returns
 
@@ -25,4 +25,4 @@ UserDataCorruptedError, UserDataVersionLowError
 
 #### Defined in
 
-[api/wallet.ts:115](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/wallet.ts#L115)
+[api/wallet.ts:118](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/wallet.ts#L118)

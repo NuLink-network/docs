@@ -1,12 +1,12 @@
-[NuLink SDK - v0.0.6](../README.md) / [Modules](../modules.md) / getMnemonic
+[NuLink SDK - v0.5.31](../README.md) / [Modules](../modules.md) / getMnemonic
 
 # Function: getMnemonic
 
 ▸ **getMnemonic**(`password?`): `Promise`<`undefined` \| ``null`` \| `string`\>
 
 get the wallet's mnemonic
- Note:  If no password is passed to the getWalletDefaultAccount function, it will attempt to obtain the wallet object from memory.
- If it cannot be obtained, null is returned. In this case, the function needs to be called again with the user's password to retrieve the wallet object.
+Note:  If no password is passed to the getWalletDefaultAccount function, it will attempt to obtain the wallet object from memory.
+If it cannot be obtained, null is returned. In this case, the function needs to be called again with the user's password to retrieve the wallet object.
 
 **`Throws`**
 
@@ -26,4 +26,4 @@ Returns the mnemonic phrase if the password is correct, otherwise returns null. 
 
 #### Defined in
 
-[api/wallet.ts:276](https://github.com/NuLink-network/nulink-sdk/blob/dec95fc/src/api/wallet.ts#L276)
+[api/wallet.ts:288](https://github.com/NuLink-network/nulink-sdk/blob/f3f9a8b/src/api/wallet.ts#L288)
