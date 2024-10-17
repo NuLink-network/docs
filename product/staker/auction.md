@@ -34,11 +34,6 @@ Once successfully placed, your bid will be displayed, as shown below:
 
 After the auction ends, you can see whether your bid was successful or not.
 
-![Auction Details](../../miscellaneous/img/dashboard/auctionDetails4.png)
-
-
-## My Auctions
-
 As shown in the image, there are three statuses for the staking grids you participated in bidding on: 
 `AUCTION IN PROGRESS`, `AUCTION ENDED SUCCESSFUL`, and `AUCTION ENDED FAILED`. 
 
