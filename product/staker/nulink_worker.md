@@ -6,9 +6,9 @@ The NuLink Worker is the node to provide cryptographic service in the NuLink net
 
 There are four steps to run a NuLink Worker:
 1. Create Worker Account
-2. Install NuLink Worker
-3. Configure and Run a Worker node
-4. Bond the Worker node with your staking account
+2. Bond the Worker node with your staking account
+3. Install NuLink Worker
+4. Configure and Run a Worker node
 
 **Warning:** Do not use same address for staker account and worker account. Make sure to generate a new one for worker account.
 
