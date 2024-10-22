@@ -6,7 +6,7 @@ The NuLink Worker is the node to provide cryptographic service in the NuLink net
 
 There are four steps to run a NuLink Worker:
 1. Create Worker Account
-2. Bond the Worker node with your staking account
+2. Bond the Worker Account with your staking account
 3. Install NuLink Worker
 4. Configure and Run a Worker node
 
@@ -28,6 +28,15 @@ Prepare an ETH type account for the Worker. We suggest creating a Worker account
 
 If you already know how to create one and access the keystore file, you can skip this step. Otherwise we recommend you to use Geth to create the Worker account.  Please check [here](./eth_account.md) for details.
 
+## Bond the Worker Account with your staking account  
+
+Don't forget to bond it with your staking account to get reward after successfully running a NuLink Worker node using the NuLink Staking Dashboard. 
+
+- Navigate to [NuLink Staking Dashboard](https://dashboard.testnet.nulink.org)
+- Connect with the Staking account and make sure you have staked tokens in the staking pool
+- Enter the Worker address to bond
+- Click “Bond Worker”
+
 ## Install NuLink Worker  
 
 Start to download and install NuLink Worker.  Install it using Docker (recommended) or install it with local installation. See [here](./worker_install.md) for more details. 
@@ -36,14 +45,7 @@ Start to download and install NuLink Worker.  Install it using Docker (recommend
 
 Initialize the configuration and start the Worker Node. If install via docker, need to initialize the configuration and run it in Docker. Otherwise please check  [here](./worker_running.md) for more details regarding local running. 
 
-## Bond the Worker node with your staking account  
 
-Don't forget to bond it with your staking account to get reward after successfully running a NuLink Worker node using the NuLink Staking Dashboard. 
-
-- Navigate to [NuLink Staking Dashboard](https://dashboard.testnet.nulink.org)
-- Connect with the Staking account and make sure you have staked tokens in the staking pool
-- Enter the Worker address to bond
-- Click “Bond Worker”
 
 Refer [here](./dashboard.md) for more usage of NuLink Staking Dashboard.
 
