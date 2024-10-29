@@ -62,7 +62,7 @@
 
 1. **Update NuLink’s Testnet Horus 3.0:**
    - Release NuLink Staking.
-   - Release NuLink Action.
+   - Release NuLink Auction.
    - Release NuLink Bridge.
    - Deploy NuLink Ecosystem Dapp"CreamStream".
 
