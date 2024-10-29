@@ -1,35 +1,34 @@
-# Horus2.0 Testnet Overview
+# Horus3.0 Testnet Overview
 
-Horus2.0 is NuLink's dedicated testnet designed for developers and community members to test and implement proprietary security infrastructure components within their Web3 applications. 
+Horus3.0 is NuLink's dedicated testnet designed for developers and community members to test and implement proprietary security infrastructure components within their Web3 applications. 
 
-## Horus2.0 Testnet Parameters
+## Horus3.0 Testnet Parameters
 
 + **Blockchain:** [BNB Smart Chain Testnet](https://testnet.bscscan.com/) 
-+ **Horus 2.0 Token address:** [0x06A0F0fa38AE42b7B3C8698e987862AfA58e90D9](https://testnet.bscscan.com/address/0x06A0F0fa38AE42b7B3C8698e987862AfA58e90D9)
++ **Horus 3.0 Token address:** [0x3DE51dBD8737d8Fc3332F34fA1D2401F1E620f60](https://testnet.bscscan.com/address/0x3DE51dBD8737d8Fc3332F34fA1D2401F1E620f60)
 + **Epoch Length:**  24 hours
-+ **Batch Length:**  4 epochs
-+ **Staking Pool Per Epoch:**  100000 TNLK
++ **Batch Length:**  7 epochs
++ **Staking Rewards Per Epoch:**  100 TNLK
 + **Minimal Staking Amount:** 1 TNLK
-+ **Maximum Staking Amount:** 1000 TNLK
 
 
-For the latest updates and progress, refer to our [testnet milestones](./horus/horus_milestones.md). The Horus 2.0 testnet is only for test purposes. The token in the testnet has no value to trade. And for each phase, all data and records will be cleared, so please do not store your valuable data in Horus testnet.
+For the latest updates and progress, refer to our [testnet milestones](./horus/horus_milestones.md). The Horus 3.0 testnet is only for test purposes. The token in the testnet has no value to trade. And for each phase, all data and records will be cleared, so please do not store your valuable data in Horus testnet.
 
 ## Testnet Components
 
 1. **Supply Side Integration:**
-   - Horus2.0 emphasizes the integration of proxy workers as the primary staking node. Developers can deploy and test proxy worker nodes to contribute services and earn test rewards.
+   - Horus3.0 emphasizes the integration of proxy workers as the primary staking node. Developers can deploy and test proxy worker nodes to contribute services and earn test rewards.
    - Essential tools for stakers include the NuLink Staking Dashboard and NuLink Worker Node Installer, ensuring efficient management and deployment of staking activities.
 
 2. **Demand Side Integration:**
    - Products for DApp builders and users are seamlessly integrated, allowing developers to test the functionality of their applications with privacy-focused solutions.
    - For DApp builders, integration with the NuLink Agent is supported, along with corresponding demonstration DApps.
-   - DApps from NuLink's grant program are actively integrated, showcasing diverse applications on the Horus2.0 testnet.
+   - DApps from NuLink's grant program are actively integrated, showcasing diverse applications on the Horus3.0 testnet.
 
 ## Demonstration DApps
 
 1. **Secure File Transfer (NuLink Agent Demo):**
-   - The "Secure File Transfer" DApp serves as a demonstration for the integration of NuLink Agent on the Horus2.0 testnet.
+   - The "Secure File Transfer" DApp serves as a demonstration for the integration of NuLink Agent on the Horus3.0 testnet.
    - Users can experience the functionality of the NuLink Agent in a real-world scenario, emphasizing secure file transfers and data sharing.
 
 2. **NuLink Snaps Showcase:**
@@ -37,7 +36,7 @@ For the latest updates and progress, refer to our [testnet milestones](./horus/h
 
 ## Get Started
 
-Getting started with the Horus2.0 Testnet is quick and easy. Follow the steps below based on your role to begin your journey with NuLink's cutting-edge Web3 data privacy solutions:
+Getting started with the Horus3.0 Testnet is quick and easy. Follow the steps below based on your role to begin your journey with NuLink's cutting-edge Web3 data privacy solutions:
 
 ### For Stakers
 
@@ -64,7 +63,7 @@ Getting started with the Horus2.0 Testnet is quick and easy. Follow the steps be
 
 1. **File Transfer DAPP:** We provide a [Demonstration DAPP](./user/agent_usecase.md) that users can use to participate in the process of privacy computing and encrypted data sharing.
 
-Now you're all set to embark on your journey with NuLink's Horus2.0 Testnet. If you have any questions or need assistance, feel free to reach out to the community or our support channels. Happy testing!
+Now you're all set to embark on your journey with NuLink's Horus3.0 Testnet. If you have any questions or need assistance, feel free to reach out to the community or our support channels. Happy testing!
 
 
 
