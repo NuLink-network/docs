@@ -45,7 +45,7 @@
 
 
 
-* [Horus2.0 Testnet](./product/testnet.md)
+* [Horus3.0 Testnet](./product/testnet.md)
   * [Testnet Milestones](./product/horus/horus_milestones.md)
 
 ## Resources
