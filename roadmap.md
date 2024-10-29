@@ -55,11 +55,16 @@
 1. **NuLink Mainnet Launch:**
    - Transplant all modules from the testnet to the mainnet.
    - Activate On-chain Governance (DAO).
+2. **Zero-Knowledge Proof (ZKP) System Integration:**
+   - Integrate the ZKP system into the mainnet.
 
 ## 2024 - Q4
 
-1. **Zero-Knowledge Proof (ZKP) System Integration:**
-   - Integrate the ZKP system into the mainnet.
+1. **Update NuLink’s Testnet Horus 3.0:**
+   - Release NuLink Staking.
+   - Release NuLink Action.
+   - Release NuLink Bridge.
+   - Deploy NuLink Ecosystem Dapp"CreamStream".
 
 ## 2025 - Q4
 
