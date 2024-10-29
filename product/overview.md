@@ -51,9 +51,9 @@ The demand side in NuLink involves users who pay NLK to obtain services from the
 * [**Demostration Dapp:**](./user/agent_usecase.md) The "File Transfer" Dapp serves as a third-party example, demonstrating the use of the NuLink Agent SDK to interact with the NuLink Agent. This showcase underscores the effortless integration and functionality made possible by the NuLink Application Layer, empowering developers to harness the capabilities of the NuLink network for secure file transfers and data sharing.
 
 
-## Horus2.0 Testnet
+## Horus3.0 Testnet
 
-[**Horus2.0**](testnet.md) Network stands as NuLink's dedicated testnet, offering developers and community members an environment to experiment with and implement proprietary security infrastructure components into their Web3 applications. This comprehensive testnet integrates all the products from both the supply and demand sides. 
+[**Horus3.0**](testnet.md) Network stands as NuLink's dedicated testnet, offering developers and community members an environment to experiment with and implement proprietary security infrastructure components into their Web3 applications. This comprehensive testnet integrates all the products from both the supply and demand sides. 
 
 
 
