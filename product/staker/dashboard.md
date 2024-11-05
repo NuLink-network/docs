@@ -1,31 +1,105 @@
-# NuLink Staking Dashboard
+#Dashboard
 
-## Overview
-NuLink Staking Dashboard is a platform for managing the staker/worker account. Users could log in his staking account through the Metamask wallet, stake NLKs(test), and bond `Worker` account to get the reward. You can access NuLink Staking Dashboard through this [link](https://dashboard.testnet.nulink.org).
+The dashboard page include two sub-page, staking reward page and service bonus page.
 
+## Staking Reward Statistics
 
-To engage to the NuLink Dashboard for the Horus network, users must obtain the initial funds of NLKs (test) and BNBs (test) by clicking the faucet button located in the upper right corner.
+The Staking Reward sub-page is the primary landing page for the NuLink Staking Dashboard, offering a comprehensive overview of staking activities. 
+Data is organized by epochs, and the default view is set to the current Epoch. Users can switch to other epochs by using the dropdown menu.
 
-![Faucet](../../miscellaneous/img/dashboard/faucet.png)  
-
-NuLink Staking dashboard provides users with the flexibility to choose between Dark and Light modes. To switch between these modes simply clicking the button next to the faucet button.
-
-# Getting Started with the Staking Dashboard
-
-Staking Dashboard is a powerful tool designed to provide staker with comprehensive control and insights into their staking activities on the NuLink network. The dashboard is organized into three main pages, each serving a specific purpose.
+![Dashboard](../../miscellaneous/img/dashboard/dashboard.png)
 
 
+### Staking Amount
 
-## 1. Explore Staking Statistics
+The left panel displays the `Staking Amount` information:
 
-Navigate to the Staking Statistics page to check the overall staking statistics and gain insights into the staking reward distribution across the entire network. Detailed information on individual stakers and their contributions is readily available, providing a holistic view of the staking ecosystem. Refer [here](./staking_reward.md) for detail instruction.
+  *  `VALID AMOUNT` shows the total valid staking amount of all stakers in the selected epoch.
+  *  `TOTAL AMOUNT` indicates the total staking amount of all stakers in the selected epoch.
 
-## 2. Dive into Service Bonus Statistics
+![Staking Amount](../../miscellaneous/img/dashboard/stakingAmount.png)
 
-Explore the Service Bonus Statistics page to access comprehensive data on the overall network's service bonus. Monitor the distribution of service bonuses and gain valuable insights into how bonuses are allocated. This page is essential for understanding the broader dynamics of service bonuses within the NuLink network.Refer [here](./service_bonus.md) for detail instruction.
+###  Staking Reward
 
-## 3. Take Control with Staking Management
+The right panel showcases the `Staking Reward` details:
 
-The Staking Management page allows staker to actively participate in staking operations. Here, staker can stake or unstake your tokens, bond or unbond, and closely monitor the status of their nodes. This page provides a centralized hub for managing staking activities efficiently. Refer [here](./staking.md) for detail instruction.
+  * `CURRENT EPOCH REWARD` represents the staking rewards generated in current epoch.
+  *  `ACCUMULATED REWARD` is the cumulative staking rewards generated across all Epochs.
+
+![Staking Reward](../../miscellaneous/img/dashboard/stakingReward.png)
+
+###  Total Staking Grids Count
+
+   Further below, there are three boxes displaying:
+
+   * `Total Staking Grids` reveals the total number of stake grids in the displayed epoch.
+   * `Current Epoch` indicates the user selected epoch number.
+   * `Total Epoch` represents the total count of all epochs.
+
+![Total Staking](../../miscellaneous/img/dashboard/stakingTotal.png)
+
+###  Staking Reward Distribution
+
+The image below demonstrates the Staking Reward Distribution list, presenting comprehensive staking-related information for each user receiving rewards.
+
+![Staking Reward Distribution](../../miscellaneous/img/dashboard/stakingDistribution.png)
 
 
+STAKE: Clicking this takes you to the staking details page, with detailed rules described in the "Staking" section.
+
+   * `Stake Grid`: Slot number, used to distinguish between different slots.
+   * `Current Epoch Fee`: The fee for the current epoch, set in the previous epoch.
+   * `Next Epoch Fee`: The fee for the next epoch, to be set during the current epoch.
+   * `Staking Number`: The number of participants in staking.
+   * `Staking Amount`: The amount of NLK staked.
+   * `Living ratio`: A metric within the NuLink network that represents the uptime of a node (higher values lead to greater rewards).
+   * `STAKE`: Clicking this takes you to the staking details page, with detailed rules described in the [Staking](./staking.md) section.
+
+
+
+## Service Bonus Statistics
+
+To navigate to the Service Bonus page, simply click the `Service Bonus` button located in the dashboard menu. 
+The displayed data is categorized by batches, with the default view set to the current batch. 
+Users can easily scroll down to explore information from other batches.
+
+![Service Bonus](../../miscellaneous/img/dashboard/serviceBonus.png)
+
+### Service Bonus
+
+The left panel displays the `Service Bonus` information: 
+* `CURRENT BATCH BONUS` indicates the bonus amount generated in the user selected batch.
+* `CUMULATIVE BATCH BONUS` represents the total bonus amount generated across all batches.
+
+### Batches
+The right panel showcases the `Batches` details:
+* `CURRENT BATCH` shows the user selected batch number.
+* `TOTAL BATCH` represents the total count of all batches.
+
+### Service bonus from each blockchain
+
+The image below presents the service bonus collected from each blockchain.
+
+![Bonus from each chain](../../miscellaneous/img/dashboard/bonusChain.png)
+
+Currently, only BSC is supported, and other chains will gradually become available.
+
+### Service bonus distribution
+
+Scrolling further, you will see the `Service Bonus Distribution` section. 
+Only users who have installed a Stake Grid and bound it to a worker are eligible to receive service bonuses. 
+The distribution of 80% of the service bonus from each batch is based on each user’s Reputation Score Quota (the Reputation Score is related to the uptime of the node—the higher the uptime, the higher the score).
+
+![Bonus from each chain](../../miscellaneous/img/dashboard/bonusDistribution.png)
+
+
+### Foundation Distribution
+The image below demonstrates the Foundation Distribution, where 15% of the service bonus generated in each Batch is allocated to the NuLink Network Foundation's account.
+
+![Foundation Distribution](../../miscellaneous/img/dashboard/foundation.png)
+
+### Burning Record
+
+This image illustrates the Burning Record, where 5% of the service bonus from each Batch is burned.
+
+![Burning Record](../../miscellaneous/img/dashboard/burning.png)

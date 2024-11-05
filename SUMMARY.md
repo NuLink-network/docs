@@ -19,9 +19,8 @@
 
 
 * [NuLink for Stakers](./product/stakers.md)
-  * [Staking Dashboard](./product/staker/dashboard.md)
-    * [Staking Reward Statistics](./product/staker/staking_reward.md)
-    * [Service Bonus Statistics](./product/staker/service_bonus.md)
+  * [Staking Dashboard](./product/staker/dashboardoverall.md)
+    * [Dashboard](./product/staker/dashboard.md)
     * [Staking](./product/staker/staking.md)
     * [Auction](./product/staker/auction.md)
     * [Staking Grid](./product/staker/grid.md)

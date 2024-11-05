@@ -1,18 +1,25 @@
 # NuLink for Stakers
 
-Stakers are crucial contributors to the NuLink network, playing a vital role in providing services and maintaining the decentralized infrastructure. NuLink offers dedicated tools and resources to facilitate staking activities and ensure the smooth operation of the network.
+Stakers are essential contributors to the NuLink network, supporting decentralized infrastructure and providing valuable services. This guide will walk you through the staking process, detail the roles available, and explain the reward and fee structures.
+
+In the NuLink network, there are two types of stakers: grid maintainers and standard stakers.
+
+- **Grid Maintainers:** Grid maintainers operate a grid by running a worker node connected to the network, playing a key role in ensuring stability and maintenance. In return, they earn two types of rewards: a Service Bonus from the network and a delegation fee from standard stakers who delegate their tokens to the grid.
+
+- **Standard Stakers:** Standard stakers do not need to run a node. Instead, they choose a grid to stake with, delegating their tokens to a grid maintainer. In return, they receive rewards from the grid, with a portion allocated to the grid maintainer based on the grid's predefined fee rate.
+
+This guide will help you understand each role and make the most of your staking experience in the NuLink network.
 
 ## Staking Dashboard
 
 [NuLink Staking Dashboard](https://dashboard.testnet.nulink.org) is a user-friendly interface designed to empower stakers in managing their staking activities. Key features include:
 
-- **Managing Staking Activities:** Stakers can efficiently manage their staking activities(stake,unstake,claim deposit and claim reward) through the dashboard.
-- **Bonding/Unbonding Service Nodes:** Detailed instructions on bonding service nodes to the staker's account.
-- **Tracking Rewards:** The dashboard provides a transparent view of earned rewards, allowing stakers to assess the success of their contributions.
-- **Monitoring Contributions:** Stakers can track their contributions to the network, gaining insights into their impact on the NuLink ecosystem.
-- **Ensuring Smooth Operation:** Stakers can utilize the dashboard to ensure the smooth operation of NuLink services, addressing any issues promptly.
+- **Stake Statistics**: Provides a clear overview of staking metrics and performance.
+- **Grid Auction and Management**: Allows users to participate in grid auctions and manage grid settings.
+- **Stake Management**: Simplifies the process of staking, unstaking, and tracking rewards.
+- **Cross-Chain Bridge**: Facilitates token transfers across different blockchain networks, enhancing flexibility for stakers.
 
-Learn more about the [NuLink Staking Dashboard](./staker/dashboard.md).
+This dashboard streamlines staking and grid management, making it accessible for all types of participants in the NuLink network. Learn more about the [NuLink Staking Dashboard](./staker/dashboard.md).
 
 ## NuLink Worker Installer
 
