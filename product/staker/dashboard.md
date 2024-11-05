@@ -1,4 +1,4 @@
-#Dashboard
+# Dashboard
 
 The dashboard page include two sub-page, staking reward page and service bonus page.
 
