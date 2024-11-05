@@ -1,18 +1,18 @@
 # NuLink Worker Initialization and Running  
 
-If you install the Worker node via Docker, please initialize and run it using Docker as well. If you install the Worker node through a local installation, please refer to the local operation section.
 
-**You have to deposit a small amount of the testnet BNB (tBNB) into the worker account to facilitate the sending of a confirmation transaction.**
-
-
-## Run Node via Docker (Recommended)  
-
-There are three steps to complete when starting a Worker node via Docker:
+After installing the worker node via Docker, you can initialize and run it by following these three steps:
 1. **Export Node Environment Variables**
 2. **Initialize Node Configuration**
 3. **Launch the Node**
 
-### Export Node Environment Variables  
+
+**You have to deposit a small amount of the testnet BNB (tBNB) into the worker account to facilitate the sending of a confirmation transaction.**
+
+
+
+
+## Export Node Environment Variables  
 To streamline the Docker installation procedure, we utilize certain environment variables. These variables are crucial for the operation of the NuLink Worker.
 
 Select a password with at least 8 characters to lock and unlock the private storage created by the NuLink Worker. **It's important to remember this password for future access.**
@@ -24,7 +24,7 @@ This password is used to unlock the keystore file of your Worker account. You wo
 export NULINK_OPERATOR_ETH_PASSWORD=<YOUR WORKER ACCOUNT PASSWORD>
 ```
 
-### Initialize Node Configuration  
+## Initialize Node Configuration  
 This step creates and stores the NuLink worker node configuration, and only needs to be run once.
 
 ```shell
@@ -109,7 +109,7 @@ Generated configuration file at default filepath /home/circleci/.local/share/nul
 
 ```
 
-### Launch the Node  
+## Launch the Node  
 Before performing this step, make sure that the environment variable has been set successfully.
 You can verify it using the following method, execute the following command: 
 ```shell
@@ -163,7 +163,7 @@ aa3a0f6376b566473cbcde46b0e772feb4d3658188d2cbb424a1e94588d6d8eb
 
 
 
-### Check Node Status for Worker Account
+## Check Node Status for Worker Account
 The following command describes how to view worker status.
 
 ```shell
@@ -189,150 +189,10 @@ Working ~ Keep Ursula Online!
 
 Now the Worker address(e.g: 0x8B1819341BEc211a45a2186C4D0030681cccE0Ee)  is ready for bonding operation.
 
-### Restart the Worker Node
+## Restart the Worker Node
 
 Occasionally, the staker may find it necessary to restart the worker node. Below is the command for restarting the currently running nodes:
 
 ```shell
 docker restart <container ID>
-```
-
-
-## Run Node via Local Operation  
-
-There are two steps to complete starting a Worker node via local operation:
-1. **Initialize Node Configuration**
-2. **Launch the Node**
-
-### Initialize Node Configuration
-
-This step creates and stores the worker node configuration, and only needs to be run once.
-
-```shell
-nulink ursula init      \
---signer <ETH KEYSTORE URI>           \
---network <NULINK NETWORK NAME>           \
---eth-provider <NULINK PROVIDER URI>      \
---payment-provider <PAYMENT PROVIDER URI>  \
---payment-network <PAYMENT NETWORK NAME>   \
---operator-address <OPERATOR ADDRESS> \
---max-gas-price <GWEI>
-```
-
-
-- `<ETH KEYSTORE URI>` - The path to the keystore file of the Worker account..
-- `<NULINK PROVIDER URI>` - The URI of a local or hosted node where the Horus network launched.
-- `<NULINK NETWORK NAME>` - The name of the network where the Horus network launched. 
-- `<PAYMENT PROVIDER URI>` - The URI of a local or hosted node where payment goes.
-- `<PAYMENT NETWORK NAME>` - The name of the payment network. 
-- `<OPERATOR ADDRESS>` - The address of the Worker account. [How to generate Worker account](./eth_account.md)
-- `<GWEI>` (Optional) - The maximum price of gas to spend on any transaction.
-
-Example Input:
-
-```shell
-nulink ursula init \
---signer keystore:///root/nulink/keystore \
---eth-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
---network horus \
---payment-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
---payment-network bsc_testnet \
---operator-address 0x8a20d379A4C08c482a617A81a39EB426B6EB8642 \
---max-gas-price 10000000000
-```
-
-Example Output:
-
-```shell
-# step 1
-Detected IPv4 address (8.219.188.70) - Is this the public-facing address of Worker? [y/N]: y
-
-Please provide a password to lock Operator keys.
-Do not forget this password, and ideally store it using a password manager.
-
-# step 2
-Enter nulink keystore password (8 character minimum): xxxxxx
-Repeat for confirmation: xxxxxx
-
-Backup your seed words, you will not be able to view them again.
-
-hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
-
-# step 3
-Have you backed up your seed phrase? [y/N]: y
-
-# step 4
-Confirm seed words: hammer fatal jazz era hurt shoulder stand story find move earn  much actor animal stamp know vital odor coin electric torch quick siege tonight
-
-
-Generated keystore
-
-
-Public Key:   02dacea4c7f5563004af37f282ca10f7
-Path to Keystore: /root/.local/share/nulink/keystore
-
-- You can share your public key with anyone. Others need it to interact with you.
-- Never share secret keys with anyone! 
-- Backup your keystore! Character keys are required to interact with the protocol!
-- Remember your password! Without the password, it's impossible to decrypt the key!
-
-
-Generated configuration file at non-default filepath /root/.local/share/nulink/ursula-02dacea4.json
-* NOTE: for a non-default configuration filepath use `--config-file "/root/.local/share/nulink/ursula-02dacea4.json"` with subsequent `ursula` CLI commands
-
-* Review configuration  -> nulink ursula config
-* Start working         -> nulink ursula run
-```
-
-### Launch the Node
-
-Run worker node using the initialized configuration.
-
-```shell
-screen -S nulink-worker // use this command if you want to run the worker node in a screen session
-
-nulink ursula run --no-block-until-ready
-```
-
-Enter the above startup command and press enter to prompt for the passwords of ETH account and NuLink keystore, which are set in the initialization phase.
-
-Note: **_operator account needs to have tokens on the corresponding chain_**
-
-
-Example Input:
-
-```shell
-nulink ursula run --no-block-until-ready
-```
-
-Example Output:
-
-```shell
-Enter ethereum account password (0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93):
-Enter nulink keystore password:
-Authenticating Ursula
-Loaded Ursula (horus)
-✓ External IP matches configuration
-Starting services
-✓ Node Discovery (Horus)
-✓ Operator 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93 is funded with 0.499959405 ETH
-✓ Operator 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93 is bonded to staking provider 0xf3D6ad89E34b1Cf8325EA614fa901eA4F34Be14a
-✓ Operator already confirmed.  Not starting worktracker.
-✓ Start Operator Bonded Tracker
-✓ Rest Server https://8.219.188.70:9151
-Working ~ Keep Ursula Online!
-```
-
-Now the Worker address(e.g: 0x7bD7B1266868B34dA4929501FfEA4ac737dA0E93) is ready for bonding operation.
-
-### Restart the Worker Node
-
-Occasionally, the staker may find it necessary to restart the worker node. Below is the command for restarting the currently running nodes:
-
-```shell
-screen -x nulink-worker // use this command if you run the worker node in a screen session
-
-press ctrl+c
-
-nulink ursula run --rest-port 9151 --no-block-until-ready
 ```
