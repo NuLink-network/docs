@@ -9,7 +9,7 @@ You can access the NuLink Staking Dashboard through this [link](https://dashboar
 
 Remark: For testnet user, users can obtain the initial funds of NLKs (test) and BNBs (test) by clicking the faucet button located in the upper right corner.
 
-![Faucet](../../miscellaneous/img/dashboard/faucet.png)  
+![Faucet](../../miscellaneous/img/dashboard/dashboardoverall.png)  
 
 NuLink Staking dashboard provides users with the flexibility to choose between Dark and Light modes. To switch between these modes simply clicking the button next to the faucet button.
 
@@ -19,7 +19,7 @@ The NuLink Staking Dashboard is a powerful tool designed to give stakers compreh
 
 ## 1. Dashboard
 
-The **Dashboard** page serves as the main hub, providing an overview of key staking information and metrics. Refer [here](./staking_reward.md) for detail instruction.
+The **Dashboard** page serves as the main hub, providing an overview of key staking information and metrics. Refer [here](./dashboard.md) for detail instruction.
 
 ## 2. Staking
 
@@ -36,24 +36,5 @@ The **My Stake Grids** area allows users to manage their personal staking grids,
 ## 5. Bridge
 
 The **Bridge** tool facilitates token transfers across different blockchain networks, providing flexibility and accessibility for stakers. *This page will be available soon.*
-
-
-
-
-
-
-
-
-## 1. Explore Staking Statistics
-
-Navigate to the Staking Statistics page to check the overall staking statistics and gain insights into the staking reward distribution across the entire network. Detailed information on individual stakers and their contributions is readily available, providing a holistic view of the staking ecosystem. Refer [here](./staking_reward.md) for detail instruction.
-
-## 2. Dive into Service Bonus Statistics
-
-Explore the Service Bonus Statistics page to access comprehensive data on the overall network's service bonus. Monitor the distribution of service bonuses and gain valuable insights into how bonuses are allocated. This page is essential for understanding the broader dynamics of service bonuses within the NuLink network.Refer [here](./service_bonus.md) for detail instruction.
-
-## 3. Take Control with Staking Management
-
-The Staking Management page allows staker to actively participate in staking operations. Here, staker can stake or unstake your tokens, bond or unbond, and closely monitor the status of their nodes. This page provides a centralized hub for managing staking activities efficiently. Refer [here](./staking.md) for detail instruction.
 
 
