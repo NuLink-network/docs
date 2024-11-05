@@ -19,7 +19,7 @@ This guide will help you understand each role and make the most of your staking 
 - **Stake Management**: Simplifies the process of staking, unstaking, and tracking rewards.
 - **Cross-Chain Bridge**: Facilitates token transfers across different blockchain networks, enhancing flexibility for stakers.
 
-This dashboard streamlines staking and grid management, making it accessible for all types of participants in the NuLink network. Learn more about the [NuLink Staking Dashboard](./staker/dashboard.md).
+This dashboard streamlines staking and grid management, making it accessible for all types of participants in the NuLink network. Learn more about the [NuLink Staking Dashboard](./staker/dashboardoverall.md).
 
 ## NuLink Worker Installer
 
