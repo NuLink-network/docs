@@ -9,13 +9,15 @@ You can access the NuLink Staking Dashboard through this [link](https://dashboar
 
 Remark: For testnet user, users can obtain the initial funds of NLKs (test) and BNBs (test) by clicking the faucet button located in the upper right corner.
 
-![Faucet](../../miscellaneous/img/dashboard/dashboardoverall.png)  
+![Faucet](../../miscellaneous/img/dashboard/faucet.png)  
 
 NuLink Staking dashboard provides users with the flexibility to choose between Dark and Light modes. To switch between these modes simply clicking the button next to the faucet button.
 
 # Getting Started with the Staking Dashboard
 
 The NuLink Staking Dashboard is a powerful tool designed to give stakers comprehensive control and insights into their staking activities on the NuLink network. The dashboard is organized into five main sections, each serving a specific purpose.
+
+![Overall](../../miscellaneous/img/dashboard/dashboardoverall.png)  
 
 ## 1. Dashboard
 
