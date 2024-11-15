@@ -18,23 +18,9 @@ as shown in the image below:
 If you’re unsure how to start the node, please click to view the help manual.
 
 ### Stake Grid Details
-Click `EDIT STAKE GRID` to view the grid’s details and staking overview. 
+Click `STAKE GRID` to view the grid’s details and staking overview. 
 
 ![Edit Grid Details](../../miscellaneous/img/dashboard/gridDetail.png)
-
-* Click `DETECT CURRENT STATUS`, if successful will return an `Online` status, otherwise `Offline`.
-* 
-* Click `UNBOND WORKER`, a pop-up will appear. Confirm to unbond the worker successfully.
-
-![Unbond Worker](../../miscellaneous/img/dashboard/workerUnbond.png)
-
-* Click `CHANGE WORKER`, and a pop-up will appear. Enter the new address and submit to successfully change the worker.
-  
-![Change Worker Address](../../miscellaneous/img/dashboard/workerChange.png)
-
-* Click `EDIT INFO` to edit the grid’s description and social media content.
-
-![Edit Grid Info](../../miscellaneous/img/dashboard/gridEdit.png)
 
 Scrolling down in the Stake Grid Details page, you can see the staking overview for the current period:
 
