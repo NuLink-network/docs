@@ -17,7 +17,7 @@ as shown in the image below:
 
 If you’re unsure how to start the node, please click to view the help manual.
 
-Click `EDIT EPOCH FEE` to customize the fee for the epoch, as shown in the image below:
+Click `EDIT FEE` to customize the fee for the epoch, as shown in the image below:
 
 ![Edit Epoch Fee](../../miscellaneous/img/dashboard/gridFee.png)
 
