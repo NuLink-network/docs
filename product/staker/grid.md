@@ -17,6 +17,10 @@ as shown in the image below:
 
 If you’re unsure how to start the node, please click to view the help manual.
 
+Click `EDIT EPOCH FEE` to customize the fee for the epoch, as shown in the image below:
+
+![Edit Epoch Fee](../../miscellaneous/img/dashboard/gridFee.png)
+
 ### Stake Grid Details
 Click `STAKE GRID` to view the grid’s details and staking overview. 
 
@@ -31,10 +35,6 @@ Scrolling down in the Stake Grid Details page, you can see the staking overview 
 * `STAKING REWARD`: VALID STAKING QUOTA * Platform Total Reward
 * `LIVING RATIO`: This parameter measures the uptime of the node (the higher the value, the higher the rewards).
 
-
-Click `EDIT EPOCH FEE` to customize the fee for the epoch, as shown in the image below:
-
-![Edit Epoch Fee](../../miscellaneous/img/dashboard/gridFee.png)
 
 Scrolling further down, you can see all staking records under the grid.
 
